@@ -1,0 +1,215 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="ワンオラクル占い" description="タロット風ワンオラクル占い。カードを引いて今日のメッセージを受け取ろう。">
+  <div class="fortune-wrap">
+    <h1 class="fortune-title">🔮 ワンオラクル占い</h1>
+    <p class="fortune-desc">心を静めて、カードを引いてください。</p>
+
+    <div class="card-area">
+      <div class="card" id="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <span class="card-back-symbol">✦</span>
+          </div>
+          <div class="card-back-face">
+            <div class="card-symbol" id="cardSymbol"></div>
+            <div class="card-name" id="cardName"></div>
+            <div class="card-message" id="cardMessage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="draw-btn" id="drawBtn">カードを引く</button>
+    <button class="reset-btn" id="resetBtn" style="display:none;">もう一度引く</button>
+
+    <p class="fortune-note" id="fortuneNote"></p>
+  </div>
+</BaseLayout>
+
+<script>
+  const cards = [
+    { symbol: '☀️', name: '太陽', message: '今日はエネルギーに満ちた一日。自信を持って前に進みましょう。あなたの明るさが周囲を照らします。' },
+    { symbol: '🌙', name: '月', message: '直感を大切にする日。表面だけでなく、物事の本質を見極めてください。夢や無意識からのメッセージに耳を傾けて。' },
+    { symbol: '⭐', name: '星', message: '希望の光が差し込んでいます。あなたの願いは着実に叶う方向へ進んでいます。焦らず、信じて待ちましょう。' },
+    { symbol: '⚡', name: '塔', message: '変化の時。古いものを手放すことで、新しい扉が開きます。突然の出来事も、成長のきっかけと捉えて。' },
+    { symbol: '⚖️', name: '正義', message: '公平さと誠実さが鍵。自分の行動を振り返り、バランスを保つことが大切です。正しい判断が道を開きます。' },
+    { symbol: '🌍', name: '世界', message: '完成と達成の象徴。あなたは今、一つのサイクルを終えようとしています。その努力は必ず報われます。' },
+    { symbol: '🔥', name: '力', message: '内なる強さを信じて。困難な状況でも、あなたには乗り越える力があります。優しさと勇気で道を切り開いて。' },
+    { symbol: '💎', name: '皇帝', message: '安定と秩序の時。計画を立て、着実に実行することで目標に近づけます。リーダーシップを発揮しましょう。' },
+    { symbol: '🌹', name: '女帝', message: '豊かさと愛情に恵まれています。創造力を活かし、周りとの繋がりを大切に。美しいものを生み出す力がある。' },
+    { symbol: '🎭', name: '愚者', message: '新しい旅の始まり。自由な心で一歩踏み出してみましょう。未知への挑戦が、大きな可能性を広げます。' },
+    { symbol: '🪄', name: '魔術師', message: '必要な力はすべてあなたの中にあります。集中力と意志で、思い描いた未来を現実にできます。行動あるのみ。' },
+    { symbol: '🏺', name: '女司祭', message: '知恵と洞察の時。答えを急がず、静かに内省してください。深い理解が、最善の選択へ導いてくれます。' },
+    { symbol: '🌊', name: '節制', message: 'バランスと調和がテーマ。焦らず、一歩ずつ丁寧に進むことで、物事は上手くいきます。穏やかな心を保って。' },
+    { symbol: '🦋', name: '死神', message: '変容と再生の象徴。終わりは新しい始まり。手放すことを恐れずに。変化の先に、輝かしい未来が待っています。' },
+    { symbol: '🏆', name: '戦車', message: '勝利と前進の時。困難があっても突き進む意志を持って。自分の意志と情熱を信じれば、必ず道は開けます。' },
+  ];
+
+  const card = document.getElementById('card');
+  const drawBtn = document.getElementById('drawBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const cardSymbol = document.getElementById('cardSymbol');
+  const cardName = document.getElementById('cardName');
+  const cardMessage = document.getElementById('cardMessage');
+  const fortuneNote = document.getElementById('fortuneNote');
+
+  function drawCard() {
+    const picked = cards[Math.floor(Math.random() * cards.length)];
+    cardSymbol.textContent = picked.symbol;
+    cardName.textContent = picked.name;
+    cardMessage.textContent = picked.message;
+
+    card.classList.add('flipped');
+    drawBtn.style.display = 'none';
+    resetBtn.style.display = 'inline-block';
+    fortuneNote.textContent = `「${picked.name}」のカードを引きました`;
+  }
+
+  function resetCard() {
+    card.classList.remove('flipped');
+    drawBtn.style.display = 'inline-block';
+    resetBtn.style.display = 'none';
+    fortuneNote.textContent = '';
+  }
+
+  drawBtn.addEventListener('click', drawCard);
+  resetBtn.addEventListener('click', resetCard);
+</script>
+
+<style>
+  .fortune-wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0 4rem;
+  }
+
+  .fortune-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .fortune-desc {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* カードエリア */
+  .card-area {
+    perspective: 1000px;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    width: 200px;
+    height: 320px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+  }
+
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  .card-front,
+  .card-back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--border);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  }
+
+  .card-front {
+    background: linear-gradient(135deg, #2d1b69, #4a3587, #6b52a3);
+  }
+
+  .card-back-symbol {
+    font-size: 4rem;
+    color: rgba(255,255,255,0.25);
+    user-select: none;
+  }
+
+  .card-back-face {
+    background: var(--bg-card);
+    transform: rotateY(180deg);
+    padding: 1.5rem;
+    gap: 0.75rem;
+  }
+
+  .card-symbol {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .card-name {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--accent);
+  }
+
+  .card-message {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  /* ボタン */
+  .draw-btn,
+  .reset-btn {
+    padding: 0.75rem 2.5rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s, transform 0.1s;
+  }
+
+  .draw-btn {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  .reset-btn {
+    background: var(--bg-card);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  .draw-btn:hover,
+  .reset-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+  }
+
+  .fortune-note {
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    min-height: 1.4em;
+  }
+</style>
