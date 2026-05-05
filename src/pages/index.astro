@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 ---
 
 <BaseLayout title="ホーム">
@@ -17,7 +18,7 @@ const posts = (await getCollection('blog')).sort(
     <p class="posts-heading">記事一覧</p>
     <ul class="post-list" role="list">
       {posts.map((post) => {
-        const url = `${import.meta.env.BASE_URL}blog/${post.slug}/`;
+        const url = `${base}blog/${post.slug}/`;
         const date = post.data.pubDate.toLocaleDateString('ja-JP', {
           year: 'numeric',
           month: 'long',

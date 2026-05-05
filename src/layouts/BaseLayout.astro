@@ -6,6 +6,7 @@ interface Props {
 
 const { title, description = 'My Blog — Astro で作ったブログ' } = Astro.props;
 const siteTitle = 'My Blog';
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 ---
 
 <!doctype html>
@@ -14,7 +15,7 @@ const siteTitle = 'My Blog';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <title>{title} | {siteTitle}</title>
   </head>
   <body>
