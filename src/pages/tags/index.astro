@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+
+const tagMap = new Map<string, number>();
+posts.forEach(post => {
+  post.data.tags?.forEach(tag => {
+    tagMap.set(tag, (tagMap.get(tag) ?? 0) + 1);
+  });
+});
+const tags = [...tagMap.entries()].sort((a, b) => b[1] - a[1]);
+---
+
+<BaseLayout title="タグ一覧">
+  <h1 class="page-heading">タグ一覧</h1>
+  <div class="tag-index">
+    {tags.map(([tag, count]) => (
+      <a href={`${base}tags/${tag}/`} class="tag-index-item">
+        <span class="tag">{tag}</span>
+        <span class="tag-count">{count}件</span>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

@@ -1,48 +1,62 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import ShareButtons from '../components/ShareButtons.astro';
+import { readingTime } from '../utils/readingTime';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
   entry: CollectionEntry<'blog'>;
+  headings: { depth: number; slug: string; text: string }[];
 }
 
-const { entry } = Astro.props;
-const { title, description, pubDate, updatedDate, tags } = entry.data;
+const { entry, headings } = Astro.props;
+const { title, description, pubDate, updatedDate, tags, category } = entry.data;
+
+const minutes = readingTime(entry.body);
+const postUrl = Astro.url.href;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
 const formattedDate = pubDate.toLocaleDateString('ja-JP', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
+  year: 'numeric', month: 'long', day: 'numeric',
 });
-
 const formattedUpdated = updatedDate?.toLocaleDateString('ja-JP', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
+  year: 'numeric', month: 'long', day: 'numeric',
 });
 ---
 
 <BaseLayout title={title} description={description}>
   <article>
     <header class="post-hero">
+      {category && <span class="category-badge">{category}</span>}
       <h1 class="post-title">{title}</h1>
       <div class="post-meta">
         <time datetime={pubDate.toISOString()}>{formattedDate}</time>
-        {formattedUpdated && (
-          <span>（更新: {formattedUpdated}）</span>
-        )}
-        {tags && tags.map((tag) => (
-          <span class="tag">{tag}</span>
-        ))}
+        {formattedUpdated && <span>（更新: {formattedUpdated}）</span>}
+        <span class="reading-time">📖 約{minutes}分で読めます</span>
       </div>
+      {tags && (
+        <div class="post-tags">
+          {tags.map(tag => (
+            <a href={`${base}tags/${tag}/`} class="tag">{tag}</a>
+          ))}
+        </div>
+      )}
     </header>
 
-    <div class="prose">
-      <slot />
+    <div class="post-layout">
+      <div class="prose">
+        <slot />
+      </div>
+      <aside class="toc-sidebar">
+        <TableOfContents headings={headings} />
+      </aside>
     </div>
 
+    <ShareButtons title={title} url={postUrl} />
+
     <nav class="post-nav">
-      <a href={import.meta.env.BASE_URL}>&larr; 記事一覧へ戻る</a>
+      <a href={base}>&larr; 記事一覧へ戻る</a>
     </nav>
   </article>
 </BaseLayout>

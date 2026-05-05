@@ -3,6 +3,7 @@ title: 'ブログをはじめました'
 description: 'Astro で作ったブログの最初の記事です。'
 pubDate: '2026-04-20'
 tags: ['はじめに', 'Astro']
+category: 'ブログ'
 ---
 
 こんにちは！このブログは [Astro](https://astro.build) で作りました。

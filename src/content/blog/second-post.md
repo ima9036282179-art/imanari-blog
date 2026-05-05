@@ -3,6 +3,7 @@ title: 'Markdown の書き方まとめ'
 description: 'ブログ記事を書くときによく使う Markdown 記法をまとめました。'
 pubDate: '2026-04-25'
 tags: ['Markdown', 'Tips']
+category: '技術'
 ---
 
 記事を書くときに使う Markdown 記法をまとめておきます。

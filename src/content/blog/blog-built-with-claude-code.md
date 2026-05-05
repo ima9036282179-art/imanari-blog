@@ -3,6 +3,7 @@ title: 'Claude Code でブログページを構築してみた'
 description: 'AI コーディングツール「Claude Code」を使って、Astro 製ブログを一から作り GitHub Pages に公開するまでの全記録です。'
 pubDate: '2026-05-05'
 tags: ['Claude Code', 'Astro', 'GitHub Pages', 'ブログ']
+category: '技術'
 ---
 
 「コードは書けないけど、自分のブログを持ちたい」そんな思いから、Claude Code を使ってブログを作ってみました。その全記録をまとめます。
