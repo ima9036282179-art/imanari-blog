@@ -142,6 +142,38 @@ img {
   font-size: 1.05rem;
 }
 
+/* プロフィール */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile-bio {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
 /* 記事一覧 */
 .posts-heading {
   font-size: 1.1rem;
