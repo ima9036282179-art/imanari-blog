@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'My Blog — Astro で作ったブログ' } = Astro.props;
+const siteTitle = 'My Blog';
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <title>{title} | {siteTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href={import.meta.env.BASE_URL} class="site-title">{siteTitle}</a>
+        <nav class="site-nav">
+          <a href={import.meta.env.BASE_URL}>ホーム</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-wrapper">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; {new Date().getFullYear()} {siteTitle}. Built with Astro.</p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

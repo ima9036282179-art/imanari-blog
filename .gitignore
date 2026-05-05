@@ -1,0 +1,17 @@
+# ビルド成果物
+dist/
+.output/
+
+# 依存関係
+node_modules/
+
+# Astro キャッシュ
+.astro/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
