@@ -1,7 +1,7 @@
 ---
 title: 'Markdown の書き方まとめ'
 description: 'ブログ記事を書くときによく使う Markdown 記法をまとめました。'
-pubDate: '2026-05-03'
+pubDate: '2026-04-25'
 tags: ['Markdown', 'Tips']
 ---
 

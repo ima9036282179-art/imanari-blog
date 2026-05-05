@@ -1,7 +1,7 @@
 ---
 title: 'GitHub Pages へのデプロイ手順'
 description: 'Astro で作ったブログを GitHub Pages に公開する手順を説明します。'
-pubDate: '2026-05-05'
+pubDate: '2026-04-28'
 tags: ['GitHub', 'デプロイ', 'Tips']
 ---
 

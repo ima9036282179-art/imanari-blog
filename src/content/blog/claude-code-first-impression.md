@@ -1,7 +1,7 @@
 ---
 title: 'Claude Code を触ってみた'
 description: 'Anthropic が開発した AI コーディングツール「Claude Code」を実際に使ってみた感想をまとめました。'
-pubDate: '2026-05-05'
+pubDate: '2026-05-01'
 tags: ['Claude Code', 'AI', 'ツール']
 ---
 
