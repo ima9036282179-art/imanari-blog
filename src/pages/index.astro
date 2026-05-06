@@ -18,7 +18,7 @@ const allTags = [...new Set(posts.flatMap(p => p.data.tags ?? []))];
   </section>
 
   <section class="profile-card">
-    <img src={`${base}images/onepiece01_luffy.png`} alt="imanari" class="profile-avatar" />
+    <img src={`${base}images/onepiece01_luffy.png`} alt="imanari" class="profile-avatar" width="80" height="80" loading="lazy" decoding="async" />
     <div class="profile-body">
       <p class="profile-name">imanari</p>
       <p class="profile-bio">Claude Codeを使ってブログを作りました</p>

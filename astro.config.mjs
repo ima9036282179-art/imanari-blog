@@ -1,10 +1,9 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
-// GitHub Pages の設定
-// YOUR_USERNAME を GitHub のユーザー名に、YOUR_REPO_NAME をリポジトリ名に変更してください
-// 例: site: 'https://taro.github.io', base: '/my-blog'
 export default defineConfig({
   site: 'https://ima9036282179-art.github.io',
   base: '/imanari-blog',
   output: 'static',
+  integrations: [sitemap()],
 });

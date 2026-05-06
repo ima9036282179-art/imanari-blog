@@ -4,11 +4,33 @@ import DarkModeToggle from '../components/DarkModeToggle.astro';
 interface Props {
   title: string;
   description?: string;
+  ogType?: 'website' | 'article';
+  ogImage?: string;
 }
 
-const { title, description = 'My Blog — Astro で作ったブログ' } = Astro.props;
+const {
+  title,
+  description = 'ドラゴン桜２を起点にした勉強法・名言・感想ブログ',
+  ogType = 'website',
+  ogImage,
+} = Astro.props;
+
 const siteTitle = 'My Blog';
+const siteUrl = 'https://ima9036282179-art.github.io/imanari-blog';
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const canonicalUrl = Astro.url.href;
+const pageTitle = `${title} | ${siteTitle}`;
+const ogImageUrl = ogImage
+  ? (ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`)
+  : `${siteUrl}/images/dragon02.jpg`;
+
+const websiteSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: siteTitle,
+  url: `${siteUrl}/`,
+  description: 'ドラゴン桜２を起点にした勉強法・名言・感想ブログ',
+});
 ---
 
 <!doctype html>
@@ -17,8 +39,32 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- OGP -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:site_name" content={siteTitle} />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
-    <title>{title} | {siteTitle}</title>
+    <title>{pageTitle}</title>
+
+    <!-- WebSite 構造化データ -->
+    <script type="application/ld+json" set:html={websiteSchema} />
+
+    <!-- 各ページ固有タグ（記事の JSON-LD など） -->
+    <slot name="head" />
+
     <!-- ダークモード FOUC 防止 -->
     <script is:inline>
       (function() {
