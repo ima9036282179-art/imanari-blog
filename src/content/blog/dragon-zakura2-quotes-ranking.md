@@ -178,6 +178,34 @@ category: '名言まとめ'
 
 ---
 
+## 公式Instagram 名言投稿
+
+TBS「ドラゴン桜２」公式Instagramより、名言画像をご紹介します。
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQ54bE3MLIV/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto 12px; max-width:540px; width:100%;"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQ54XXeMMkw/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto 12px; max-width:540px; width:100%;"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQ54UTdsJ7B/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto 12px; max-width:540px; width:100%;"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQ3YVABsWEn/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto 12px; max-width:540px; width:100%;"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQ3YRStM6JM/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto 12px; max-width:540px; width:100%;"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQ0c16BMgto/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto 12px; max-width:540px; width:100%;"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQ0cxJHsvHs/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto 12px; max-width:540px; width:100%;"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQ0crtTMUtn/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto 12px; max-width:540px; width:100%;"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQnvIpaH1Ku/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto 12px; max-width:540px; width:100%;"></blockquote>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+> 出典：TBS「ドラゴン桜２」公式Instagram（[@dragonzakuratbs](https://www.instagram.com/dragonzakuratbs/)）
+
+---
+
 ## 公式サイト
 
 [📺 TBS「ドラゴン桜２」公式サイトはこちら →](https://www.tbs.co.jp/dragonzakura/)
