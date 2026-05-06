@@ -1,34 +1,51 @@
 ---
-title: 'ドラゴン桜2 主題歌はKing & Prince｜挿入歌・BGMまとめ'
-description: 'ドラゴン桜２の主題歌「恋降る月夜に君想ふ」（King & Prince）を解説。髙橋海人が出演者かつ主題歌アーティストである理由と、挿入歌・BGMの使い方をまとめました。'
+title: 'ドラゴン桜2 BGM・サウンドトラック完全まとめ｜劇中音楽の魅力'
+description: 'ドラゴン桜２（2021年TBS）のBGM・サウンドトラックを徹底解説。作業用・勉強用BGMとしても人気の劇中音楽をYouTube動画付きでまとめました。'
 pubDate: '2026-05-23'
-tags: ['ドラゴン桜2', '主題歌', '挿入歌', 'King & Prince', '音楽']
+tags: ['ドラゴン桜2', 'BGM', 'サウンドトラック', '音楽']
 category: '比較・解説'
 ---
 
-ドラマの感動を倍増させる音楽。「ドラゴン桜２」（2021年TBS）の主題歌・挿入歌についてまとめました。
+ドラマの感動を何倍にも引き上げる音楽。「ドラゴン桜２」（2021年TBS日曜劇場）のBGM・サウンドトラックについてまとめました。
+
+**この記事でわかること**
+- ドラゴン桜２のBGM・サウンドトラックの特徴
+- 各シーンで流れる音楽の役割
+- 公式サウンドトラック・作業用BGM動画
 
 ---
 
-## 主題歌
+## 公式サウンドトラック
 
-### King & Prince「恋降る月夜に君想ふ」
+TBSから「ドラゴン桜２」オリジナル・サウンドトラックが公式リリースされています。
 
-**ドラゴン桜２の主題歌**はKing & Princeが担当しました。
+### メインテーマ（先行公開）
 
-ドラマに出演している**髙橋海人**（瀬戸輝役）がKing & Princeのメンバーであることもあり、ドラマと主題歌の世界観が自然に結びついています。
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/qilbwB7G3y4" title="【公式】TBS系 日曜劇場「ドラゴン桜」オリジナル・サウンドトラック メインテーマ先行公開" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:8px;margin:12px 0;"></iframe>
 
-#### 楽曲の特徴
+### サウンドトラック 先行ダイジェスト
 
-切なさと力強さが共存するバラード調の楽曲で、東大を目指して奮闘する生徒たちの心情とリンクするような歌詞が印象的です。ドラマのエンディングで流れるたびに、その回の感動が静かに締めくくられます。
-
-#### 購入・試聴はこちら
-
-[🛒 Amazonで見る](https://www.amazon.co.jp/s?k=King+Prince+恋降る月夜に君想ふ) ／ [🛒 楽天で見る](https://search.rakuten.co.jp/search/mall/King+Prince+恋降る月夜に君想ふ/)
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Zxo0iKM221g" title="【公式】TBS系 日曜劇場「ドラゴン桜」オリジナル・サウンドトラック 先行ダイジェスト" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:8px;margin:12px 0;"></iframe>
 
 ---
 
-## 挿入歌・BGMの役割
+## BGM集・作業用動画
+
+### BGM集（セリフ書き起こし付き）
+
+劇中のセリフと合わせてBGMを楽しめる動画です。
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/jNvHrneo020" title="ドラゴン桜 BGM集 セリフ書き起こし TBS 日曜劇場" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:8px;margin:12px 0;"></iframe>
+
+### メインテーマ【1時間耐久・作業用BGM】
+
+受験勉強・作業用としても人気の1時間ループ動画です。
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/SAfwXcdKmkE" title="【1時間耐久】日曜劇場『ドラゴン桜』メインテーマ 作業用BGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:8px;margin:12px 0;"></iframe>
+
+---
+
+## BGMの役割と使われ方
 
 ### 緊張感を高めるBGM
 
@@ -36,39 +53,39 @@ category: '比較・解説'
 
 ### 感動シーンを彩る音楽
 
-生徒が壁を乗り越える瞬間や、桜木が心に刺さる言葉を放つシーンでは、静かで感情的なBGMが流れます。第5話の海岸シーン（「生きてるだけで迷惑なんて誰にも言わせんなよ」）では、音楽が言葉の重みをさらに引き立てていました。
+生徒が壁を乗り越える瞬間や、桜木が心に刺さる言葉を放つシーンでは、静かで感情的なBGMが流れます。
 
----
+第5話の海岸シーン（「生きてるだけで迷惑なんて誰にも言わせんなよ」）では、音楽が言葉の重みをさらに引き立てていました。
 
-## 髙橋海人（King & Prince）とドラゴン桜２の関係
+### 場面転換のBGM
 
-主題歌アーティストと出演者が同一人物というのは、ドラマの宣伝効果としても大きな話題になりました。
-
-| 項目 | 内容 |
-|-----|-----|
-| 出演キャラ | 瀬戸輝（家業のラーメン店を守る苦労人） |
-| グループ | King & Prince |
-| 主題歌 | 恋降る月夜に君想ふ |
-
-髙橋海人が演じた瀬戸輝は、家族のために夢を諦めかけていた生徒。主題歌の切なさとキャラクターの背景が重なり合い、より深い感動を生んでいます。
-
----
-
-## ドラマと音楽の相乗効果
-
-「ドラゴン桜２」の音楽は単なるBGMを超えて、ストーリーの一部として機能しています。
-
-- **オープニング**：前向きで力強いトーンでドラマの世界へ引き込む
-- **場面転換**：緊張・弛緩のリズムをコントロール
-- **エンディング**：その回の感動を静かに残す余韻
+| シーン | BGMの特徴 |
+|-------|---------|
+| オープニング | 前向きで力強いトーン |
+| 授業・勉強シーン | テンポのよい躍動感 |
+| 対決・模試 | 緊張感・疾走感 |
+| 感動シーン | 静かで叙情的 |
+| エンディング | 余韻を残す穏やかな調べ |
 
 特に感動的なシーンで音楽が止まり、セリフだけが空間に響く演出も巧みで、桜木の名言がより深く心に刺さるよう計算されています。
 
 ---
 
+## 作業用BGMとしての人気
+
+「ドラゴン桜２」のBGMは、受験生・学生を中心に**勉強用・作業用BGM**としても高い人気があります。
+
+- 「頑張れる気持ちになる」
+- 「桜木先生に叱られてる感じで集中できる」
+- 「テンポが良くて作業がはかどる」
+
+という声が多く、YouTubeでの再生数も高い水準を維持しています。
+
+---
+
 ## まとめ
 
-「ドラゴン桜２」の音楽は、King & Princeの主題歌を中心にドラマの世界観を豊かに彩っています。髙橋海人が出演者かつ主題歌アーティストというユニークな構造も、このドラマならではの魅力のひとつ。ドラマを見直す際はぜひ音楽にも注目してみてください。
+「ドラゴン桜２」のBGM・サウンドトラックは、ドラマの感動を音楽でさらに深める重要な役割を果たしています。公式サウンドトラックはYouTubeでも視聴可能なので、ドラマを見直す際はぜひ音楽にも注目してみてください。
 
 ---
 
@@ -83,6 +100,6 @@ category: '比較・解説'
 ## 関連記事
 
 - [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
-- [ドラゴン桜2 キャラクター徹底解説｜東大専科7人の背景と名シーン](/imanari-blog/blog/dragon-zakura2-character-detail/)
+- [ドラゴン桜2 名言ランキングTOP20｜桜木建二の言葉まとめ](/imanari-blog/blog/dragon-zakura2-quotes-ranking/)
 - [ドラゴン桜2 ロケ地まとめ｜学校・海岸の撮影場所はどこ？](/imanari-blog/blog/dragon-zakura2-locations/)
 - [ドラゴン桜2 漫画とドラマの違い｜ストーリー・キャラの変更点まとめ](/imanari-blog/blog/dragon-zakura2-manga-vs-drama/)
