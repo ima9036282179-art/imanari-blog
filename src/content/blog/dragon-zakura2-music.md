@@ -77,3 +77,12 @@ category: '比較・解説'
 [📺 TBS「ドラゴン桜２」公式サイトはこちら →](https://www.tbs.co.jp/dragonzakura/)
 
 > 出典：TBS「ドラゴン桜２」公式サイト（https://www.tbs.co.jp/dragonzakura/）
+
+---
+
+## 関連記事
+
+- [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
+- [ドラゴン桜2 キャラクター徹底解説｜東大専科7人の背景と名シーン](/imanari-blog/blog/dragon-zakura2-character-detail/)
+- [ドラゴン桜2 ロケ地まとめ｜学校・海岸の撮影場所はどこ？](/imanari-blog/blog/dragon-zakura2-locations/)
+- [ドラゴン桜2 漫画とドラマの違い｜ストーリー・キャラの変更点まとめ](/imanari-blog/blog/dragon-zakura2-manga-vs-drama/)

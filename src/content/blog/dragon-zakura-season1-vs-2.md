@@ -148,6 +148,15 @@ category: '比較・解説'
 
 ---
 
+## 関連記事
+
+- [ドラゴン桜2 漫画とドラマの違い｜ストーリー・キャラの変更点まとめ](/imanari-blog/blog/dragon-zakura2-manga-vs-drama/)
+- [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
+- [ドラゴン桜2 名言ランキングTOP20｜桜木建二の言葉まとめ](/imanari-blog/blog/dragon-zakura2-quotes-ranking/)
+- [ドラゴン桜2 勉強法まとめ｜科学的学習法を全話から解説](/imanari-blog/blog/dragon-zakura2-study-methods/)
+
+---
+
 ## 公式サイト
 
 [📺 TBS「ドラゴン桜２」公式サイトはこちら →](https://www.tbs.co.jp/dragonzakura/)

@@ -216,6 +216,15 @@ category: 'キャラクター解説'
 
 ---
 
+## 関連記事
+
+- [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
+- [ドラゴン桜2 生徒の名言まとめ｜瀬戸・天野・早瀬ら成長の言葉](/imanari-blog/blog/dragon-zakura2-student-quotes/)
+- [ドラゴン桜2 名言ランキングTOP20｜桜木建二の言葉まとめ](/imanari-blog/blog/dragon-zakura2-quotes-ranking/)
+- [【ドラゴン桜2 第5話感想】健太が数学198点・一流大学コース廃止](/imanari-blog/blog/dragon-zakura2-ep5-review/)
+
+---
+
 ## 公式サイト
 
 [📺 TBS「ドラゴン桜２」公式サイトはこちら →](https://www.tbs.co.jp/dragonzakura/)
