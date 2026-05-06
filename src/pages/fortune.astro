@@ -2,21 +2,20 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="ワンオラクル占い" description="タロット風ワンオラクル占い。カードを引いて今日のメッセージを受け取ろう。">
+<BaseLayout title="ドラゴン桜２ ワンオラクル占い｜桜木建二からの今日のメッセージ" description="桜木建二の言葉が今日のあなたへのメッセージ。20枚のタロットカードから1枚引いて、今日の指針を受け取ろう。">
   <div class="fortune-wrap">
-    <h1 class="fortune-title">🔮 ワンオラクル占い</h1>
-    <p class="fortune-desc">心を静めて、カードを引いてください。</p>
+    <h1 class="fortune-title">🔮 ドラゴン桜２ ワンオラクル</h1>
+    <p class="fortune-desc">心を静めて、桜木建二からのメッセージを受け取ってください。</p>
 
     <div class="card-area">
       <div class="card" id="card">
         <div class="card-inner">
           <div class="card-front">
-            <span class="card-back-symbol">✦</span>
+            <div class="front-header">✦ DRAGON ZAKURA ✦</div>
+            <div class="front-mark">？</div>
+            <div class="front-footer">― 桜木建二 ―</div>
           </div>
-          <div class="card-back-face">
-            <div class="card-symbol" id="cardSymbol"></div>
-            <div class="card-name" id="cardName"></div>
-            <div class="card-message" id="cardMessage"></div>
+          <div class="card-back-face" id="cardContent">
           </div>
         </div>
       </div>
@@ -25,54 +24,173 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <button class="draw-btn" id="drawBtn">カードを引く</button>
     <button class="reset-btn" id="resetBtn" style="display:none;">もう一度引く</button>
 
-    <p class="fortune-note" id="fortuneNote"></p>
+    <div class="oracle-result" id="oracleResult" style="display:none;">
+      <p class="oracle-label">✦ 今日のメッセージ ✦</p>
+      <p class="oracle-text" id="oracleText"></p>
+    </div>
   </div>
 </BaseLayout>
 
 <script>
   const cards = [
-    { symbol: '☀️', name: '太陽', message: '今日はエネルギーに満ちた一日。自信を持って前に進みましょう。あなたの明るさが周囲を照らします。' },
-    { symbol: '🌙', name: '月', message: '直感を大切にする日。表面だけでなく、物事の本質を見極めてください。夢や無意識からのメッセージに耳を傾けて。' },
-    { symbol: '⭐', name: '星', message: '希望の光が差し込んでいます。あなたの願いは着実に叶う方向へ進んでいます。焦らず、信じて待ちましょう。' },
-    { symbol: '⚡', name: '塔', message: '変化の時。古いものを手放すことで、新しい扉が開きます。突然の出来事も、成長のきっかけと捉えて。' },
-    { symbol: '⚖️', name: '正義', message: '公平さと誠実さが鍵。自分の行動を振り返り、バランスを保つことが大切です。正しい判断が道を開きます。' },
-    { symbol: '🌍', name: '世界', message: '完成と達成の象徴。あなたは今、一つのサイクルを終えようとしています。その努力は必ず報われます。' },
-    { symbol: '🔥', name: '力', message: '内なる強さを信じて。困難な状況でも、あなたには乗り越える力があります。優しさと勇気で道を切り開いて。' },
-    { symbol: '💎', name: '皇帝', message: '安定と秩序の時。計画を立て、着実に実行することで目標に近づけます。リーダーシップを発揮しましょう。' },
-    { symbol: '🌹', name: '女帝', message: '豊かさと愛情に恵まれています。創造力を活かし、周りとの繋がりを大切に。美しいものを生み出す力がある。' },
-    { symbol: '🎭', name: '愚者', message: '新しい旅の始まり。自由な心で一歩踏み出してみましょう。未知への挑戦が、大きな可能性を広げます。' },
-    { symbol: '🪄', name: '魔術師', message: '必要な力はすべてあなたの中にあります。集中力と意志で、思い描いた未来を現実にできます。行動あるのみ。' },
-    { symbol: '🏺', name: '女司祭', message: '知恵と洞察の時。答えを急がず、静かに内省してください。深い理解が、最善の選択へ導いてくれます。' },
-    { symbol: '🌊', name: '節制', message: 'バランスと調和がテーマ。焦らず、一歩ずつ丁寧に進むことで、物事は上手くいきます。穏やかな心を保って。' },
-    { symbol: '🦋', name: '死神', message: '変容と再生の象徴。終わりは新しい始まり。手放すことを恐れずに。変化の先に、輝かしい未来が待っています。' },
-    { symbol: '🏆', name: '戦車', message: '勝利と前進の時。困難があっても突き進む意志を持って。自分の意志と情熱を信じれば、必ず道は開けます。' },
+    {
+      numeral: 'Ⅰ',
+      quote: '「バカとブスこそ東大へ行け」',
+      desc: '見た目や偏差値で人生を諦めるな。シリーズを貫く代名詞的な一言。',
+      oracle: '今日のあなたへ——自分を過小評価するのをやめる日です。常識や先入観が作り出した「壁」はあなたの想像の中にしか存在しません。大きな目標に向けて、今すぐ一歩踏み出してください。'
+    },
+    {
+      numeral: 'Ⅱ',
+      quote: '「ルールは賢い奴が自分に都合よく作ってんだ。だから勉強しろ。ルールを作る側に回れ。」',
+      desc: '社会の本質を突いた言葉。勉強の意義を根本から問い直させてくれる。',
+      oracle: '今日のあなたへ——あなたはまだ「与えられたルール」の中で動いていませんか？知識を身につけることで、ゲームのルールを変える側に回れます。今日は学ぶことに時間を使いましょう。'
+    },
+    {
+      numeral: 'Ⅲ',
+      quote: '「できない理由を探すな。できる方法を探せ。」',
+      desc: '言い訳をやめ、行動に転換するきっかけをくれる一言。',
+      oracle: '今日のあなたへ——あなたの前に立ちはだかる壁は、実は薄い紙一枚かもしれません。「どうすればできるか」だけを考えてください。答えは必ず見つかります。'
+    },
+    {
+      numeral: 'Ⅳ',
+      quote: '「諦めたらそこで試合終了じゃない。諦めた瞬間から、負けが始まるんだ。」',
+      desc: '終わりではなく「始まり」として捉える逆転の発想。',
+      oracle: '今日のあなたへ——少し疲れを感じているかもしれません。しかし今日がその分岐点です。諦める前に、もう一度だけ立ち上がってみてください。未来はあなたの選択の先にあります。'
+    },
+    {
+      numeral: 'Ⅴ',
+      quote: '「お前らが逃げているのは失敗することじゃない。本気になることだ。」',
+      desc: '「本気になること」を恐れていることを鋭く指摘した言葉。',
+      oracle: '今日のあなたへ——本気で向き合うことを、どこかで怖れていませんか？傷つくことを恐れて全力を出し惜しみしているなら、今日がその呪縛を解く日です。'
+    },
+    {
+      numeral: 'Ⅵ',
+      quote: '「勉強は才能じゃない。やり方と時間の問題だ。」',
+      desc: '「自分には無理」という思い込みを崩す言葉。',
+      oracle: '今日のあなたへ——「自分には向いていない」という思い込みを捨ててください。正しい方法で十分な時間をかければ、あなたは必ず成果を出せます。今日は方法を見直す日です。'
+    },
+    {
+      numeral: 'Ⅶ',
+      quote: '「東大に受かるかどうかは、結局やるかやらないかだ。」',
+      desc: 'シンプルだが核心を突く言葉。どんな問題もこれに尽きる。',
+      oracle: '今日のあなたへ——複雑に考えすぎていませんか？突き詰めれば、あとはやるかやらないかだけです。今日は考える前に動いてみてください。'
+    },
+    {
+      numeral: 'Ⅷ',
+      quote: '「模試の点数はお前の実力じゃない。今の状態を示しているだけだ。」',
+      desc: '結果に一喜一憂せず、プロセスを大切にすることの本質。',
+      oracle: '今日のあなたへ——最近の結果に落ち込んでいるなら、それはあなたの「今の状態」にすぎません。過去の結果は変えられませんが、今日からの行動は変えられます。'
+    },
+    {
+      numeral: 'Ⅸ',
+      quote: '「人生に必要なのは、正しい努力と正しい方向性だ。」',
+      desc: 'がむしゃらに頑張るだけでなく、戦略的に動く重要性。',
+      oracle: '今日のあなたへ——頑張っているのに成果が出ないと感じているなら、方向性を見直す時かもしれません。量より質。今日は「何のために」を問い直してみてください。'
+    },
+    {
+      numeral: 'Ⅹ',
+      quote: '「教えることは最高の学習法だ。教えられないなら、まだ本当には理解していない。」',
+      desc: 'アウトプットの重要性を端的に表した名言。',
+      oracle: '今日のあなたへ——インプットばかりになっていませんか？誰かに説明する、書き出す、声に出す——アウトプットが知識を本物にします。今日は教えることを意識してみてください。'
+    },
+    {
+      numeral: 'Ⅺ',
+      quote: '「環境のせいにするな。環境を変えるのがお前の仕事だ。」',
+      desc: '境遇を言い訳にしない強さを与えてくれる言葉。',
+      oracle: '今日のあなたへ——周囲の状況への不満があるなら、それを変える力はあなた自身の中にあります。今日、あなたにできる一つの行動で環境を変えてみましょう。'
+    },
+    {
+      numeral: 'Ⅻ',
+      quote: '「睡眠不足は最大の敵だ。寝ることも勉強のうちだ。」',
+      desc: '根性論を否定し、科学的な学習を推奨する桜木らしい言葉。',
+      oracle: '今日のあなたへ——無理をしすぎていませんか？体と頭を万全に整えることが、最大のパフォーマンスへの近道です。今日は意識的に休息を取りましょう。'
+    },
+    {
+      numeral: 'XIII',
+      quote: '「今のお前に必要なのは比較じゃなく前進だ。」',
+      desc: '他人との比較をやめ、自分の成長にフォーカスする大切さ。',
+      oracle: '今日のあなたへ——他の誰かと自分を比べて落ち込む必要はありません。昨日の自分と比べて、今日の自分が少しでも前に進んでいれば十分です。'
+    },
+    {
+      numeral: 'XIV',
+      quote: '「失敗は恥じゃない。挑戦しないことが恥だ。」',
+      desc: 'チャレンジすることへの勇気をくれる言葉。',
+      oracle: '今日のあなたへ——迷っているなら、挑戦してください。失敗しても、それはあなたが動いた証拠です。動かない後悔より、動いた失敗を選ぶ日です。'
+    },
+    {
+      numeral: 'XV',
+      quote: '「25分やったら5分休め。だらだら6時間より、集中した3時間の方が価値がある。」',
+      desc: '効率的な学習時間の使い方を示した実践的な言葉。',
+      oracle: '今日のあなたへ——長時間だらだら取り組むより、集中した短い時間の方が何倍もの成果を生みます。今日は時間を区切って、全力で集中してみてください。'
+    },
+    {
+      numeral: 'XVI',
+      quote: '「好きなことだけやって生きていけると思うな。嫌いなことを乗り越えた先に、本当にやりたいことが見えてくる。」',
+      desc: '甘くない現実と向き合う覚悟を促す言葉。',
+      oracle: '今日のあなたへ——今、避けていることはありますか？嫌なこと、苦手なことに向き合う先に、あなたの本当の可能性が待っています。今日、一つだけ向き合ってみてください。'
+    },
+    {
+      numeral: 'XVII',
+      quote: '「問題を解くな。問題を理解しろ。解き方を覚えても、問題が変われば使えない。」',
+      desc: '丸暗記ではなく理解を重視する学習姿勢の本質。',
+      oracle: '今日のあなたへ——表面的な解決策を探すより、根本を理解することが大切です。今日は「なぜそうなるのか」を一段深く掘り下げてみてください。'
+    },
+    {
+      numeral: 'XVIII',
+      quote: '「夢は見つけるものじゃなく、作るものだ。」',
+      desc: '夢がないことを悩む人への力強いメッセージ。',
+      oracle: '今日のあなたへ——やりたいことが見つからないと悩んでいるなら、それを「探す」のをやめてみてください。小さな行動の積み重ねが、気づけば夢になっています。'
+    },
+    {
+      numeral: 'XIX',
+      quote: '「逆転は、いつだって可能だ。ただし、今から始めた奴だけにな。」',
+      desc: '希望と叱咤を同時に伝える、ドラゴン桜らしい言葉。',
+      oracle: '今日のあなたへ——今から始めれば、まだ間に合います。遅すぎることはありません。ただし、動かなければ何も変わりません。今日が逆転のスタートです。'
+    },
+    {
+      numeral: 'XX',
+      quote: '「お前が変われば、周りも変わる。世界は外から変えるんじゃなく、内側から変わるんだ。」',
+      desc: '自分自身の変革が世界を変えるという、ドラゴン桜の根底にあるメッセージ。',
+      oracle: '今日のあなたへ——外の世界を変えようとする前に、まず自分自身を変えてみてください。あなたが変われば、不思議とあなたを取り巻く世界も変わり始めます。'
+    }
   ];
 
   const card = document.getElementById('card');
   const drawBtn = document.getElementById('drawBtn');
   const resetBtn = document.getElementById('resetBtn');
-  const cardSymbol = document.getElementById('cardSymbol');
-  const cardName = document.getElementById('cardName');
-  const cardMessage = document.getElementById('cardMessage');
-  const fortuneNote = document.getElementById('fortuneNote');
+  const cardContent = document.getElementById('cardContent');
+  const oracleResult = document.getElementById('oracleResult');
+  const oracleText = document.getElementById('oracleText');
 
   function drawCard() {
     const picked = cards[Math.floor(Math.random() * cards.length)];
-    cardSymbol.textContent = picked.symbol;
-    cardName.textContent = picked.name;
-    cardMessage.textContent = picked.message;
+
+    cardContent.innerHTML = `
+      <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px;box-sizing:border-box;">
+        <div style="color:#c9a84c;font-size:9px;letter-spacing:3px;margin-bottom:6px;">✦ DRAGON ZAKURA ✦</div>
+        <div style="color:#c9a84c;font-size:20px;font-weight:bold;margin-bottom:10px;">${picked.numeral}</div>
+        <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:12px 4px;margin-bottom:10px;width:100%;">
+          <p style="color:#f5e6c0;font-size:12px;font-weight:bold;line-height:1.8;margin:0;text-align:center;">${picked.quote}</p>
+        </div>
+        <p style="color:#b8a880;font-size:10px;line-height:1.6;margin:0 0 10px;text-align:center;">${picked.desc}</p>
+        <div style="color:#c9a84c;font-size:10px;letter-spacing:2px;">― 桜木建二 ―</div>
+      </div>
+    `;
+
+    oracleText.textContent = picked.oracle;
 
     card.classList.add('flipped');
     drawBtn.style.display = 'none';
     resetBtn.style.display = 'inline-block';
-    fortuneNote.textContent = `「${picked.name}」のカードを引きました`;
+    oracleResult.style.display = 'block';
   }
 
   function resetCard() {
     card.classList.remove('flipped');
     drawBtn.style.display = 'inline-block';
     resetBtn.style.display = 'none';
-    fortuneNote.textContent = '';
+    oracleResult.style.display = 'none';
+    cardContent.innerHTML = '';
   }
 
   drawBtn.addEventListener('click', drawCard);
@@ -84,11 +202,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     max-width: 480px;
     margin: 0 auto;
     text-align: center;
-    padding: 2rem 0 4rem;
+    padding: 2rem 1rem 4rem;
   }
 
   .fortune-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
   }
@@ -99,20 +217,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     font-size: 0.95rem;
   }
 
-  /* カードエリア */
   .card-area {
     perspective: 1000px;
     margin-bottom: 2rem;
   }
 
   .card {
-    width: 200px;
-    height: 320px;
+    width: 260px;
+    height: 380px;
     margin: 0 auto;
     cursor: pointer;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.7s ease;
+    transition: transform 0.8s ease;
   }
 
   .card.flipped {
@@ -131,53 +248,51 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 14px;
+    border-radius: 12px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    overflow: hidden;
+  }
+
+  .card-front {
+    background: linear-gradient(160deg, #1a0533 0%, #2d1b69 50%, #1a0533 100%);
+    border: 2px solid #c9a84c;
+    box-shadow: 0 0 20px rgba(201,168,76,0.35);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--border);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    gap: 1rem;
+    font-family: Georgia, serif;
   }
 
-  .card-front {
-    background: linear-gradient(135deg, #2d1b69, #4a3587, #6b52a3);
+  .front-header {
+    color: #c9a84c;
+    font-size: 10px;
+    letter-spacing: 3px;
   }
 
-  .card-back-symbol {
+  .front-mark {
+    color: #c9a84c;
     font-size: 4rem;
-    color: rgba(255,255,255,0.25);
-    user-select: none;
+    font-weight: bold;
+    opacity: 0.7;
+  }
+
+  .front-footer {
+    color: #c9a84c;
+    font-size: 10px;
+    letter-spacing: 2px;
   }
 
   .card-back-face {
-    background: var(--bg-card);
+    background: linear-gradient(160deg, #1a0533 0%, #2d1b69 50%, #1a0533 100%);
+    border: 2px solid #c9a84c;
+    box-shadow: 0 0 20px rgba(201,168,76,0.35);
     transform: rotateY(180deg);
-    padding: 1.5rem;
-    gap: 0.75rem;
+    font-family: Georgia, serif;
   }
 
-  .card-symbol {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .card-name {
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: var(--accent);
-  }
-
-  .card-message {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-    text-align: center;
-  }
-
-  /* ボタン */
   .draw-btn,
   .reset-btn {
     padding: 0.75rem 2.5rem;
@@ -190,12 +305,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   .draw-btn {
-    background: var(--accent);
-    color: #fff;
+    background: linear-gradient(135deg, #c9a84c, #e8c96e);
+    color: #1a0533;
   }
 
   .reset-btn {
-    background: var(--bg-card);
+    background: transparent;
     color: var(--text);
     border: 1px solid var(--border);
   }
@@ -203,13 +318,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .draw-btn:hover,
   .reset-btn:hover {
     opacity: 0.85;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
   }
 
-  .fortune-note {
-    margin-top: 1.25rem;
+  .oracle-result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(160deg, #1a0533 0%, #2d1b69 100%);
+    border: 1px solid #c9a84c;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(201,168,76,0.2);
+  }
+
+  .oracle-label {
+    color: #c9a84c;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin: 0 0 0.75rem;
+  }
+
+  .oracle-text {
+    color: #f5e6c0;
     font-size: 0.9rem;
-    color: var(--text-muted);
-    min-height: 1.4em;
+    line-height: 1.8;
+    margin: 0;
+    text-align: left;
   }
 </style>

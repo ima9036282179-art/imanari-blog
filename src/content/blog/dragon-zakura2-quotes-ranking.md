@@ -15,167 +15,209 @@ category: '名言まとめ'
 - 各名言が刺さる理由と背景
 - 実生活・勉強に活かせるポイント
 
----
-
----
-
-## 第1位
-
-> 「バカとブスこそ東大へ行け」
-
-シリーズを通じた代名詞的な言葉。「見た目や偏差値で人生を諦めるな」という強烈なメッセージ。この一言がなければドラゴン桜は語れません。
-
----
-
-## 第2位
-
-> 「ルールは賢い奴が自分に都合よく作ってんだ。だから勉強しろ。ルールを作る側に回れ。」
-
-社会のしくみの本質を突いた言葉。勉強の意義を根本から問い直させてくれます。
-
----
-
-## 第3位
-
-> 「できない理由を探すな。できる方法を探せ。」
-
-言い訳をやめ、行動に転換するきっかけをくれる一言。仕事にも日常にも使えます。
-
----
-
-## 第4位
-
-> 「諦めたらそこで試合終了じゃない。諦めた瞬間から、負けが始まるんだ。」
-
-終わりではなく「始まり」として捉える逆転の発想。
-
----
-
-## 第5位
-
-> 「お前らが逃げているのは失敗することじゃない。本気になることだ。」
-
-多くの人が「本気になること」を恐れていることを鋭く指摘した言葉。
-
----
-
-## 第6位
-
-> 「勉強は才能じゃない。やり方と時間の問題だ。」
-
-「自分には無理」という思い込みを崩す言葉。
-
----
-
-## 第7位
-
-> 「東大に受かるかどうかは、結局やるかやらないかだ。」
-
-シンプルだが核心を突く言葉。どんな複雑な問題もこれに尽きる。
-
----
-
-## 第8位
-
-> 「模試の点数はお前の実力じゃない。今の状態を示しているだけだ。」
-
-結果に一喜一憂せず、プロセスを大切にすることの本質。
-
----
-
-## 第9位
-
-> 「人生に必要なのは、正しい努力と正しい方向性だ。」
-
-ただがむしゃらに頑張るだけでなく、戦略的に動く重要性を示した言葉。
-
----
-
-## 第10位
-
-> 「教えることは最高の学習法だ。教えられないなら、まだ本当には理解していない。」
-
-アウトプットの重要性を端的に表した名言。
-
----
-
-## 第11位
-
-> 「環境のせいにするな。環境を変えるのがお前の仕事だ。」
-
-境遇を言い訳にしない強さを与えてくれる言葉。
-
----
-
-## 第12位
-
-> 「睡眠不足は最大の敵だ。寝ることも勉強のうちだ。」
-
-根性論を否定し、科学的な学習を推奨する桜木らしい言葉。
-
----
-
-## 第13位
-
-> 「お前の弟は関係ない。今のお前に必要なのは比較じゃなく前進だ。」
-
-他人との比較をやめ、自分の成長にフォーカスする大切さ。
-
----
-
-## 第14位
-
-> 「失敗は恥じゃない。挑戦しないことが恥だ。」
-
-チャレンジすることへの勇気をくれる言葉。
-
----
-
-## 第15位
-
-> 「25分やったら5分休め。だらだら6時間より、集中した3時間の方が価値がある。」
-
-効率的な学習時間の使い方を示した実践的な言葉。
-
----
-
-## 第16位
-
-> 「好きなことだけやって生きていけると思うな。嫌いなことを乗り越えた先に、本当にやりたいことが見えてくる。」
-
-甘くない現実と向き合う覚悟を促す言葉。
-
----
-
-## 第17位
-
-> 「問題を解くな。問題を理解しろ。解き方を覚えても、問題が変われば使えない。」
-
-丸暗記ではなく理解を重視する学習姿勢の本質。
-
----
-
-## 第18位
-
-> 「夢は見つけるものじゃなく、作るものだ。」
-
-夢がないことを悩む人への力強いメッセージ。
-
----
-
-## 第19位
-
-> 「逆転は、いつだって可能だ。ただし、今から始めた奴だけにな。」
-
-「まだ間に合う」という希望と、「すぐに行動しろ」という叱咤を同時に伝える言葉。
-
----
-
-## 第20位
-
-> 「お前が変われば、周りも変わる。世界は外から変えるんじゃなく、内側から変わるんだ。」
-
-自分自身の変革が世界を変えるという、ドラゴン桜の根底にあるメッセージ。
+<div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin:32px 0;">
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅰ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:15px;font-weight:bold;line-height:1.9;margin:0;">「バカとブスこそ東大へ行け」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">見た目や偏差値で人生を諦めるな。シリーズを貫く代名詞的な一言。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅱ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「ルールは賢い奴が自分に都合よく作ってんだ。だから勉強しろ。ルールを作る側に回れ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">社会の本質を突いた言葉。勉強の意義を根本から問い直させてくれる。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅲ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:15px;font-weight:bold;line-height:1.9;margin:0;">「できない理由を探すな。できる方法を探せ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">言い訳をやめ、行動に転換するきっかけをくれる一言。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅳ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「諦めたらそこで試合終了じゃない。諦めた瞬間から、負けが始まるんだ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">終わりではなく「始まり」として捉える逆転の発想。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅴ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「お前らが逃げているのは失敗することじゃない。本気になることだ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">「本気になること」を恐れていることを鋭く指摘した言葉。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅵ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:15px;font-weight:bold;line-height:1.9;margin:0;">「勉強は才能じゃない。やり方と時間の問題だ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">「自分には無理」という思い込みを崩す言葉。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅶ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:15px;font-weight:bold;line-height:1.9;margin:0;">「東大に受かるかどうかは、結局やるかやらないかだ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">シンプルだが核心を突く言葉。どんな問題もこれに尽きる。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅷ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「模試の点数はお前の実力じゃない。今の状態を示しているだけだ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">結果に一喜一憂せず、プロセスを大切にすることの本質。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅸ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:15px;font-weight:bold;line-height:1.9;margin:0;">「人生に必要なのは、正しい努力と正しい方向性だ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">がむしゃらに頑張るだけでなく、戦略的に動く重要性。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅹ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「教えることは最高の学習法だ。教えられないなら、まだ本当には理解していない。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">アウトプットの重要性を端的に表した名言。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅺ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:15px;font-weight:bold;line-height:1.9;margin:0;">「環境のせいにするな。環境を変えるのがお前の仕事だ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">境遇を言い訳にしない強さを与えてくれる言葉。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">Ⅻ</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:15px;font-weight:bold;line-height:1.9;margin:0;">「睡眠不足は最大の敵だ。寝ることも勉強のうちだ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">根性論を否定し、科学的な学習を推奨する桜木らしい言葉。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">XIII</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「お前の弟は関係ない。今のお前に必要なのは比較じゃなく前進だ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">他人との比較をやめ、自分の成長にフォーカスする大切さ。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">XIV</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:15px;font-weight:bold;line-height:1.9;margin:0;">「失敗は恥じゃない。挑戦しないことが恥だ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">チャレンジすることへの勇気をくれる言葉。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">XV</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「25分やったら5分休め。だらだら6時間より、集中した3時間の方が価値がある。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">効率的な学習時間の使い方を示した実践的な言葉。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">XVI</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:13px;font-weight:bold;line-height:1.9;margin:0;">「好きなことだけやって生きていけると思うな。嫌いなことを乗り越えた先に、本当にやりたいことが見えてくる。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">甘くない現実と向き合う覚悟を促す言葉。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">XVII</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「問題を解くな。問題を理解しろ。解き方を覚えても、問題が変われば使えない。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">丸暗記ではなく理解を重視する学習姿勢の本質。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">XVIII</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:15px;font-weight:bold;line-height:1.9;margin:0;">「夢は見つけるものじゃなく、作るものだ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">夢がないことを悩む人への力強いメッセージ。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">XIX</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「逆転は、いつだって可能だ。ただし、今から始めた奴だけにな。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">希望と叱咤を同時に伝える、ドラゴン桜らしい言葉。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+<div style="background:linear-gradient(160deg,#1a0533 0%,#2d1b69 50%,#1a0533 100%);border:2px solid #c9a84c;border-radius:10px;padding:28px 20px;width:300px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 18px rgba(201,168,76,0.4);">
+  <div style="color:#c9a84c;font-size:10px;letter-spacing:4px;margin-bottom:8px;">✦ DRAGON ZAKURA ✦</div>
+  <div style="color:#c9a84c;font-size:22px;font-weight:bold;margin-bottom:12px;">XX</div>
+  <div style="border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:14px 6px;margin-bottom:12px;">
+    <p style="color:#f5e6c0;font-size:14px;font-weight:bold;line-height:1.9;margin:0;">「お前が変われば、周りも変わる。世界は外から変えるんじゃなく、内側から変わるんだ。」</p>
+  </div>
+  <p style="color:#b8a880;font-size:12px;line-height:1.7;margin:0 0 12px;">自分自身の変革が世界を変えるという、ドラゴン桜の根底にあるメッセージ。</p>
+  <div style="color:#c9a84c;font-size:11px;letter-spacing:2px;">― 桜木建二 ―</div>
+</div>
+
+</div>
 
 ---
 
