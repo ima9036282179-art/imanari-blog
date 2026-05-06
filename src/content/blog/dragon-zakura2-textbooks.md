@@ -27,6 +27,8 @@ category: '勉強法解説'
 - 英単語を体系的に覚えたい人
 - 東大・難関大学志望者
 
+[🛒 Amazonで見る](https://www.amazon.co.jp/s?k=東大英単語熟語+鉄壁) ／ [🛒 楽天で見る](https://search.rakuten.co.jp/search/mall/東大英単語熟語+鉄壁/)
+
 ---
 
 ### システム英単語（駿台文庫）
@@ -37,6 +39,8 @@ category: '勉強法解説'
 - ミニマルフレーズ（短い例文）で覚える
 - 頻出度順に収録
 - 共通テストから東大まで対応
+
+[🛒 Amazonで見る](https://www.amazon.co.jp/s?k=システム英単語) ／ [🛒 楽天で見る](https://search.rakuten.co.jp/search/mall/システム英単語/)
 
 ---
 
@@ -58,6 +62,8 @@ category: '勉強法解説'
 | 青チャート | 応用（最も使われる）|
 | 赤チャート | 難関大学向け |
 
+[🛒 Amazonで見る](https://www.amazon.co.jp/s?k=青チャート+数学) ／ [🛒 楽天で見る](https://search.rakuten.co.jp/search/mall/青チャート+数学/)
+
 ---
 
 ## 国語
@@ -71,6 +77,8 @@ category: '勉強法解説'
 - 難文を読む訓練ができる
 - 東大・早慶対策に最適
 
+[🛒 Amazonで見る](https://www.amazon.co.jp/s?k=現代文と格闘する) ／ [🛒 楽天で見る](https://search.rakuten.co.jp/search/mall/現代文と格闘する/)
+
 ---
 
 ### 古文上達（Z会）
@@ -81,6 +89,8 @@ category: '勉強法解説'
 - 文法から読解まで段階的に学習できる
 - 解説が詳しい
 - 入試問題を多数収録
+
+[🛒 Amazonで見る](https://www.amazon.co.jp/s?k=古文上達+Z会) ／ [🛒 楽天で見る](https://search.rakuten.co.jp/search/mall/古文上達+Z会/)
 
 ---
 
@@ -95,6 +105,8 @@ category: '勉強法解説'
 - 薄いのに要点が詰まっている
 - 「エッセンス→良問の風→名問の森」の王道ルートで使用
 
+[🛒 Amazonで見る](https://www.amazon.co.jp/s?k=物理のエッセンス) ／ [🛒 楽天で見る](https://search.rakuten.co.jp/search/mall/物理のエッセンス/)
+
 ---
 
 ### 化学の新演習（三省堂）
@@ -104,6 +116,8 @@ category: '勉強法解説'
 **特徴**
 - 難関大学の過去問を中心に収録
 - 計算問題・論述問題が充実
+
+[🛒 Amazonで見る](https://www.amazon.co.jp/s?k=化学の新演習) ／ [🛒 楽天で見る](https://search.rakuten.co.jp/search/mall/化学の新演習/)
 
 ---
 
@@ -116,6 +130,8 @@ category: '勉強法解説'
 **特徴**
 - 一問一答形式で隙間時間に活用できる
 - ★マークでレベル別に学習できる
+
+[🛒 Amazonで見る](https://www.amazon.co.jp/s?k=日本史B+一問一答+東進) ／ [🛒 楽天で見る](https://search.rakuten.co.jp/search/mall/日本史B+一問一答+東進/)
 
 ---
 
