@@ -9,15 +9,39 @@ const posts = (await getCollection('blog')).sort(
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
 const allTags = [...new Set(posts.flatMap(p => p.data.tags ?? []))];
+
+const categoryClassMap: Record<string, string> = {
+  'ドラマ感想': 'cat-drama',
+  '名言まとめ': 'cat-quotes',
+  '勉強法・解説': 'cat-study',
+  '比較・解説': 'cat-compare',
+  'キャラクター': 'cat-character',
+};
+function catClass(cat?: string) {
+  return cat ? (categoryClassMap[cat] ?? 'cat-default') : 'cat-default';
+}
+
+function excerpt(description: string) {
+  return description.length > 130 ? description.slice(0, 130) + '…' : description;
+}
 ---
 
 <BaseLayout title="ホーム">
-  <section class="hero">
-    <h1 class="hero-title">My Blog</h1>
-    <p class="hero-desc">Astro で作ったシンプルなブログです。</p>
+  <!-- ヒーローバナー（full-widthスロット） -->
+  <section class="hero-banner" slot="full-width">
+    <div class="hero-banner-inner">
+      <span class="hero-eyecatch">🐉</span>
+      <h1 class="hero-catchphrase">ドラゴン桜2から学ぶ、<br>勉強と人生のヒント</h1>
+      <p class="hero-sub">桜木建二の言葉で、あなたの人生を逆転させよう</p>
+      <div class="hero-cta">
+        <a href="#articles" class="hero-btn-primary">記事を読む →</a>
+        <a href={`${base}fortune/`} class="hero-btn-secondary">🔮 ワンオラクル占い</a>
+      </div>
+    </div>
   </section>
 
-  <section class="profile-card">
+  <!-- プロフィール -->
+  <section class="profile-card fade-in-up">
     <img src={`${base}images/onepiece01_luffy.png`} alt="imanari" class="profile-avatar" width="80" height="80" loading="lazy" decoding="async" />
     <div class="profile-body">
       <p class="profile-name">imanari</p>
@@ -25,8 +49,8 @@ const allTags = [...new Set(posts.flatMap(p => p.data.tags ?? []))];
     </div>
   </section>
 
-  <section>
-    <!-- タグフィルター -->
+  <!-- 記事一覧 -->
+  <section id="articles">
     <div class="tag-filter" id="tagFilter">
       <button class="filter-btn active" data-tag="all">すべて</button>
       {allTags.map(tag => (
@@ -35,23 +59,32 @@ const allTags = [...new Set(posts.flatMap(p => p.data.tags ?? []))];
     </div>
 
     <ul class="post-list" id="postList" role="list">
-      {posts.map((post) => {
+      {posts.map((post, i) => {
         const url = `${base}blog/${post.slug}/`;
         const date = post.data.pubDate.toLocaleDateString('ja-JP', {
           year: 'numeric', month: 'long', day: 'numeric',
         });
         const minutes = readingTime(post.body);
         const tagsJson = JSON.stringify(post.data.tags ?? []);
+        const cc = catClass(post.data.category);
+        const desc = excerpt(post.data.description);
         return (
-          <li data-tags={tagsJson}>
+          <li data-tags={tagsJson} class="fade-in-up" style={`transition-delay: ${Math.min(i * 40, 400)}ms`}>
             <a href={url} class="post-card" style="display:block;text-decoration:none;">
-              {post.data.category && <span class="category-badge">{post.data.category}</span>}
-              <h2 class="post-card-title">{post.data.title}</h2>
-              <p class="post-card-desc">{post.data.description}</p>
-              <div class="post-card-meta">
-                <time class="post-date" datetime={post.data.pubDate.toISOString()}>{date}</time>
-                <span class="reading-time">📖 約{minutes}分</span>
-                {post.data.tags?.map(tag => <span class="tag">{tag}</span>)}
+              {post.data.eyecatch && (
+                <img src={post.data.eyecatch} alt={post.data.title} class="post-card-eyecatch" loading="lazy" decoding="async" />
+              )}
+              <div class="post-card-body">
+                {post.data.category && (
+                  <span class={`category-badge ${cc}`}>{post.data.category}</span>
+                )}
+                <h2 class="post-card-title">{post.data.title}</h2>
+                <p class="post-card-desc">{desc}</p>
+                <div class="post-card-meta">
+                  <time class="post-date" datetime={post.data.pubDate.toISOString()}>📅 {date}</time>
+                  <span class="reading-time">📖 約{minutes}分</span>
+                  {post.data.tags?.slice(0, 2).map(tag => <span class="tag">{tag}</span>)}
+                </div>
               </div>
             </a>
           </li>

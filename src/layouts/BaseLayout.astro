@@ -15,7 +15,7 @@ const {
   ogImage,
 } = Astro.props;
 
-const siteTitle = 'My Blog';
+const siteTitle = 'Dragon Blog';
 const siteUrl = 'https://ima9036282179-art.github.io/imanari-blog';
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const canonicalUrl = Astro.url.href;
@@ -58,6 +58,12 @@ const websiteSchema = JSON.stringify({
     <meta name="twitter:image" content={ogImageUrl} />
 
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet" />
+
     <title>{pageTitle}</title>
 
     <!-- WebSite 構造化データ -->
@@ -76,28 +82,80 @@ const websiteSchema = JSON.stringify({
     </script>
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <div class="header-inner">
-        <a href={base} class="site-title">{siteTitle}</a>
+        <a href={base} class="site-logo">
+          <span class="site-logo-icon">🐉</span>
+          <span class="site-title">Dragon Blog</span>
+        </a>
         <nav class="site-nav">
           <a href={base}>ホーム</a>
           <a href={`${base}tags/`}>タグ</a>
+          <a href={`${base}search/`}>🔍 検索</a>
           <a href={`${base}fortune/`}>🔮 占い</a>
           <DarkModeToggle />
         </nav>
       </div>
     </header>
 
+    <!-- フルワイドスロット（ヒーローバナーなど） -->
+    <slot name="full-width" />
+
     <main class="site-wrapper">
       <slot />
     </main>
 
     <footer class="site-footer">
-      <p>&copy; {new Date().getFullYear()} {siteTitle}. Built with Astro.</p>
+      <p>&copy; {new Date().getFullYear()} Dragon Blog. Built with Astro.</p>
     </footer>
+
+    <!-- トップに戻るボタン -->
+    <button class="back-to-top" id="backToTop" aria-label="トップへ戻る">↑</button>
   </body>
 </html>
 
 <style is:global>
   @import '../styles/global.css';
 </style>
+
+<script>
+  // ヘッダー スクロール時半透明化
+  const header = document.getElementById('site-header');
+  function updateHeader() {
+    if (window.scrollY > 20) {
+      header?.classList.add('scrolled');
+    } else {
+      header?.classList.remove('scrolled');
+    }
+  }
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+
+  // トップに戻るボタン
+  const backToTop = document.getElementById('backToTop');
+  function updateBackToTop() {
+    if (window.scrollY > 320) {
+      backToTop?.classList.add('visible');
+    } else {
+      backToTop?.classList.remove('visible');
+    }
+  }
+  window.addEventListener('scroll', updateBackToTop, { passive: true });
+  backToTop?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // スクロール フェードイン（IntersectionObserver）
+  const fadeEls = document.querySelectorAll('.fade-in-up');
+  if (fadeEls.length > 0) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => io.observe(el));
+  }
+</script>
