@@ -1,4 +1,4 @@
----
+﻿---
 title: '【ドラゴン桜2 第3話感想】SNS英語発信法・難関大コースとの模試対決'
 description: 'ドラゴン桜２第3話のあらすじ・感想レビュー。YouTubeとTwitterを使ったSNS英語発信法の導入、難関大コース設立と模試対決の結末を詳しく解説します。'
 pubDate: '2026-05-15'
@@ -116,6 +116,13 @@ category: 'ドラマ感想'
 - [【ドラゴン桜2 第4話感想】初模試で撃沈・挫折からの立ち直り方](/imanari-blog/blog/dragon-zakura2-ep4-review/)
 - [ドラゴン桜2 勉強法まとめ｜科学的学習法を全話から解説](/imanari-blog/blog/dragon-zakura2-study-methods/)
 - [ドラゴン桜2 桜木メソッド解説｜暗記が苦手な人の勉強テクニック5選](/imanari-blog/blog/dragon-zakura2-sakuragi-method/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

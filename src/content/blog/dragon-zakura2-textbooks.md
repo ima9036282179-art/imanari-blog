@@ -1,4 +1,4 @@
----
+﻿---
 title: 'ドラゴン桜2 参考書まとめ｜登場した問題集を科目別に紹介【購入リンクあり】'
 description: 'ドラゴン桜２に登場した参考書・問題集を科目別に解説。英語「鉄壁」・数学「青チャート」など8冊をAmazon・楽天の購入リンクつきで紹介します。'
 pubDate: '2026-05-13'
@@ -167,6 +167,14 @@ category: '勉強法解説'
 - [ドラゴン桜2 英語勉強法まとめ｜鉄壁・速読英熟語の使い方](/imanari-blog/blog/dragon-zakura2-english-study/)
 - [ドラゴン桜2 メモリーツリーとは？記憶定着の使い方を解説](/imanari-blog/blog/dragon-zakura2-memory-tree/)
 - [ドラゴン桜2 勉強法まとめ｜科学的学習法を全話から解説](/imanari-blog/blog/dragon-zakura2-study-methods/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
+- 📖 [東大受験 参考書をAmazonで探す](https://www.amazon.co.jp/s?k=東大受験+参考書&tag=ima3burukku2-22)
 
 ---
 

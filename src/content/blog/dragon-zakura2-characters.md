@@ -1,4 +1,4 @@
----
+﻿---
 title: 'ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説'
 description: 'ドラゴン桜２の登場人物をキャスト一覧でまとめました。桜木建二（阿部寛）・水野直美（長澤まさみ）・東大専科7人の魅力と役どころを解説します。'
 pubDate: '2026-05-08'
@@ -142,6 +142,13 @@ category: 'キャラクター解説'
 - [ドラゴン桜2 生徒の名言まとめ｜瀬戸・天野・早瀬ら成長の言葉](/imanari-blog/blog/dragon-zakura2-student-quotes/)
 - [ドラゴン桜2 名言ランキングTOP20｜桜木建二の言葉まとめ](/imanari-blog/blog/dragon-zakura2-quotes-ranking/)
 - [ドラゴン桜1と2の違いを比較｜キャスト・勉強法・テーマの差](/imanari-blog/blog/dragon-zakura-season1-vs-2/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'ドラゴン桜2 名言まとめ一覧｜勉強・人生・逆転の言葉'
 description: 'ドラゴン桜２の名言を一覧でまとめました。桜木建二の「バカとブスこそ東大へ行け」をはじめ、勉強・人生・逆転に刺さる言葉を厳選して解説します。'
 pubDate: '2026-05-05'
@@ -70,6 +70,13 @@ category: '名言まとめ'
 - [ドラゴン桜2 生徒の名言まとめ｜瀬戸・天野・早瀬ら成長の言葉](/imanari-blog/blog/dragon-zakura2-student-quotes/)
 - [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
 - [ドラゴン桜2 キャラクター徹底解説｜東大専科7人の背景と名シーン](/imanari-blog/blog/dragon-zakura2-character-detail/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

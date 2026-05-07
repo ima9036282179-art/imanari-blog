@@ -1,4 +1,4 @@
----
+﻿---
 title: '【ドラゴン桜2 第7話感想】東大模試決戦・合格見込みなければ退出宣告'
 description: 'ドラゴン桜２第7話のあらすじ・感想レビュー。7人全員での東大模試、桜木の退出宣告、高原による陰謀の始まり、理科特別講師の登場を詳しく解説します。'
 pubDate: '2026-05-21'
@@ -80,6 +80,13 @@ category: 'ドラマ感想'
 - [【ドラゴン桜2 第6話感想】麻里の涙・国語講師登場・藤井が正式入科](/imanari-blog/blog/dragon-zakura2-ep6-review/)
 - [【ドラゴン桜2 第8話感想】夏休み五箇条・親子愛がカギ](/imanari-blog/blog/dragon-zakura2-ep8-review/)
 - [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

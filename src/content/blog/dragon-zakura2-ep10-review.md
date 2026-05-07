@@ -1,4 +1,4 @@
----
+﻿---
 title: '【ドラゴン桜2 第10話感想・最終回】東大合格発表・ダブル逆転の結末'
 description: 'ドラゴン桜２最終回（第10話）のあらすじ・感想レビュー。東大合格者は誰？学園存続の結末、前作キャスト登場、新垣結衣のサプライズ出演まで詳しく解説します。'
 pubDate: '2026-05-24'
@@ -105,6 +105,13 @@ category: 'ドラマ感想'
 - [ドラゴン桜2 視聴率まとめ｜全話推移グラフと各話の評価](/imanari-blog/blog/dragon-zakura2-ratings/)
 - [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
 - [ドラゴン桜2 名言ランキングTOP20](/imanari-blog/blog/dragon-zakura2-quotes-ranking/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'ドラゴン桜2 漫画とドラマの違い｜ストーリー・キャラの変更点まとめ'
 description: 'ドラゴン桜２の原作漫画とTBSドラマの違いを徹底比較。キャラクター設定・ストーリー・勉強法の描き方の相違点を、どちらから見るべきかも含めて解説します。'
 pubDate: '2026-05-21'
@@ -118,6 +118,13 @@ category: '比較・解説'
 - [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
 - [ドラゴン桜2 勉強法まとめ｜科学的学習法を全話から解説](/imanari-blog/blog/dragon-zakura2-study-methods/)
 - [ドラゴン桜2 主題歌はKing & Prince｜挿入歌・BGMまとめ](/imanari-blog/blog/dragon-zakura2-music/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

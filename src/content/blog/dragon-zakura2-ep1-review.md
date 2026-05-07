@@ -1,4 +1,4 @@
----
+﻿---
 title: '【ドラゴン桜2 第1話感想】桜木復活の経緯と東大専科誕生の衝撃'
 description: 'ドラゴン桜２第1話のあらすじ・感想レビュー。2年前の米山の自殺未遂事件で姿を消した桜木建二の復活、瀬戸の黒幕の真相、東大専科誕生の経緯を詳しく解説します。'
 pubDate: '2026-05-06'
@@ -83,6 +83,13 @@ category: 'ドラマ感想'
 - [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
 - [ドラゴン桜2 名言まとめ一覧｜勉強・人生・逆転の言葉](/imanari-blog/blog/dragon-zakura2-quotes/)
 - [ドラゴン桜1と2の違いを比較｜キャスト・勉強法・テーマの差](/imanari-blog/blog/dragon-zakura-season1-vs-2/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

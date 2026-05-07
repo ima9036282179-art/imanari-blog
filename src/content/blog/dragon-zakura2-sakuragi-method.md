@@ -1,4 +1,4 @@
----
+﻿---
 title: 'ドラゴン桜2 桜木メソッド解説｜暗記が苦手な人の勉強テクニック5選'
 description: 'ドラゴン桜２で桜木建二が教える暗記・勉強テクニック5選を解説。科学的根拠のある方法ばかりなので、今日から実践できます。'
 pubDate: '2026-05-12'
@@ -141,6 +141,14 @@ category: '勉強法解説'
 - [ドラゴン桜2 メモリーツリーとは？記憶定着の使い方を解説](/imanari-blog/blog/dragon-zakura2-memory-tree/)
 - [ドラゴン桜2 英語勉強法まとめ｜鉄壁・速読英熟語の使い方](/imanari-blog/blog/dragon-zakura2-english-study/)
 - [ドラゴン桜2 参考書まとめ｜登場した問題集を科目別に紹介](/imanari-blog/blog/dragon-zakura2-textbooks/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
+- 📖 [東大受験 参考書をAmazonで探す](https://www.amazon.co.jp/s?k=東大受験+参考書&tag=ima3burukku2-22)
 
 ---
 

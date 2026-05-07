@@ -1,4 +1,4 @@
----
+﻿---
 title: 'ドラゴン桜2 キャラクター徹底解説｜東大専科7人の背景と名シーン'
 description: 'ドラゴン桜２の東大専科メンバー7人を徹底解説。瀬戸輝・岩崎楓・天野晃一郎・早瀬菜緒・藤井遼・原健太・小杉麻里の背景・成長・印象的なシーンをまとめました。'
 pubDate: '2026-05-19'
@@ -222,6 +222,13 @@ category: 'キャラクター解説'
 - [ドラゴン桜2 生徒の名言まとめ｜瀬戸・天野・早瀬ら成長の言葉](/imanari-blog/blog/dragon-zakura2-student-quotes/)
 - [ドラゴン桜2 名言ランキングTOP20｜桜木建二の言葉まとめ](/imanari-blog/blog/dragon-zakura2-quotes-ranking/)
 - [【ドラゴン桜2 第5話感想】健太が数学198点・一流大学コース廃止](/imanari-blog/blog/dragon-zakura2-ep5-review/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

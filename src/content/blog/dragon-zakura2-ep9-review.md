@@ -1,4 +1,4 @@
----
+﻿---
 title: '【ドラゴン桜2 第9話感想】共通テスト突破・学園売却をめぐる大逆転'
 description: 'ドラゴン桜２第9話のあらすじ・感想レビュー。共通テスト直前の心構え5か条、黒幕の正体と学園売却阻止への動き、共通テスト本番の緊迫シーンを詳しく解説します。'
 pubDate: '2026-05-23'
@@ -80,6 +80,13 @@ category: 'ドラマ感想'
 - [【ドラゴン桜2 第8話感想】夏休み五箇条・合格のカギは親子愛](/imanari-blog/blog/dragon-zakura2-ep8-review/)
 - [【ドラゴン桜2 第10話感想】最終回・東大合格発表とダブル逆転](/imanari-blog/blog/dragon-zakura2-ep10-review/)
 - [ドラゴン桜2 勉強法まとめ｜科学的学習法を全話から解説](/imanari-blog/blog/dragon-zakura2-study-methods/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

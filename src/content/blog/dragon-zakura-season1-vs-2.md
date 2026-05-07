@@ -1,4 +1,4 @@
----
+﻿---
 title: 'ドラゴン桜1と2の違いを比較｜キャスト・勉強法・テーマの差'
 description: 'ドラゴン桜１（2005年）と２（2021年）の違いをキャスト・勉強法・時代背景で比較。どちらから見るべきか迷っている方への答えも解説します。'
 pubDate: '2026-05-20'
@@ -154,6 +154,13 @@ category: '比較・解説'
 - [ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説](/imanari-blog/blog/dragon-zakura2-characters/)
 - [ドラゴン桜2 名言ランキングTOP20｜桜木建二の言葉まとめ](/imanari-blog/blog/dragon-zakura2-quotes-ranking/)
 - [ドラゴン桜2 勉強法まとめ｜科学的学習法を全話から解説](/imanari-blog/blog/dragon-zakura2-study-methods/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

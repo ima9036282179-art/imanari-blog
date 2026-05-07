@@ -1,4 +1,4 @@
----
+﻿---
 title: '【ドラゴン桜2 第5話感想】健太が数学198点・一流大学コース廃止'
 description: 'ドラゴン桜２第5話のあらすじ・感想レビュー。健太が数学198点・専科が全3教科勝利・一流大学コース廃止の衝撃展開と、桜木の海岸シーン名言を解説します。'
 pubDate: '2026-05-17'
@@ -70,6 +70,13 @@ category: 'ドラマ感想'
 - [ドラゴン桜2 キャラクター徹底解説｜東大専科7人の背景と名シーン](/imanari-blog/blog/dragon-zakura2-character-detail/)
 - [ドラゴン桜2 ロケ地まとめ｜学校・海岸の撮影場所はどこ？](/imanari-blog/blog/dragon-zakura2-locations/)
 - [ドラゴン桜2 名言ランキングTOP20｜桜木建二の言葉まとめ](/imanari-blog/blog/dragon-zakura2-quotes-ranking/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: '【ドラゴン桜2 第2話感想】楓の怪我・火災事件・桜木の決断'
 description: 'ドラゴン桜２第2話のあらすじ・感想レビュー。岩崎楓の膝の怪我と東大志望への転換、教室の火災事件と瀬戸の自首、桜木の名言を詳しく解説します。'
 pubDate: '2026-05-14'
@@ -83,6 +83,13 @@ category: 'ドラマ感想'
 - [【ドラゴン桜2 第3話感想】桜木式勉強法が本格始動・岩崎楓覚醒](/imanari-blog/blog/dragon-zakura2-ep3-review/)
 - [ドラゴン桜2 キャラクター徹底解説｜東大専科7人の背景と名シーン](/imanari-blog/blog/dragon-zakura2-character-detail/)
 - [ドラゴン桜2 名言まとめ一覧｜勉強・人生・逆転の言葉](/imanari-blog/blog/dragon-zakura2-quotes/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

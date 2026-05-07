@@ -1,4 +1,4 @@
----
+﻿---
 title: '【ドラゴン桜2 第4話感想】瀬戸の闇金問題・受験生の家庭の10カ条'
 description: 'ドラゴン桜２第4話のあらすじ・感想レビュー。瀬戸輝の闇金による借金問題、保護者説得と「受験生の家庭の10カ条」、柳先生の数学指導を詳しく解説します。'
 pubDate: '2026-05-16'
@@ -100,6 +100,13 @@ category: 'ドラマ感想'
 - [【ドラゴン桜2 第5話感想】健太が数学198点・一流大学コース廃止](/imanari-blog/blog/dragon-zakura2-ep5-review/)
 - [ドラゴン桜2 勉強法まとめ｜科学的学習法を全話から解説](/imanari-blog/blog/dragon-zakura2-study-methods/)
 - [ドラゴン桜2 キャラクター徹底解説｜東大専科7人の背景と名シーン](/imanari-blog/blog/dragon-zakura2-character-detail/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 

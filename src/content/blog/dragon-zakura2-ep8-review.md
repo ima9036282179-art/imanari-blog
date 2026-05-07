@@ -1,4 +1,4 @@
----
+﻿---
 title: '【ドラゴン桜2 第8話感想】夏休み五箇条・合格のカギは親子愛'
 description: 'ドラゴン桜２第8話のあらすじ・感想レビュー。桜木の「夏休み五箇条」と自主性への委任、楓の苦悩、親子の絆が合否を左右するというメッセージを詳しく解説します。'
 pubDate: '2026-05-22'
@@ -88,6 +88,13 @@ category: 'ドラマ感想'
 - [【ドラゴン桜2 第7話感想】東大模試決戦・陰謀の序章](/imanari-blog/blog/dragon-zakura2-ep7-review/)
 - [【ドラゴン桜2 第9話感想】共通テスト突破・学園ダブル逆転へ](/imanari-blog/blog/dragon-zakura2-ep9-review/)
 - [ドラゴン桜2 勉強法まとめ｜科学的学習法を全話から解説](/imanari-blog/blog/dragon-zakura2-study-methods/)
+
+---
+
+## Amazon で購入する
+
+- 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
+- 📚 [ドラゴン桜 漫画（原作コミック）をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜+漫画&tag=ima3burukku2-22)
 
 ---
 
