@@ -4,6 +4,7 @@ description: 'ドラゴン桜２で紹介されたメモリーツリーのやり
 pubDate: '2026-05-11'
 tags: ['ドラゴン桜2', '勉強法', 'メモリーツリー', '記憶術', '受験']
 category: '勉強法解説'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 
 「メモリーツリーって何？どうやるの？」と調べてここにたどり着いた方へ。

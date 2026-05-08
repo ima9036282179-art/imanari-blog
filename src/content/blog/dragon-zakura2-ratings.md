@@ -4,6 +4,7 @@ description: 'ドラゴン桜２（2021年TBS）の全10話視聴率を一覧表
 pubDate: '2026-05-25'
 tags: ['ドラゴン桜2', '視聴率', 'TBSドラマ', 'データ']
 category: '比較・解説'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-coffee-book.jpg'
 ---
 
 「ドラゴン桜２の視聴率が気になる」「最終回が特別高かったのはなぜ？」という方へ。全話の視聴率データと推移を詳しくまとめました。

@@ -4,6 +4,7 @@ description: 'ドラゴン桜２第3話のあらすじ・感想レビュー。Yo
 pubDate: '2026-05-15'
 tags: ['ドラゴン桜2', 'ドラマ感想', '第3話', 'レビュー']
 category: 'ドラマ感想'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 ---
 
 「第3話で紹介された勉強法を詳しく知りたい」「難関大コースとの模試の結果を確認したい」という方へ。第3話のあらすじと見どころをまとめました。

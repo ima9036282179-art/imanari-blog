@@ -4,6 +4,7 @@ description: 'ドラゴン桜２に登場する生徒たちの名言をまとめ
 pubDate: '2026-05-09'
 tags: ['ドラゴン桜2', '名言', '生徒', '感動']
 category: '名言まとめ'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 ---
 
 「桜木先生の言葉は有名だけど、生徒たちの名シーンも忘れられない」という方へ。7人それぞれの成長の言葉をまとめました。

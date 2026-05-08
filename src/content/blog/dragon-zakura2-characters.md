@@ -4,6 +4,7 @@ description: 'ドラゴン桜２の登場人物をキャスト一覧でまとめ
 pubDate: '2026-05-08'
 tags: ['ドラゴン桜2', 'キャラクター', 'キャスト']
 category: 'キャラクター解説'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 ---
 
 「ドラゴン桜２って登場人物が多くて誰が誰かわからない」という方へ。キャスト一覧と役どころをまとめました。

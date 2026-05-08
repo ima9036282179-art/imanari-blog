@@ -4,6 +4,7 @@ description: 'ドラゴン桜２の原作漫画とTBSドラマの違いを徹底
 pubDate: '2026-05-21'
 tags: ['ドラゴン桜2', '原作漫画', 'ドラマ', '比較']
 category: '比較・解説'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-books.jpg'
 ---
 
 「ドラゴン桜２」はTBSドラマ（2021年）として大ヒットしましたが、原作は三田紀房による漫画です。原作ファンもドラマから入った方も気になる「漫画とドラマの違い」をまとめました。

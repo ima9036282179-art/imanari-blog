@@ -4,6 +4,7 @@ description: 'ドラゴン桜２で桜木建二が教える暗記・勉強テク
 pubDate: '2026-05-12'
 tags: ['ドラゴン桜2', '勉強法', '桜木メソッド', '暗記', '受験']
 category: '勉強法解説'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 
 「自分は暗記が苦手だ」と思っている人へ。ドラゴン桜２の桜木先生はこう言います。

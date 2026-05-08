@@ -4,6 +4,7 @@ description: 'ドラゴン桜２に登場した参考書・問題集を科目別
 pubDate: '2026-05-13'
 tags: ['ドラゴン桜2', '参考書', '問題集', '受験', '東大']
 category: '勉強法解説'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 
 「ドラゴン桜２に出てきたあの参考書、実際に使えるの？」と気になった方へ。ドラマ登場書籍を科目別に整理しました。

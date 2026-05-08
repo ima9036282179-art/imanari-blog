@@ -12,7 +12,7 @@ interface Props {
 }
 
 const { entry, headings } = Astro.props;
-const { title, description, pubDate, updatedDate, tags, category } = entry.data;
+const { title, description, pubDate, updatedDate, tags, category, eyecatch } = entry.data;
 
 const minutes = readingTime(entry.body);
 const postUrl = Astro.url.href;
@@ -83,6 +83,12 @@ const crumbs = [
         </div>
       )}
     </header>
+
+    {eyecatch && (
+      <div class="post-eyecatch-wrap">
+        <img src={eyecatch} alt={title} class="post-eyecatch" loading="eager" decoding="async" />
+      </div>
+    )}
 
     <div class="post-layout">
       <div class="prose">

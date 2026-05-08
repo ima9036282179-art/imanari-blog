@@ -4,6 +4,7 @@ description: 'ドラゴン桜２で紹介された英語学習法を解説。リ
 pubDate: '2026-05-10'
 tags: ['ドラゴン桜2', '英語', '勉強法', '受験']
 category: '勉強法解説'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 
 「英語だけどうしても伸びない」と悩んでいませんか？ドラゴン桜２の英語勉強法は、暗記中心の古い勉強法とは根本から違います。

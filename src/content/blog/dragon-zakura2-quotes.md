@@ -4,6 +4,7 @@ description: 'ドラゴン桜２の名言を一覧でまとめました。桜木
 pubDate: '2026-05-05'
 tags: ['ドラゴン桜', 'マンガ', '名言', '勉強']
 category: '名言まとめ'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 ---
 
 ![ドラゴン桜２](/imanari-blog/images/dragon02.jpg)
