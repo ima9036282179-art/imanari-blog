@@ -224,6 +224,79 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 
 ---
 
+## 前作（シーズン1）の生徒役キャスト
+
+前作（2005年）の東大専科OBたちが最終回にサプライズ登場。それぞれ東大卒業後の姿で描かれました。
+
+### 紗栄子（役：小林麻紀）
+
+<div class="cast-profile-card">
+  <img src="/imanari-blog/images/cast/saeko.png" alt="小林麻紀 紗栄子" class="cast-profile-img">
+  <div class="cast-profile-info">
+    <p class="cast-role-name">小林麻紀</p>
+    <p class="cast-actor-name">紗栄子</p>
+    <div class="cast-profile-tags">
+      <span class="cast-tag">前作出演</span>
+      <span class="cast-tag">東大出身の人気タレント</span>
+      <span class="cast-tag">最終回登場</span>
+    </div>
+  </div>
+</div>
+
+前作で桜木の指導を受けた東大専科OG。ドラゴン桜2では「東大出身の人気タレント」として活躍している姿で最終回に登場。後輩たちへのエールを届けた。
+
+---
+
+### 中尾明慶（役：奥野一郎）
+
+<div class="cast-profile-card">
+  <img src="/imanari-blog/images/cast/nakao.png" alt="奥野一郎 中尾明慶" class="cast-profile-img">
+  <div class="cast-profile-info">
+    <p class="cast-role-name">奥野一郎</p>
+    <p class="cast-actor-name">中尾明慶</p>
+    <div class="cast-profile-tags">
+      <span class="cast-tag">前作出演</span>
+      <span class="cast-tag">東大理Ⅰ現役合格</span>
+      <span class="cast-tag">トキワ自動車エンジニア</span>
+    </div>
+  </div>
+</div>
+
+前作では東大理Ⅰに現役合格。ドラゴン桜2では「トキワ自動車のエンジニア」として活躍する姿で最終回に登場した。
+
+---
+
+### 小池徹平（役：緒方英喜）
+
+<div class="cast-profile-card">
+  <img src="/imanari-blog/images/cast/koike.png" alt="緒方英喜 小池徹平" class="cast-profile-img">
+  <div class="cast-profile-info">
+    <p class="cast-role-name">緒方英喜</p>
+    <p class="cast-actor-name">小池徹平</p>
+    <div class="cast-profile-tags">
+      <span class="cast-tag">前作出演</span>
+      <span class="cast-tag">現役不合格→翌年合格</span>
+      <span class="cast-tag">外資系コンサル勤務</span>
+    </div>
+  </div>
+</div>
+
+前作では現役時代は不合格だったが翌年東大に合格。ドラゴン桜2では「外資系コンサル会社勤務」として登場した。
+
+---
+
+### 山下智久（役：矢島勇介）
+
+前作で東大理Ⅰに合格後、入学を辞退し弁護士を志望した異色のOB。ドラゴン桜2の最終回にはメールの内容という形（声のみ）で登場した。
+
+---
+
+### 新垣結衣（役：香坂よしの）
+
+前作で東大理Ⅰに現役合格。ドラゴン桜2では会社でシステム開発に従事している姿で最終回に登場。「ドラゴン桜3」を予感させる印象的なサプライズ出演として大きな話題となった。
+
+---
+
 ## キャスト一覧
 
 | 俳優 | 役名 | 役どころ |
@@ -244,10 +317,11 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 | 安田顕 | 大宰府治 | 国語講師 |
 | ゆりやんレトリィバァ | 由利杏奈 | 英語講師 |
 | 林遣都 | 坂本智之 | IT企業社長 |
-| 紗栄子 | 小林麻紀 | 前作の教え子（タレントに） |
-| 中尾明慶 | 奥野一郎 | 前作の教え子（エンジニアに） |
-| 小池徹平 | 緒方英喜 | 前作の教え子（コンサル勤務） |
-| 新垣結衣 | 香坂よしの | 最終回サプライズ登場 |
+| 紗栄子 | 小林麻紀 | 前作OG・東大出身タレント |
+| 中尾明慶 | 奥野一郎 | 前作OB・トキワ自動車エンジニア |
+| 小池徹平 | 緒方英喜 | 前作OB・外資系コンサル勤務 |
+| 山下智久 | 矢島勇介 | 前作OB・声のみ出演 |
+| 新垣結衣 | 香坂よしの | 前作OG・システム開発・最終回登場 |
 
 ---
 
