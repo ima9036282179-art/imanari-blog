@@ -1,9 +1,9 @@
-﻿---
+---
 title: 'ドラゴン桜2 桜木メソッド解説｜暗記が苦手な人の勉強テクニック5選'
 description: 'ドラゴン桜２で桜木建二が教える暗記・勉強テクニック5選を解説。科学的根拠のある方法ばかりなので、今日から実践できます。'
 pubDate: '2026-05-12'
 tags: ['ドラゴン桜2', '勉強法', '桜木メソッド', '暗記', '受験']
-category: '勉強法解説'
+category: '勉強法・解説'
 eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 

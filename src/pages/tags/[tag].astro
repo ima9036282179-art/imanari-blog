@@ -4,12 +4,18 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  const tags = [...new Set(posts.flatMap(p => p.data.tags ?? []))];
-  return tags.map(tag => ({
+  const tagSet = [...new Set(posts.flatMap(p => p.data.tags ?? []))];
+  const categorySet = [...new Set(posts.map(p => p.data.category).filter(Boolean) as string[])];
+  const allKeys = [...new Set([...tagSet, ...categorySet])];
+
+  return allKeys.map(tag => ({
     params: { tag },
-    props: { tag, posts: posts.filter(p => p.data.tags?.includes(tag)).sort(
-      (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-    )},
+    props: {
+      tag,
+      posts: posts
+        .filter(p => p.data.tags?.includes(tag) || p.data.category === tag)
+        .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()),
+    },
   }));
 }
 

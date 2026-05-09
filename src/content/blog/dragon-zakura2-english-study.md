@@ -1,9 +1,9 @@
-﻿---
+---
 title: 'ドラゴン桜2 英語勉強法まとめ｜桜木式で偏差値を上げる方法'
 description: 'ドラゴン桜２で紹介された英語学習法を解説。リスニング・単語・文法・読解まで桜木式メソッドを実践的にまとめました。受験英語に悩む人に読んでほしい内容です。'
 pubDate: '2026-05-10'
 tags: ['ドラゴン桜2', '英語', '勉強法', '受験']
-category: '勉強法解説'
+category: '勉強法・解説'
 eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 

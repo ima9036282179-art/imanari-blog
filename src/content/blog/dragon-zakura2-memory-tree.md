@@ -1,9 +1,9 @@
-﻿---
+---
 title: 'ドラゴン桜2 メモリーツリーのやり方【図解】暗記できる理由も解説'
 description: 'ドラゴン桜２で紹介されたメモリーツリーのやり方を図解で解説。作り方の手順・コツ・科目別の活用例を詳しくまとめました。暗記が苦手な人ほど効果を実感できます。'
 pubDate: '2026-05-11'
 tags: ['ドラゴン桜2', '勉強法', 'メモリーツリー', '記憶術', '受験']
-category: '勉強法解説'
+category: '勉強法・解説'
 eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 

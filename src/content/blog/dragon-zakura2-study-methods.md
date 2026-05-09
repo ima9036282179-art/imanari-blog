@@ -1,9 +1,9 @@
-﻿---
+---
 title: 'ドラゴン桜2 勉強法5選｜今日から使える桜木式メソッド'
 description: 'ドラゴン桜２で紹介された勉強法5選を解説。メモリーツリー・エピソード記憶・睡眠学習など科学的根拠のある勉強法を、受験生・社会人向けに実践的にまとめました。'
 pubDate: '2026-05-07'
 tags: ['ドラゴン桜2', '勉強法', '受験', 'Tips']
-category: '勉強法解説'
+category: '勉強法・解説'
 eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 

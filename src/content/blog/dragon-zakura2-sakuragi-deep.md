@@ -1,9 +1,9 @@
-﻿---
+---
 title: '桜木建二の魅力を徹底解説｜なぜ彼の言葉は人の心を動かすのか'
 description: 'ドラゴン桜２の主人公・桜木建二（阿部寛）の魅力を深掘り解説。元落ちこぼれ弁護士という経歴、逆説的な指導哲学、名シーンから見える人間性の本質を分析します。'
 pubDate: '2026-05-26'
 tags: ['ドラゴン桜2', '桜木建二', 'キャラクター', '阿部寛']
-category: 'キャラクター'
+category: 'キャラクター解説'
 eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 ---
 

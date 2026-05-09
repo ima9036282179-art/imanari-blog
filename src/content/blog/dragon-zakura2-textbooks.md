@@ -1,9 +1,9 @@
-﻿---
+---
 title: 'ドラゴン桜2 参考書まとめ｜登場した問題集を科目別に紹介【購入リンクあり】'
 description: 'ドラゴン桜２に登場した参考書・問題集を科目別に解説。英語「鉄壁」・数学「青チャート」など8冊をAmazon・楽天の購入リンクつきで紹介します。'
 pubDate: '2026-05-13'
 tags: ['ドラゴン桜2', '参考書', '問題集', '受験', '東大']
-category: '勉強法解説'
+category: '勉強法・解説'
 eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 
