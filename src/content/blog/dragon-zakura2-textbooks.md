@@ -162,6 +162,24 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 
 ---
 
+## 実践チェックリスト
+
+<div class="callout callout-info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+
+**参考書選び・使い方5つの確認**
+- [ ] 自分の今の偏差値帯に合った参考書を1冊に絞った
+- [ ] 「やり切る1冊」を決めて、他の参考書を増やさないと決めた
+- [ ] 参考書を書店やAmazonで実際の中身を確認してから選んだ
+- [ ] 1冊を3周する計画を立てた（1周して終わらない）
+- [ ] 問題集は「解いて終わり」でなく「間違えた理由を言語化した」
+
+  </div>
+</div>
+
+---
+
 ## 関連記事
 
 - [ドラゴン桜2 桜木メソッド解説｜暗記が苦手な人の勉強テクニック5選](/imanari-blog/blog/dragon-zakura2-sakuragi-method/)

@@ -16,6 +16,18 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 - 高原による学園売却陰謀の伏線
 - 東大模試の結果と各生徒の課題
 
+<div class="callout callout-point">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+
+**この話のポイント3選**
+1. 藤井が加わり7名となった東大専科が、全員で東大模試に初挑戦
+2. 桜木が「合格見込みなければ退出」という衝撃の宣告をした理由
+3. 高原による学園売却計画という、物語後半の核心となる陰謀の伏線が張られる
+
+  </div>
+</div>
+
 ---
 
 ## 第7話のあらすじ

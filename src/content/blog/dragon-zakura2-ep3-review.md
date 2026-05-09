@@ -14,6 +14,18 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 - YouTubeとTwitterを活用した桜木メソッドの内容
 - 特別模試の結果と藤井の反応
 
+<div class="callout callout-point">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+
+**この話のポイント3選**
+1. YouTubeとTwitterを活用した「SNS英語発信法」という斬新な桜木メソッド
+2. 対抗勢力として「難関大コース」が設立され、東大専科との模試対決が始まる
+3. 岩崎楓がスポーツの集中力（ゾーン状態）を勉強に活かせると気づく転機
+
+  </div>
+</div>
+
 ## 第3話のあらすじ
 
 瀬戸輝（髙橋海人）が東大専科に加わり、メンバーは4名に。桜木はSNSを活用した英語発信学習法を導入します。一方、理事長・久美子は対抗策として「難関大コース」を新設。秀才・藤井遼（鈴鹿央士）を配置し、東大専科との特別模試対決が実施されることになります。

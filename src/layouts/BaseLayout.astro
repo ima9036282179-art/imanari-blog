@@ -83,6 +83,7 @@ const websiteSchema = JSON.stringify({
     </script>
   </head>
   <body>
+    <div class="read-progress" id="readProgress"></div>
     <header class="site-header" id="site-header">
       <div class="header-inner">
         <a href={base} class="site-logo">
@@ -127,6 +128,16 @@ const websiteSchema = JSON.stringify({
 </style>
 
 <script>
+  // 読了プログレスバー
+  const progress = document.getElementById('readProgress');
+  if (progress) {
+    const updateProgress = () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+  }
+
   // ヘッダー スクロール時半透明化
   const header = document.getElementById('site-header');
   function updateHeader() {

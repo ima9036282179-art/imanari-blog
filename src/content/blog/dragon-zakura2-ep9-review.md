@@ -16,6 +16,18 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 - 桜木が生徒に授けた「共通テスト心構え5か条」
 - 黒幕の正体と水野による学園存続への動き
 
+<div class="callout callout-point">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+
+**この話のポイント3選**
+1. 桜木が授けた「共通テスト心構え5か条」と東大専科7人全員の本番挑戦
+2. 高原の学園売却計画の全容が明かされ、水野が法律で阻止に動く緊迫の展開
+3. 「共通テストは終わりじゃない、ここからが本当の勝負だ」——達成感を許さない桜木の言葉
+
+  </div>
+</div>
+
 ---
 
 ## 第9話のあらすじ

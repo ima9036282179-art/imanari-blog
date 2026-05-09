@@ -111,6 +111,24 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 
 ---
 
+## 実践チェックリスト
+
+<div class="callout callout-info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+
+**今日からできる5つの行動**
+- [ ] 今学習していることに「なぜ？」を3回問いかけた
+- [ ] 覚えた内容を誰かに説明するか白紙に書き出した
+- [ ] 25分タイマーで集中学習を1セット完了した
+- [ ] 寝る前30分を暗記専用の時間に設定した
+- [ ] 翌朝に前日の内容を思い出す練習（想起）をした
+
+  </div>
+</div>
+
+---
+
 ## Amazon で購入する
 
 - 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)

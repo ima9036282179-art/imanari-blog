@@ -107,6 +107,24 @@ SVOCが見えると、長文でも構造が理解しやすくなります。
 
 ---
 
+## 実践チェックリスト
+
+<div class="callout callout-info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+
+**今日からできる5つの行動**
+- [ ] 英単語を10個「声に出しながら」覚えた
+- [ ] 文法書を先に読まず、いきなり問題集を解いた
+- [ ] 英語を1本聞いて、何を言っていたか日本語で要約した
+- [ ] 短い英文を1つ手書きして、アウトプットした
+- [ ] 単語帳を寝る前30分に見直してそのまま寝た
+
+  </div>
+</div>
+
+---
+
 ## Amazon で購入する
 
 - 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)

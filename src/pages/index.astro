@@ -29,6 +29,19 @@ function excerpt(description: string) {
 // おすすめの1本
 const featuredPost = posts.find(p => p.slug === 'dragon-zakura2-quotes-ranking') ?? posts[0];
 
+// 人気記事（カテゴリを横断した6本）
+const popularSlugs = [
+  'dragon-zakura2-ep10-review',
+  'dragon-zakura2-character-detail',
+  'dragon-zakura2-sakuragi-method',
+  'dragon-zakura2-student-quotes',
+  'dragon-zakura2-reviews',
+  'dragon-zakura2-memory-tree',
+];
+const popularPosts = popularSlugs
+  .map(slug => posts.find(p => p.slug === slug))
+  .filter(Boolean) as typeof posts;
+
 // シリーズで読む（カテゴリ別記事数）
 const seriesLinks = [
   { label: 'ドラマ感想', tag: 'ドラマ感想', emoji: '🎬', desc: '全話レビュー' },
@@ -92,6 +105,28 @@ const catCounts = posts.reduce((acc, p) => {
           <span class="series-read-emoji">{s.emoji}</span>
           <span class="series-read-label">{s.label}</span>
           <span class="series-read-count">{catCounts[s.label] ?? 0}本</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- 人気記事 -->
+  <section class="popular-section fade-in-up">
+    <p class="popular-heading">人気記事</p>
+    <div class="popular-grid">
+      {popularPosts.map((post, i) => (
+        <a href={`${base}blog/${post.slug}/`} class="popular-card">
+          <div class="popular-card-thumb">
+            {post.data.eyecatch
+              ? <img src={post.data.eyecatch} alt={post.data.title} class="popular-card-img" loading="lazy" decoding="async" />
+              : <div class="popular-card-img" style="background:linear-gradient(135deg,#450A0A,#7F1D1D);"></div>
+            }
+            <span class="popular-card-no">{i + 1}</span>
+          </div>
+          <div class="popular-card-body">
+            <span class="popular-card-cat">{post.data.category}</span>
+            <p class="popular-card-title">{post.data.title}</p>
+          </div>
         </a>
       ))}
     </div>

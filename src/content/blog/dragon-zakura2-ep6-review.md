@@ -16,6 +16,18 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 - 小杉麻里の涙と父親を説得した経緯
 - 藤井遼が正式に東大専科へ入科した理由
 
+<div class="callout callout-point">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+
+**この話のポイント3選**
+1. 国語特別講師・大宰府治が登場し、読解力強化のための勉強合宿が始まる
+2. 麻里の父親を全員の言葉で説得し、受験の許可を得た感動の場面
+3. 「本気になるのが怖いのは本気で失敗したくないから」——藤井入科を促した桜木の核心の言葉
+
+  </div>
+</div>
+
 ---
 
 ## 第6話のあらすじ

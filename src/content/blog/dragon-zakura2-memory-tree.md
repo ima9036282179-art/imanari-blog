@@ -135,6 +135,24 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 
 ---
 
+## 実践チェックリスト
+
+<div class="callout callout-info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+
+**今日からできる5つの行動**
+- [ ] 白紙の中央に1つのテーマを書いた
+- [ ] 中心から大きな枝を3本以上伸ばした
+- [ ] 枝の先に詳細情報・サブキーワードを書き加えた
+- [ ] 色分けしてカテゴリを視覚的に区別した
+- [ ] 完成したツリーを見ずに、内容を頭から再現できるか試した
+
+  </div>
+</div>
+
+---
+
 ## Amazon で購入する
 
 - 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)

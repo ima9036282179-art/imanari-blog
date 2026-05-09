@@ -16,6 +16,18 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 - 学園存続の結末
 - 前作キャスト・新垣結衣のサプライズ登場
 
+<div class="callout callout-point">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+
+**この話のポイント3選**
+1. 東大二次試験当日、藤井の怪我という予期せぬ試練とその結末
+2. 学園売却阻止と東大合格という「ダブル逆転」が同時に決まる感動のクライマックス
+3. 「どんな状況からでも、人間は変われる」——シリーズ全体の結論となる桜木最後の言葉
+
+  </div>
+</div>
+
 ---
 
 ## 最終回のあらすじ

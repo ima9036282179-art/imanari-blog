@@ -16,6 +16,18 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 - 岩崎楓の苦悩と親子の関係
 - 「合格のカギは親子愛」というテーマの深み
 
+<div class="callout callout-point">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+
+**この話のポイント3選**
+1. 桜木が夏休みの指針「夏休み五箇条」を提示し、あえて生徒の自主性に委ねた意図
+2. 岩崎楓が浮かない表情を続けた理由と、予期せぬアクシデントの展開
+3. 「一人で全部できなくていい、仲間に頼ることも強さの一つ」という強さの再定義
+
+  </div>
+</div>
+
 ---
 
 ## 第8話のあらすじ

@@ -136,6 +136,24 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 
 ---
 
+## 実践チェックリスト
+
+<div class="callout callout-info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+
+**今日からできる5つの行動**
+- [ ] 分散学習スケジュールを紙に書いて机に貼った
+- [ ] 寝る30分前に覚えたいことを読んで、そのまま寝た
+- [ ] 今日1つの単語・用語を「声に出しながら」覚えた
+- [ ] 覚えにくい情報に連想ストーリーをつくってみた
+- [ ] 自宅の各部屋を「記憶の宮殿」に見立てて1セット試した
+
+  </div>
+</div>
+
+---
+
 ## 関連記事
 
 - [ドラゴン桜2 勉強法まとめ｜科学的学習法を全話から解説](/imanari-blog/blog/dragon-zakura2-study-methods/)

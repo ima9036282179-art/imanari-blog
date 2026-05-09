@@ -117,17 +117,29 @@ const isEpSeries = category === 'ドラマ感想';
       </aside>
     </div>
 
-    {/* シリーズナビ（前後記事） */}
+    {/* 役に立ったボタン */}
+    <div class="helpful-section" id="helpfulSection">
+      <p class="helpful-question">この記事は役に立ちましたか？</p>
+      <div class="helpful-btns">
+        <button class="helpful-btn" id="helpfulYes">👍 役に立った</button>
+        <button class="helpful-btn" id="helpfulNo">🤔 まだ疑問がある</button>
+      </div>
+      <p class="helpful-thanks" id="helpfulThanks">ありがとうございます！引き続き良い記事をお届けします。</p>
+    </div>
+
+    {/* シリーズナビ（前後記事・サムネイル付き） */}
     {(prevPost || nextPost) && (
       <nav class="post-series-nav">
         {prevPost ? (
           <a href={`${base}blog/${prevPost.slug}/`} class="post-series-nav-item">
+            {prevPost.data.eyecatch && <img src={prevPost.data.eyecatch} alt={prevPost.data.title} class="post-series-nav-thumb" loading="lazy" />}
             <span class="post-series-nav-label">← 前の記事</span>
             <span class="post-series-nav-title">{prevPost.data.title}</span>
           </a>
         ) : <span />}
         {nextPost ? (
           <a href={`${base}blog/${nextPost.slug}/`} class="post-series-nav-item next">
+            {nextPost.data.eyecatch && <img src={nextPost.data.eyecatch} alt={nextPost.data.title} class="post-series-nav-thumb" loading="lazy" />}
             <span class="post-series-nav-label">次の記事 →</span>
             <span class="post-series-nav-title">{nextPost.data.title}</span>
           </a>
@@ -213,3 +225,58 @@ const isEpSeries = category === 'ドラマ感想';
     </nav>
   </article>
 </BaseLayout>
+
+<script>
+  // コードブロック コピーボタン
+  document.querySelectorAll('pre > code').forEach(code => {
+    const pre = code.parentElement!;
+    const btn = document.createElement('button');
+    btn.className = 'copy-code-btn';
+    btn.textContent = 'コピー';
+    btn.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(code.textContent ?? '');
+      btn.textContent = '✓ コピー済み';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'コピー'; btn.classList.remove('copied'); }, 2000);
+    });
+    pre.appendChild(btn);
+  });
+
+  // Lightbox
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  const lbImg = document.createElement('img');
+  lbImg.className = 'lightbox-img';
+  overlay.appendChild(lbImg);
+  document.body.appendChild(overlay);
+  document.querySelectorAll<HTMLImageElement>('.prose img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      overlay.classList.add('active');
+    });
+  });
+  overlay.addEventListener('click', () => overlay.classList.remove('active'));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') overlay.classList.remove('active'); });
+
+  // 役に立ったボタン
+  const key = 'helpful_' + location.pathname;
+  const yesBtn = document.getElementById('helpfulYes') as HTMLButtonElement;
+  const noBtn  = document.getElementById('helpfulNo')  as HTMLButtonElement;
+  const thanks = document.getElementById('helpfulThanks') as HTMLElement;
+  const stored = localStorage.getItem(key);
+  if (stored) {
+    (stored === 'yes' ? yesBtn : noBtn)?.classList.add('selected');
+    if (thanks) thanks.style.display = 'block';
+  }
+  [yesBtn, noBtn].forEach(btn => {
+    btn?.addEventListener('click', () => {
+      const val = btn.id === 'helpfulYes' ? 'yes' : 'no';
+      localStorage.setItem(key, val);
+      yesBtn?.classList.toggle('selected', val === 'yes');
+      noBtn?.classList.toggle('selected', val === 'no');
+      if (thanks) thanks.style.display = 'block';
+    });
+  });
+</script>

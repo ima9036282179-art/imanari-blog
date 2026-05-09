@@ -135,6 +135,24 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 
 ---
 
+## 実践チェックリスト
+
+<div class="callout callout-info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+
+**スケジュール管理5つの確認**
+- [ ] 今の学年・時期に合わせた優先科目を決めた
+- [ ] 1週間のスケジュール表を実際に紙に書いた
+- [ ] 朝型生活に切り替えるための就寝・起床時間を決めた
+- [ ] 模試の結果を見て弱い科目に多くの時間を配分した
+- [ ] 過去問を「時間を計って本番と同じ条件」で解いた
+
+  </div>
+</div>
+
+---
+
 ## Amazon で購入する
 
 - 💿 [ドラゴン桜2 DVD-BOX をAmazonで探す](https://www.amazon.co.jp/s?k=ドラゴン桜2+DVD&tag=ima3burukku2-22)
