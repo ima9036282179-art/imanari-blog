@@ -58,6 +58,7 @@ const websiteSchema = JSON.stringify({
     <meta name="twitter:image" content={ogImageUrl} />
 
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <link rel="alternate" type="application/rss+xml" title="Dragon Blog RSS" href={`${base}rss.xml`} />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -92,6 +93,7 @@ const websiteSchema = JSON.stringify({
           <a href={base}>ホーム</a>
           <a href={`${base}tags/`}>タグ</a>
           <a href={`${base}about/`}>About</a>
+          <a href={`${base}newsletter/`}>📬 購読</a>
           <a href={`${base}search/`}>🔍 検索</a>
           <a href={`${base}fortune/`}>🔮 占い</a>
           <DarkModeToggle />
@@ -110,7 +112,8 @@ const websiteSchema = JSON.stringify({
       <p>&copy; {new Date().getFullYear()} Dragon Blog. Built with Astro.</p>
       <div class="footer-sns">
         <a href="https://x.com/" class="footer-sns-btn" target="_blank" rel="noopener">𝕏 フォローする</a>
-        <a href={`${base}about/`} class="footer-sns-btn">このブログについて</a>
+        <a href={`${base}newsletter/`} class="footer-sns-btn">📬 メール購読</a>
+        <a href={`${base}rss.xml`} class="footer-sns-btn">RSS</a>
       </div>
     </footer>
 

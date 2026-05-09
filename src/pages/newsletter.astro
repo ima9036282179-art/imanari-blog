@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const BUTTONDOWN_USERNAME = 'imanari-blog'; // ← Buttondown登録後にユーザー名に変更
+---
+
+<BaseLayout
+  title="メール購読"
+  description="Dragon Blog の新着記事をメールでお届けします。無料で購読できます。"
+>
+  <div class="newsletter-page">
+    <div class="nl-hero">
+      <p class="nl-hero-icon">📬</p>
+      <h1 class="nl-hero-title">新着記事をメールで受け取る</h1>
+      <p class="nl-hero-desc">
+        ドラゴン桜2の名言・全話レビュー・勉強法など、<br>
+        週1〜2本の更新をメールでお届けします。<br>
+        無料・いつでも解除できます。
+      </p>
+    </div>
+
+    <div class="nl-form-card">
+      <form
+        action={`https://buttondown.email/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`}
+        method="post"
+        target="popupwindow"
+        onsubmit={`window.open('https://buttondown.email/${BUTTONDOWN_USERNAME}', 'popupwindow')`}
+        class="nl-form"
+        id="subscribeForm"
+      >
+        <input type="hidden" name="embed" value="1" />
+        <div class="nl-input-row">
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="メールアドレスを入力"
+            class="nl-input"
+            id="emailInput"
+          />
+          <button type="submit" class="nl-submit-btn">無料で購読する</button>
+        </div>
+        <p class="nl-privacy">
+          ✅ スパムは送りません。&nbsp;&nbsp;✅ いつでも解除できます。
+        </p>
+      </form>
+      <p class="nl-powered">配信サービス: <a href="https://buttondown.email" target="_blank" rel="noopener">Buttondown</a></p>
+    </div>
+
+    <div class="nl-features">
+      <div class="nl-feature">
+        <span class="nl-feature-icon">🎬</span>
+        <p class="nl-feature-text">ドラマ全話レビュー</p>
+      </div>
+      <div class="nl-feature">
+        <span class="nl-feature-icon">💬</span>
+        <p class="nl-feature-text">桜木建二の名言</p>
+      </div>
+      <div class="nl-feature">
+        <span class="nl-feature-icon">📚</span>
+        <p class="nl-feature-text">受験・勉強法の解説</p>
+      </div>
+      <div class="nl-feature">
+        <span class="nl-feature-icon">👥</span>
+        <p class="nl-feature-text">キャラクター深掘り</p>
+      </div>
+    </div>
+
+    <div class="nl-rss-note">
+      <p>RSSリーダーをお使いの方は <a href={`${base}rss.xml`}>RSS フィード</a> もご利用いただけます。</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+.newsletter-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 0 5rem;
+  text-align: center;
+}
+
+.nl-hero { margin-bottom: 2.5rem; }
+.nl-hero-icon { font-size: 3.5rem; margin: 0 0 0.75rem; }
+.nl-hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--text);
+  margin: 0 0 1rem;
+}
+.nl-hero-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 2;
+  margin: 0;
+}
+
+.nl-form-card {
+  background: linear-gradient(135deg, #450A0A 0%, #7F1D1D 100%);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.nl-input-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.nl-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.95rem;
+  outline: none;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.nl-input:focus { box-shadow: 0 0 0 3px rgba(255,255,255,0.3); }
+
+.nl-submit-btn {
+  background: #fff;
+  color: var(--accent);
+  font-weight: 900;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s, transform 0.15s;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.nl-submit-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.nl-privacy { font-size: 0.75rem; color: #FCA5A5; margin: 0; }
+.nl-powered { font-size: 0.7rem; color: #FCA5A5; margin-top: 1rem; opacity: 0.7; }
+.nl-powered a { color: #FCA5A5; }
+
+.nl-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.nl-feature {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 0.5rem;
+}
+.nl-feature-icon { font-size: 1.75rem; display: block; margin-bottom: 0.4rem; }
+.nl-feature-text { font-size: 0.75rem; font-weight: 700; color: var(--text); margin: 0; }
+
+.nl-rss-note { font-size: 0.82rem; color: var(--text-muted); }
+.nl-rss-note a { color: var(--accent); }
+
+@media (max-width: 640px) {
+  .nl-input-row { flex-direction: column; }
+  .nl-submit-btn { width: 100%; }
+  .nl-features { grid-template-columns: repeat(2, 1fr); }
+  .nl-form-card { padding: 1.75rem 1.25rem; }
+  .nl-hero-title { font-size: 1.4rem; }
+}
+</style>

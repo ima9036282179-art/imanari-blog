@@ -191,12 +191,19 @@ const isEpSeries = category === 'ドラマ感想';
     {/* ニュースレター */}
     <section class="newsletter-section">
       <p class="newsletter-title">📬 新着記事をメールで受け取る</p>
-      <p class="newsletter-desc">ドラゴン桜2の名言・感想・勉強法など、週1〜2本の更新をお届けします。</p>
-      <div class="newsletter-form">
-        <input type="email" class="newsletter-input" placeholder="メールアドレスを入力" disabled />
-        <button class="newsletter-btn" disabled>登録（準備中）</button>
-      </div>
-      <p class="newsletter-note">※ 現在準備中です。もうしばらくお待ちください。</p>
+      <p class="newsletter-desc">ドラゴン桜2の名言・感想・勉強法など、週1〜2本の更新をお届けします。無料・解除いつでも。</p>
+      <form
+        action={`https://buttondown.email/api/emails/embed-subscribe/imanari-blog`}
+        method="post"
+        target="popupwindow"
+        onsubmit={`window.open('https://buttondown.email/imanari-blog','popupwindow')`}
+        class="newsletter-form"
+      >
+        <input type="hidden" name="embed" value="1" />
+        <input type="email" name="email" required class="newsletter-input" placeholder="メールアドレスを入力" />
+        <button type="submit" class="newsletter-btn">登録する</button>
+      </form>
+      <p class="newsletter-note">詳細は <a href={`${base}newsletter/`} style="color:#FCA5A5;">購読ページ</a> をご覧ください。</p>
     </section>
 
     <ShareButtons title={title} url={postUrl} />
