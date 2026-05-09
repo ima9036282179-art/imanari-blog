@@ -91,6 +91,7 @@ const websiteSchema = JSON.stringify({
         <nav class="site-nav">
           <a href={base}>ホーム</a>
           <a href={`${base}tags/`}>タグ</a>
+          <a href={`${base}about/`}>About</a>
           <a href={`${base}search/`}>🔍 検索</a>
           <a href={`${base}fortune/`}>🔮 占い</a>
           <DarkModeToggle />
@@ -107,6 +108,10 @@ const websiteSchema = JSON.stringify({
 
     <footer class="site-footer">
       <p>&copy; {new Date().getFullYear()} Dragon Blog. Built with Astro.</p>
+      <div class="footer-sns">
+        <a href="https://x.com/" class="footer-sns-btn" target="_blank" rel="noopener">𝕏 フォローする</a>
+        <a href={`${base}about/`} class="footer-sns-btn">このブログについて</a>
+      </div>
     </footer>
 
     <!-- トップに戻るボタン -->

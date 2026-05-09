@@ -16,6 +16,7 @@ const categoryClassMap: Record<string, string> = {
   '勉強法・解説': 'cat-study',
   '比較・解説': 'cat-compare',
   'キャラクター': 'cat-character',
+  'キャラクター解説': 'cat-character',
 };
 function catClass(cat?: string) {
   return cat ? (categoryClassMap[cat] ?? 'cat-default') : 'cat-default';
@@ -24,6 +25,22 @@ function catClass(cat?: string) {
 function excerpt(description: string) {
   return description.length > 130 ? description.slice(0, 130) + '…' : description;
 }
+
+// おすすめの1本
+const featuredPost = posts.find(p => p.slug === 'dragon-zakura2-quotes-ranking') ?? posts[0];
+
+// シリーズで読む（カテゴリ別記事数）
+const seriesLinks = [
+  { label: 'ドラマ感想', tag: 'ドラマ感想', emoji: '🎬', desc: '全話レビュー' },
+  { label: '名言まとめ', tag: '名言まとめ', emoji: '💬', desc: '桜木名言' },
+  { label: '勉強法・解説', tag: '勉強法・解説', emoji: '📚', desc: '学習メソッド' },
+  { label: 'キャラクター解説', tag: 'キャラクター解説', emoji: '👥', desc: 'キャスト・キャラ' },
+];
+const catCounts = posts.reduce((acc, p) => {
+  const c = p.data.category;
+  if (c) acc[c] = (acc[c] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
 ---
 
 <BaseLayout title="ホーム">
@@ -37,6 +54,46 @@ function excerpt(description: string) {
         <a href="#articles" class="hero-btn-primary">記事を読む →</a>
         <a href={`${base}fortune/`} class="hero-btn-secondary">🔮 ワンオラクル占い</a>
       </div>
+    </div>
+  </section>
+
+  <!-- マニフェスト -->
+  <section class="site-manifest fade-in-up">
+    <p class="site-manifest-text">
+      「これはただの受験ドラマレビューではない。<br>
+      ドラマに散りばめられた言葉と思考法を、<br>
+      一人の人間として咀嚼するブログです。」
+    </p>
+  </section>
+
+  <!-- おすすめの1本 -->
+  <section class="featured-section fade-in-up">
+    <p class="featured-label">おすすめの1本</p>
+    <a href={`${base}blog/${featuredPost.slug}/`} class="featured-banner">
+      {featuredPost.data.eyecatch
+        ? <img src={featuredPost.data.eyecatch} alt={featuredPost.data.title} class="featured-banner-img" loading="lazy" decoding="async" />
+        : <div class="featured-banner-img" style="background: linear-gradient(135deg,#450A0A,#7F1D1D);"></div>
+      }
+      <div class="featured-banner-body">
+        {featuredPost.data.category && <span class="featured-badge">{featuredPost.data.category}</span>}
+        <p class="featured-title">{featuredPost.data.title}</p>
+        <p class="featured-desc">{excerpt(featuredPost.data.description)}</p>
+        <p class="featured-meta">📅 {featuredPost.data.pubDate.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+      </div>
+    </a>
+  </section>
+
+  <!-- シリーズで読む -->
+  <section class="series-read-section fade-in-up">
+    <p class="series-read-heading">シリーズで読む</p>
+    <div class="series-read-grid">
+      {seriesLinks.map(s => (
+        <a href={`${base}tags/${encodeURIComponent(s.tag)}/`} class="series-read-card">
+          <span class="series-read-emoji">{s.emoji}</span>
+          <span class="series-read-label">{s.label}</span>
+          <span class="series-read-count">{catCounts[s.label] ?? 0}本</span>
+        </a>
+      ))}
     </div>
   </section>
 

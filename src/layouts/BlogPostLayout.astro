@@ -4,14 +4,17 @@ import TableOfContents from '../components/TableOfContents.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import { readingTime } from '../utils/readingTime';
+import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
   entry: CollectionEntry<'blog'>;
   headings: { depth: number; slug: string; text: string }[];
+  prevPost?: CollectionEntry<'blog'> | null;
+  nextPost?: CollectionEntry<'blog'> | null;
 }
 
-const { entry, headings } = Astro.props;
+const { entry, headings, prevPost, nextPost } = Astro.props;
 const { title, description, pubDate, updatedDate, tags, category, eyecatch } = entry.data;
 
 const minutes = readingTime(entry.body);
@@ -58,6 +61,21 @@ const crumbs = [
   ...(category ? [{ label: category }] : []),
   { label: title },
 ];
+
+// 関連記事（タグ一致数の多い順に最大3件）
+const allPosts = await getCollection('blog');
+const currentTags = tags ?? [];
+const scored = allPosts
+  .filter(p => p.slug !== entry.slug)
+  .map(p => ({
+    post: p,
+    score: (p.data.tags ?? []).filter(t => currentTags.includes(t)).length,
+  }))
+  .sort((a, b) => b.score - a.score || b.post.data.pubDate.valueOf() - a.post.data.pubDate.valueOf());
+const relatedPosts = scored.slice(0, 3).map(s => s.post);
+
+// ドラマ感想シリーズなら「第1話から読む」ボタンを表示
+const isEpSeries = category === 'ドラマ感想';
 ---
 
 <BaseLayout title={title} description={description} ogType="article">
@@ -98,6 +116,88 @@ const crumbs = [
         <TableOfContents headings={headings} />
       </aside>
     </div>
+
+    {/* シリーズナビ（前後記事） */}
+    {(prevPost || nextPost) && (
+      <nav class="post-series-nav">
+        {prevPost ? (
+          <a href={`${base}blog/${prevPost.slug}/`} class="post-series-nav-item">
+            <span class="post-series-nav-label">← 前の記事</span>
+            <span class="post-series-nav-title">{prevPost.data.title}</span>
+          </a>
+        ) : <span />}
+        {nextPost ? (
+          <a href={`${base}blog/${nextPost.slug}/`} class="post-series-nav-item next">
+            <span class="post-series-nav-label">次の記事 →</span>
+            <span class="post-series-nav-title">{nextPost.data.title}</span>
+          </a>
+        ) : <span />}
+      </nav>
+    )}
+
+    {/* 次に読む（1本大きく） */}
+    {scored[0] && (
+      <section class="next-post-section">
+        <p class="next-post-label">次に読む</p>
+        <a href={`${base}blog/${scored[0].post.slug}/`} class="next-post-banner">
+          {scored[0].post.data.eyecatch
+            ? <img src={scored[0].post.data.eyecatch} alt={scored[0].post.data.title} class="next-post-img" loading="lazy" decoding="async" />
+            : <div class="next-post-img" style="background: linear-gradient(135deg,#450A0A,#7F1D1D);" />
+          }
+          <div class="next-post-body">
+            {scored[0].post.data.category && <span class="category-badge" style="font-size:0.68rem;">{scored[0].post.data.category}</span>}
+            <p class="next-post-title">{scored[0].post.data.title}</p>
+            <p class="next-post-desc">{scored[0].post.data.description?.slice(0, 90)}…</p>
+          </div>
+        </a>
+      </section>
+    )}
+
+    {/* 関連記事（2〜4件） */}
+    {scored.length > 1 && (
+      <section class="related-posts-section">
+        <h2 class="related-posts-title">関連記事</h2>
+        <div class="related-posts-grid">
+          {scored.slice(1, 4).map(s => (
+            <a href={`${base}blog/${s.post.slug}/`} class="related-post-card">
+              {s.post.data.eyecatch && (
+                <img src={s.post.data.eyecatch} alt={s.post.data.title} class="related-post-img" loading="lazy" decoding="async" />
+              )}
+              <p class="related-post-title">{s.post.data.title}</p>
+              <time class="related-post-date">{s.post.data.pubDate.toLocaleDateString('ja-JP', { month: 'long', day: 'numeric' })}</time>
+            </a>
+          ))}
+        </div>
+        {isEpSeries && (
+          <div class="series-btn-wrap">
+            <a href={`${base}blog/dragon-zakura2-ep1-review/`} class="series-btn">▶ 第1話から読む</a>
+          </div>
+        )}
+      </section>
+    )}
+
+    {/* 著者カード */}
+    <div class="author-card">
+      <img src={`${base}images/onepiece01_luffy.png`} alt="imanari" class="author-card-avatar" loading="lazy" decoding="async" />
+      <div class="author-card-body">
+        <p class="author-card-name">imanari</p>
+        <p class="author-card-bio">ドラゴン桜2の言葉に心を動かされ、このブログを始めました。受験の話だけじゃない、大人にこそ響く「逆転の哲学」を言語化しています。</p>
+        <div class="author-card-links">
+          <a href={`${base}about/`} class="author-card-link">このブログについて</a>
+        </div>
+      </div>
+    </div>
+
+    {/* ニュースレター */}
+    <section class="newsletter-section">
+      <p class="newsletter-title">📬 新着記事をメールで受け取る</p>
+      <p class="newsletter-desc">ドラゴン桜2の名言・感想・勉強法など、週1〜2本の更新をお届けします。</p>
+      <div class="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="メールアドレスを入力" disabled />
+        <button class="newsletter-btn" disabled>登録（準備中）</button>
+      </div>
+      <p class="newsletter-note">※ 現在準備中です。もうしばらくお待ちください。</p>
+    </section>
 
     <ShareButtons title={title} url={postUrl} />
 

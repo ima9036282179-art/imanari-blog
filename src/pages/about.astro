@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+
+<BaseLayout
+  title="このブログについて"
+  description="Dragon Blog の運営者 imanari によるブログ紹介ページ。ドラゴン桜2をテーマに、勉強法・名言・人生哲学を発信しています。"
+>
+  <article class="about-page">
+    <header class="about-header">
+      <h1 class="about-title">このブログについて</h1>
+      <p class="about-subtitle">Dragon Blog — ドラゴン桜2から学ぶ、勉強と人生のヒント</p>
+    </header>
+
+    <div class="about-profile-block">
+      <img
+        src={`${base}images/onepiece01_luffy.png`}
+        alt="imanari"
+        class="about-avatar"
+        width="100"
+        height="100"
+        loading="lazy"
+        decoding="async"
+      />
+      <div>
+        <p class="about-profile-name">imanari</p>
+        <p class="about-profile-desc">ドラゴン桜2に影響を受け、Claude Code を使ってこのブログを作りました。</p>
+      </div>
+    </div>
+
+    <section class="about-section">
+      <h2>なぜこのブログを作ったか</h2>
+      <p>
+        ドラゴン桜2を見て、「これはただの受験ドラマではない」と感じました。
+        桜木建二の言葉には、受験生だけでなく、仕事や人生に悩む大人にも刺さるものがある。
+        そのメッセージを自分なりに言語化し、残しておきたい。それがこのブログを始めた理由です。
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2>このブログで発信していること</h2>
+      <ul>
+        <li>🎬 <strong>全話レビュー</strong>：各話のあらすじ・印象的なシーン・名言</li>
+        <li>💬 <strong>名言まとめ</strong>：桜木建二・生徒たちの言葉を深掘り</li>
+        <li>📚 <strong>勉強法・解説</strong>：ドラゴン桜2に登場する学習メソッドの実践ガイド</li>
+        <li>👥 <strong>キャラクター解説</strong>：登場人物の背景・成長・名シーン</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>ブログのスタンス</h2>
+      <blockquote>
+        「東大に行く必要はないけれど、桜木建二の言葉は知っておいた方がいい。」
+      </blockquote>
+      <p>
+        情報をまとめるだけでなく、「自分ならどう受け取るか」という視点を大切にしています。
+        受験生向けの解説ではなく、ドラマを通じて人生や仕事を考えるヒントとして書いています。
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2>技術について</h2>
+      <p>
+        このブログは <a href="https://astro.build/" target="_blank" rel="noopener">Astro</a> で構築し、
+        GitHub Pages で公開しています。
+        記事作成・コーディングには <strong>Claude Code</strong>（Anthropic の AI）を活用しています。
+      </p>
+    </section>
+
+    <div class="about-back">
+      <a href={base} class="series-btn">← 記事一覧へ戻る</a>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+.about-page { max-width: 720px; margin: 0 auto; padding: 2rem 0 4rem; }
+
+.about-header { margin-bottom: 2.5rem; }
+.about-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 0 0.4rem;
+  color: var(--text);
+}
+.about-subtitle { font-size: 0.95rem; color: var(--text-muted); margin: 0; }
+
+.about-profile-block {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.about-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); flex-shrink: 0; }
+.about-profile-name { font-weight: 900; font-size: 1.1rem; margin: 0 0 0.3rem; }
+.about-profile-desc { font-size: 0.88rem; color: var(--text-muted); margin: 0; line-height: 1.7; }
+
+.about-section { margin-bottom: 2.5rem; }
+.about-section h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-left: 4px solid var(--accent);
+  padding-left: 0.85rem;
+  margin: 0 0 1rem;
+}
+.about-section p { line-height: 1.85; color: var(--text); }
+.about-section ul { padding-left: 1.25rem; line-height: 2; }
+.about-section a { color: var(--accent); }
+.about-section blockquote {
+  border-left: 4px solid var(--accent);
+  background: var(--bg-card);
+  padding: 0.9rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: var(--text);
+}
+
+.about-back { margin-top: 3rem; text-align: center; }
+</style>
