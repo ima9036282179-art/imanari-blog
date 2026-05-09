@@ -48,6 +48,10 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 
 虫が好きという特性を持つ健太が、虫の図鑑的知識と視覚記憶を数学の問題解法に結びつける場面。「得意を武器にする」桜木メソッドが健太に見事に機能し、模試で数学198点という結果につながります。
 
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CPNpk-YsAfz/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%;"><a href="https://www.instagram.com/p/CPNpk-YsAfz/" target="_blank" rel="noopener noreferrer">Instagramで見る</a></blockquote>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
 ### 麻里が専科に踏み出す決断
 
 親の反対を押し切って東大専科への参加を決めた麻里（志田彩良）。家庭の圧力という重い背景を背負いながらも、自分の意志で前に進む姿が丁寧に描かれています。

@@ -44,6 +44,8 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 
 ### 国語特別講師・大宰府の授業
 
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CPb8ziXshnt/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%;"><a href="https://www.instagram.com/p/CPb8ziXshnt/" target="_blank" rel="noopener noreferrer">Instagramで見る</a></blockquote>
+
 大宰府治が解説した読解法の核心は**「文章の3つの構造」**でした。
 
 | 構造 | 内容 |
@@ -61,6 +63,12 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 ### 麻里の涙のシーン
 
 メンバーが読み上げた発表文を聞いた麻里が流す涙。視聴者から「一緒に泣いた」との声が続出した、第6話最大の名場面です。志田彩良の繊細な演技が際立っていました。
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CPf5rO8sPX2/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%;"><a href="https://www.instagram.com/p/CPf5rO8sPX2/" target="_blank" rel="noopener noreferrer">Instagramで見る</a></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CPfdA6HMl0z/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%;"><a href="https://www.instagram.com/p/CPfdA6HMl0z/" target="_blank" rel="noopener noreferrer">Instagramで見る</a></blockquote>
+
+<script async src="//www.instagram.com/embed.js"></script>
 
 ### 藤井の入科決断
 

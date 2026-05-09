@@ -64,6 +64,8 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 
 この台詞が楓のブレない動機を再確認させてくれる場面でした。
 
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CQGP7sisl6z/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%;"><a href="https://www.instagram.com/p/CQGP7sisl6z/" target="_blank" rel="noopener noreferrer">Instagramで見る</a></blockquote>
+
 ### 親子関係と受験の関係
 
 麻里（第6話）に続き、この回では各生徒の家庭環境が成績に影響することが改めて描かれます。「受験生の家庭の10カ条」（第4話）の文脈とつながる重要な回です。
@@ -85,6 +87,10 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 > 「夏で差がつくんじゃない。夏の使い方で、秋以降の自分が変わるんだ。」
 
 > 「受験は最後は一人だ。しかし、一人で戦えるようにするのが俺の仕事だ。」
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CQDZZYbs7UQ/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%;"><a href="https://www.instagram.com/p/CQDZZYbs7UQ/" target="_blank" rel="noopener noreferrer">Instagramで見る</a></blockquote>
+
+<script async src="//www.instagram.com/embed.js"></script>
 
 ---
 

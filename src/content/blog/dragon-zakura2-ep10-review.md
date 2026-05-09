@@ -58,6 +58,10 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 
 偏差値30台からの逆転合格を果たした麻里が合格番号を見つけた瞬間。暴力的な父の支配から自分の力で抜け出した麻里の成長が、一枚の合格通知書に凝縮されていました。「もらい泣きした」という声が続出した最終回屈指の名場面です。
 
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CQc9ll8MPY3/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%;"><a href="https://www.instagram.com/p/CQc9ll8MPY3/" target="_blank" rel="noopener noreferrer">Instagramで見る</a></blockquote>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
 ### 藤井の不合格と前を向く姿
 
 > 「俺は来年、もう一度受ける。」

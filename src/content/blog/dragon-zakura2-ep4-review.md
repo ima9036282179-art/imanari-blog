@@ -79,6 +79,10 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-exam.jpg'
 
 「考えずに感覚で解答できるレベルまで習熟させる」ことで、「数の暗黙知」を鍛えます。基礎を極限まで固めることで、難問にも動じない計算力の土台をつくる指導法です。
 
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CO70ExJsMxt/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%;"><a href="https://www.instagram.com/p/CO70ExJsMxt/" target="_blank" rel="noopener noreferrer">Instagramで見る</a></blockquote>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
 ---
 
 ## 桜木の名言（第4話）
