@@ -98,7 +98,7 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 
 <div class="quote-share-card">
   <p class="quote-share-text">「負けるのが怖くて、<br>本当の勝負から逃げてきた。」</p>
-  <p class="quote-share-from">藤井遼 — 第2話</p>
+  <p class="quote-share-from">藤井遼</p>
 </div>
 
 これは藤井自身の言葉。「できる人間」でさえ、孤独な恐怖を抱えていた。一人で怖がっているのは自分だけじゃない。
