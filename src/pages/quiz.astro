@@ -29,27 +29,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     </div>
 
     <div id="resultContainer" style="display:none">
-      <div class="result-card" id="resultCard">
-        <p class="result-label">あなたのタイプは…</p>
-        <h2 class="result-name" id="resultName"></h2>
-        <p class="result-emoji" id="resultEmoji"></p>
-        <p class="result-desc" id="resultDesc"></p>
-        <div class="result-tip-box">
-          <p class="result-tip-title">✏️ あなたに合った勉強法</p>
-          <p class="result-tip" id="resultTip"></p>
-        </div>
-        <div class="result-quote-box">
-          <p class="result-quote" id="resultQuote"></p>
-          <p class="result-quote-from">— 桜木建二（ドラゴン桜2）</p>
-        </div>
-        <button id="retryBtn" class="quiz-retry-btn">もう一度診断する</button>
-        <div class="result-share">
-          <p class="result-share-label">結果をシェアする</p>
-          <div class="result-share-btns">
-            <button id="shareX" class="share-btn share-x">𝕏 でシェア</button>
-          </div>
-        </div>
-      </div>
+      <div id="resultCard"></div>
     </div>
 
     <div class="quiz-related">
@@ -153,41 +133,116 @@ const results = {
     name: "岩崎楓タイプ",
     emoji: "🏸",
     actor: "（平手友梨奈）",
-    desc: "目標に向かって走る「逆転ランナー」。迷いや不安を抱えながらも、追い詰められたときに本領を発揮します。傷つきやすいからこそ、誰よりも深く前に進める力を持っています。",
-    tip: "「なぜ勉強するのか」という動機を紙に書いて貼っておきましょう。迷いが生じたときに動機に立ち返ることが、あなたの最大の武器になります。",
+    desc: "目標に向かって走る「逆転ランナー」。迷いや不安を抱えながらも、追い詰められたときに本領を発揮します。傷つきやすいからこそ、誰よりも深く共感し、前に進める力を持っています。",
+    traits: [
+      "崖っぷちに追い詰められてから、本当の集中力が発動する",
+      "迷いや不安を抱えながらも諦めずに走り続けられる",
+      "傷ついた経験があるからこそ、他者の痛みに深く共感できる",
+      "一度「やる」と決めたら、誰にも止められない強さがある",
+    ],
+    strength: "極限状態での爆発的な集中力と、絶対に諦めない粘り強さ",
+    caution: "「どうせ自分には無理」という自己否定が、行動を起こす前に邪魔をしやすい",
+    studyTips: [
+      { title: "動機の可視化", detail: "「なぜ勉強するのか」を紙に書いて目の届く場所に貼る。迷いが生じたとき動機に立ち返ることが、あなたの最大の武器になる。" },
+      { title: "締め切り駆動学習", detail: "試験日から逆算して週単位のタスクを設定する。「今週ここまで」という締め切りが、あなたの集中スイッチを入れてくれる。" },
+      { title: "感情日記をつける", detail: "モチベーションが上がった瞬間・下がった瞬間を短くメモする。パターンがわかると、自分でスイッチを入れる方法が見えてくる。" },
+      { title: "意識的なリセット時間", detail: "頑張りすぎて燃え尽きるのがこのタイプの落とし穴。週に1日「勉強しない日」を予定に入れ、長期戦を戦い抜く体力を残す。" },
+    ],
     quote: "どうするかはお前が決めろ。",
+    articleUrl: "blog/dragon-zakura2-kaede-deep/",
+    articleLabel: "岩崎楓の記事を読む",
   },
   kenta: {
     name: "原健太タイプ",
     emoji: "🐛",
     actor: "（細田佳央太）",
-    desc: "独自の才能を持つ「異才」。人とは違う視点と記憶力を持ち、得意なことに徹底的に深掘りします。「変わってる」は最大の武器——自分らしさを捨てないでください。",
-    tip: "好きなことと勉強を結びつける「連想記憶法」が効果的です。虫が好きな健太が図鑑的知識で数学を解いたように、あなたの「好き」を学習に活かしましょう。",
+    desc: "独自の才能を持つ「異才」。人とは違う視点と圧倒的な記憶力を持ち、好きなことに徹底的に深掘りします。「変わってる」は弱点ではなく、最大の武器です。",
+    traits: [
+      "人が気づかない視点から問題を解くオリジナルな発想力がある",
+      "好きなことへの集中力は誰にも負けない。深掘りが得意",
+      "連想記憶が強い。興味と結びついた知識は絶対に忘れない",
+      "マイペースに見えるが、内側に強い「自分の世界」を持っている",
+    ],
+    strength: "「好き」と学習を結びつけることで生まれる、圧倒的な記憶定着力",
+    caution: "興味のない分野はどうしてもやる気が出ず、勉強にムラが生まれやすい",
+    studyTips: [
+      { title: "連想記憶法", detail: "好きなことと学習内容を意識的に結びつける。健太が虫の知識で数学を解いたように、あなたの「好き」が最強の記憶術になる。" },
+      { title: "図解・マインドマップ", detail: "情報をテキストではなく「図」で整理する。視覚的に関係性をつなぐことで、あなたの連想力が一気に発揮される。" },
+      { title: "「なぜ？」から始める探究学習", detail: "教科書を読み進める前に、まず「なぜこうなる？」と疑問を立てる。好奇心が入口になると、勉強が自然と続く。" },
+      { title: "1テーマ深掘り→拡張法", detail: "1つのテーマを徹底的に調べてから周辺知識に広げる。興味の芽を育てながら、自然と試験範囲をカバーしていく。" },
+    ],
     quote: "生きてるだけで迷惑なんて誰にも言わせんなよ。",
+    articleUrl: "blog/dragon-zakura2-kenta-deep/",
+    articleLabel: "原健太の記事を読む",
   },
   mari: {
     name: "小杉麻里タイプ",
     emoji: "🌸",
     actor: "（志田彩良）",
-    desc: "仲間と共に輝く「絆の人」。周囲の影響を強く受けますが、信頼できる仲間がいると爆発的な力を発揮します。環境を選ぶことが、あなたの成績を最も大きく変えます。",
-    tip: "一人で黙々と勉強するより、勉強仲間や勉強カフェなど「勉強する人がいる環境」に身を置くのが効果的です。環境が変わると、あなたは変わります。",
+    desc: "仲間と共に輝く「絆の人」。周囲の影響を強く受けますが、信頼できる仲間がいると爆発的な力を発揮します。環境を選ぶことが、あなたの成績を最も大きく変える鍵です。",
+    traits: [
+      "周囲の雰囲気や仲間の存在が、直接パフォーマンスに影響する",
+      "共感力が高く、人の気持ちを読み取るのが得意",
+      "言葉や文章に強く動かされる。物語やエピソードで覚えるタイプ",
+      "信頼できる仲間がいると、自分でも驚くほどの力が出せる",
+    ],
+    strength: "仲間・環境・言葉の力を最大に活かせたとき、誰よりも高く跳べる",
+    caution: "一人だとモチベーションが続きにくい。孤立した環境は天敵",
+    studyTips: [
+      { title: "勉強仲間を作る", detail: "同じ目標を持つ人と「一緒に頑張る」関係を作る。オンライン勉強会でもSNSの勉強仲間でも、誰かと繋がるだけで続き方が変わる。" },
+      { title: "環境で行動を変える", detail: "自宅より、カフェ・図書館・コワーキングスペースなど「勉強している人がいる場所」へ。環境を変えるだけで、あなたは自然と勉強モードになる。" },
+      { title: "声に出す・人に説明する", detail: "覚えたいことを声に出して読む、あるいは誰かに説明する。音読・解説アウトプットはこのタイプの記憶定着に特に効果が高い。" },
+      { title: "「宣言」でスイッチを入れる", detail: "「○月に試験を受ける」と誰かに話す（宣言効果）。他者の目が入ることで、あなたの責任感と行動力が一気に高まる。" },
+    ],
     quote: "お前たちが書いた文章が、麻里を動かした。これが言葉の力だ。",
+    articleUrl: "blog/dragon-zakura2-characters/",
+    articleLabel: "東大専科キャラクター記事を読む",
   },
   fujii: {
     name: "藤井遼タイプ",
     emoji: "📐",
     actor: "（鈴鹿央士）",
-    desc: "本気になれば無敵の「実力者」。高い分析力とプライドを持ちますが、失敗を恐れて本気を出せないことがあります。その壁を越えたとき、あなたは本当に強くなります。",
-    tip: "「本気でやって失敗したら怖い」という気持ちに正直になりましょう。まず結果を気にせず小さな挑戦を繰り返すことで、本気を出すことへの恐怖が薄れていきます。",
+    desc: "本気になれば無敵の「実力者」。高い分析力とプライドを持ちますが、失敗を恐れて本気を出せないことがあります。その壁を自分で壊せたとき、あなたは本当に強くなります。",
+    traits: [
+      "論理的な思考と高い分析力を持ち、問題の構造を見抜くのが得意",
+      "本気を出すことへの恐怖がある——失敗を恐れるからこそ実力を隠す",
+      "プライドが高く、完璧にできない自分を認めることが難しい",
+      "一度壁を越えると、誰よりも高い集中力と成果を出せる潜在能力がある",
+    ],
+    strength: "本気モードに入ったときの圧倒的な集中力と、細部まで分析する論理的思考力",
+    caution: "「本気でやって失敗したくない」という恐怖が、実力を封印してしまう",
+    studyTips: [
+      { title: "小さな挑戦から本気の練習", detail: "失敗していい「練習問題」で本気を出す習慣をつける。ミスを重ねながら、本気を出す恐怖を少しずつ薄れさせていく。" },
+      { title: "ミス分析ノート", detail: "間違えた問題を「なぜ間違えたか」まで必ず分析して記録する。あなたの分析力はこの作業で最大に活きる。弱点がパターン化されると自信に変わる。" },
+      { title: "タイムトライアル式演習", detail: "時間制限をつけて解く練習を日常的に取り入れる。「完璧な答えではなく、制限時間内に出せる答え」を意識することで、完璧主義を崩せる。" },
+      { title: "「途中でやめる許可」を自分に出す", detail: "全部やり切れなくてもいい日を意識的に作る。完璧にやらない日があっても継続は崩れない、という体験を積み重ねることが鍵。" },
+    ],
     quote: "本気になるのが怖いのは、本気でやって失敗したくないからだ。",
+    articleUrl: "blog/dragon-zakura2-fujii-deep/",
+    articleLabel: "藤井遼の記事を読む",
   },
   seto: {
     name: "瀬戸輝タイプ",
     emoji: "🔥",
     actor: "（髙橋海人）",
-    desc: "責任感で本気になれる「リーダー」。誰かのため・何かのためという使命感がエンジンになります。ただし一人で抱え込む傾向があるので、頼ることも強さと心得て。",
-    tip: "「誰かのために」という動機を明確にすることが、あなたの最大のモチベーション源です。勉強の目的を「誰かへの貢献」と結びつけると、ブレにくくなります。",
+    desc: "責任感で本気になれる「リーダー」。誰かのため・何かのためという使命感がエンジンになります。ただし一人で抱え込みすぎて燃え尽きやすいので、他者に頼ることも強さと心得て。",
+    traits: [
+      "「誰かのために」という使命感が、本気を引き出す最大のエンジン",
+      "行動力と度胸がある。リスクを取って動ける覚悟がある",
+      "責任感が強く、任されたことは最後まで諦めない",
+      "一人で抱え込む傾向があり、限界まで頑張りすぎる",
+    ],
+    strength: "責任と使命感が揃ったとき、誰よりも力強く動き続けられる実行力",
+    caution: "抱え込んで燃え尽きやすい。「頼る」ことを弱さと感じてしまう",
+    studyTips: [
+      { title: "「誰かのため」動機設定", detail: "「この資格を取ったら○○に貢献できる」という貢献先を明確にする。あなたは目的が「自分だけ」より「誰かのため」の方が圧倒的に強くなれる。" },
+      { title: "公言・宣言で退路を断つ", detail: "「○月○日に受験する」と周囲に宣言する。責任感の強いあなたには、この宣言が最強の行動トリガーになる。" },
+      { title: "教え合い勉強法", detail: "誰かに教えることで、自分の知識の穴が見えてくる（テスト効果）。リーダーシップを発揮しながら、同時に自分の理解も深めるこの方法はあなたに最適。" },
+      { title: "「手放し時間」を予定に入れる", detail: "週に1度、意識的に勉強しない時間を作る。「頑張らない時間」を予定に組み込むことで燃え尽きを防ぎ、長期戦で安定したパフォーマンスを維持できる。" },
+    ],
     quote: "もっと人を頼れ。",
+    articleUrl: "blog/dragon-zakura2-characters/",
+    articleLabel: "東大専科キャラクター記事を読む",
   },
 };
 
@@ -243,11 +298,75 @@ function showResult() {
   document.getElementById('quizContainer')!.style.display = 'none';
   const rc = document.getElementById('resultContainer')!;
   rc.style.display = 'block';
-  document.getElementById('resultName')!.textContent = r.name + ' ' + r.actor;
-  document.getElementById('resultEmoji')!.textContent = r.emoji;
-  document.getElementById('resultDesc')!.textContent = r.desc;
-  document.getElementById('resultTip')!.textContent = r.tip;
-  document.getElementById('resultQuote')!.textContent = '「' + r.quote + '」';
+
+  const base = '/imanari-blog/';
+
+  document.getElementById('resultCard')!.innerHTML = `
+    <div class="result-card">
+      <p class="result-label">あなたのタイプは…</p>
+      <div class="result-header">
+        <p class="result-emoji-big">${r.emoji}</p>
+        <div>
+          <h2 class="result-name">${r.name}</h2>
+          <p class="result-actor">${r.actor}</p>
+        </div>
+      </div>
+      <p class="result-desc">${r.desc}</p>
+
+      <div class="result-section">
+        <h3 class="result-section-title">🔍 このタイプの特徴</h3>
+        <ul class="result-traits-list">
+          ${r.traits.map(t => `<li>${t}</li>`).join('')}
+        </ul>
+        <div class="result-meta-row">
+          <span class="meta-badge badge-strength">強み</span>
+          <span class="meta-text">${r.strength}</span>
+        </div>
+        <div class="result-meta-row">
+          <span class="meta-badge badge-caution">注意</span>
+          <span class="meta-text">${r.caution}</span>
+        </div>
+      </div>
+
+      <div class="result-section">
+        <h3 class="result-section-title">✏️ あなたに合った勉強法</h3>
+        <div class="study-tips-grid">
+          ${r.studyTips.map((tip, i) => `
+            <div class="study-tip-card">
+              <p class="study-tip-num">0${i + 1}</p>
+              <p class="study-tip-title">${tip.title}</p>
+              <p class="study-tip-detail">${tip.detail}</p>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <div class="result-quote-box">
+        <p class="result-quote">「${r.quote}」</p>
+        <p class="result-quote-from">— 桜木建二（ドラゴン桜2）</p>
+      </div>
+
+      <a href="${base}${r.articleUrl}" class="result-article-link">→ ${r.articleLabel}</a>
+
+      <div class="result-actions">
+        <button id="retryBtn" class="quiz-retry-btn">もう一度診断する</button>
+        <div class="result-share">
+          <p class="result-share-label">結果をシェアする</p>
+          <div class="result-share-btns">
+            <button id="shareX" class="share-btn share-x">𝕏 でシェア</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('retryBtn')!.addEventListener('click', () => {
+    current = 0;
+    answers.fill('');
+    document.getElementById('resultContainer')!.style.display = 'none';
+    document.getElementById('quizContainer')!.style.display = 'block';
+    renderQuestion();
+  });
 
   document.getElementById('shareX')!.addEventListener('click', () => {
     const text = `私は「${r.name}」タイプでした！${r.emoji}\nドラゴン桜2 キャラ診断`;
@@ -267,14 +386,6 @@ document.getElementById('nextBtn')!.addEventListener('click', () => {
 
 document.getElementById('prevBtn')!.addEventListener('click', () => {
   if (current > 0) { current--; renderQuestion(); }
-});
-
-document.getElementById('retryBtn')!.addEventListener('click', () => {
-  current = 0;
-  answers.fill('');
-  document.getElementById('resultContainer')!.style.display = 'none';
-  document.getElementById('quizContainer')!.style.display = 'block';
-  renderQuestion();
 });
 
 renderQuestion();
@@ -325,24 +436,46 @@ renderQuestion();
 .quiz-btn-next:disabled { opacity: 0.4; cursor: not-allowed; }
 
 /* Result */
-.result-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 2.5rem 2rem; text-align: center; }
-.result-label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; letter-spacing: 0.05em; }
-.result-name { font-family: 'Noto Serif JP', serif; font-size: 1.6rem; font-weight: 900; color: var(--accent); margin: 0 0 0.5rem; }
-.result-emoji { font-size: 3.5rem; margin: 0.5rem 0 1rem; }
-.result-desc { color: var(--text); font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.5rem; text-align: left; }
+.result-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 2.5rem 2rem; }
+.result-label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem; letter-spacing: 0.05em; text-align: center; }
 
-.result-tip-box { background: rgba(220,38,38,0.06); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; margin-bottom: 1.5rem; text-align: left; }
-.result-tip-title { font-weight: 700; font-size: 0.9rem; color: var(--accent); margin-bottom: 0.4rem; }
-.result-tip { font-size: 0.9rem; color: var(--text); line-height: 1.8; margin: 0; }
+.result-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+.result-emoji-big { font-size: 3.5rem; line-height: 1; margin: 0; }
+.result-name { font-family: 'Noto Serif JP', serif; font-size: 1.5rem; font-weight: 900; color: var(--accent); margin: 0 0 0.2rem; }
+.result-actor { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
 
-.result-quote-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+.result-desc { color: var(--text); font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.75rem; }
+
+.result-section { background: rgba(0,0,0,0.02); border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; }
+.result-section-title { font-size: 0.9rem; font-weight: 700; color: var(--accent); margin: 0 0 0.85rem; }
+
+.result-traits-list { margin: 0 0 1rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.45rem; }
+.result-traits-list li { font-size: 0.9rem; color: var(--text); line-height: 1.7; }
+
+.result-meta-row { display: flex; align-items: flex-start; gap: 0.6rem; margin-top: 0.5rem; }
+.meta-badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 99px; font-size: 0.72rem; font-weight: 700; white-space: nowrap; flex-shrink: 0; margin-top: 0.1rem; }
+.badge-strength { background: rgba(22,163,74,0.12); color: #166534; }
+.badge-caution { background: rgba(234,88,12,0.12); color: #9a3412; }
+.meta-text { font-size: 0.88rem; color: var(--text); line-height: 1.7; }
+
+.study-tips-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.study-tip-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; }
+.study-tip-num { font-size: 1.4rem; font-weight: 900; color: var(--accent); opacity: 0.25; line-height: 1; margin: 0 0 0.3rem; font-family: 'Noto Serif JP', serif; }
+.study-tip-title { font-size: 0.88rem; font-weight: 700; color: var(--text); margin: 0 0 0.4rem; }
+.study-tip-detail { font-size: 0.82rem; color: var(--text-muted); line-height: 1.75; margin: 0; }
+
+.result-quote-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; text-align: center; }
 .result-quote { font-size: 1rem; font-weight: 700; color: var(--text); font-style: italic; margin-bottom: 0.3rem; }
 .result-quote-from { font-size: 0.75rem; color: var(--text-muted); margin: 0; }
 
-.quiz-retry-btn { background: var(--bg-card); border: 2px solid var(--border); color: var(--text); padding: 0.65rem 2rem; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 0.9rem; margin-bottom: 1.5rem; font-family: 'Noto Sans JP', sans-serif; transition: border-color 0.15s; }
+.result-article-link { display: block; text-align: center; padding: 0.7rem; background: rgba(220,38,38,0.06); border: 1px solid rgba(220,38,38,0.2); border-radius: 10px; color: var(--accent); font-size: 0.9rem; font-weight: 700; text-decoration: none; margin-bottom: 1.5rem; transition: background 0.15s; }
+.result-article-link:hover { background: rgba(220,38,38,0.12); }
+
+.result-actions { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+.quiz-retry-btn { background: var(--bg-card); border: 2px solid var(--border); color: var(--text); padding: 0.65rem 2rem; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 0.9rem; font-family: 'Noto Sans JP', sans-serif; transition: border-color 0.15s; }
 .quiz-retry-btn:hover { border-color: var(--accent); }
 
-.result-share { margin-top: 0.5rem; }
+.result-share { text-align: center; }
 .result-share-label { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; }
 .result-share-btns { display: flex; justify-content: center; gap: 0.5rem; }
 .share-btn { padding: 0.6rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; border: none; font-family: 'Noto Sans JP', sans-serif; }
@@ -360,5 +493,8 @@ renderQuestion();
   .question-text { font-size: 1rem; }
   .quiz-btn { padding: 0.7rem 1.2rem; font-size: 0.85rem; }
   .result-name { font-size: 1.3rem; }
+  .study-tips-grid { grid-template-columns: 1fr; }
+  .result-header { gap: 0.75rem; }
+  .result-emoji-big { font-size: 2.75rem; }
 }
 </style>
