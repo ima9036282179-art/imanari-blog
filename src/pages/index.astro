@@ -51,8 +51,9 @@ const seriesLinks = [
   { label: '資格', tag: '資格', emoji: '🏆', desc: 'TOEIC・宅建・FP・簿記' },
 ];
 const catCounts = posts.reduce((acc, p) => {
-  const c = p.data.category;
-  if (c) acc[c] = (acc[c] || 0) + 1;
+  for (const t of p.data.tags ?? []) {
+    acc[t] = (acc[t] || 0) + 1;
+  }
   return acc;
 }, {} as Record<string, number>);
 ---
