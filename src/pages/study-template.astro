@@ -1,0 +1,270 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+
+<BaseLayout
+  title="無料 勉強計画テンプレート｜印刷して使える桜木式シート【ドラゴン桜2】"
+  description="桜木建二メソッドをベースにした勉強計画テンプレート。週間スケジュール・目標設定シート・振り返りシートを無料で印刷できます。"
+>
+  <div class="template-page">
+    <div class="template-hero">
+      <p class="template-label">📋 無料ダウンロード</p>
+      <h1 class="template-title">桜木式 勉強計画<br>テンプレート</h1>
+      <p class="template-desc">ブラウザ上で記入して印刷できます。スマホからも使えます。</p>
+      <button class="print-btn" onclick="window.print()">🖨 印刷する</button>
+    </div>
+
+    <!-- タブ切替 -->
+    <div class="template-tabs" id="templateTabs">
+      <button class="tab-btn active" data-tab="goal">目標設定シート</button>
+      <button class="tab-btn" data-tab="weekly">週間計画シート</button>
+      <button class="tab-btn" data-tab="review">振り返りシート</button>
+    </div>
+
+    <!-- 目標設定シート -->
+    <div class="template-sheet" id="tab-goal">
+      <div class="sheet-header">
+        <h2>🎯 目標設定シート</h2>
+        <p class="sheet-subtitle">桜木建二式「なぜ・いつまでに・何を」の設計</p>
+      </div>
+      <div class="sheet-body">
+        <div class="sheet-block">
+          <label class="sheet-label">なぜ、この勉強をするのか（自分の言葉で）</label>
+          <textarea class="sheet-input tall" placeholder="例：転職で年収を上げたい。家族に安心してほしい。自分への挑戦として…"></textarea>
+        </div>
+        <div class="sheet-row-2">
+          <div class="sheet-block">
+            <label class="sheet-label">達成したい目標</label>
+            <input type="text" class="sheet-input" placeholder="例：TOEIC 800点" />
+          </div>
+          <div class="sheet-block">
+            <label class="sheet-label">期限（試験日・締め切り）</label>
+            <input type="text" class="sheet-input" placeholder="例：2026年10月19日" />
+          </div>
+        </div>
+        <div class="sheet-block">
+          <label class="sheet-label">残り日数・必要な学習時間（概算）</label>
+          <div class="sheet-row-3">
+            <div class="sheet-calc-item">
+              <input type="text" class="sheet-input small" placeholder="今日から" />
+              <span class="sheet-unit">日間</span>
+            </div>
+            <div class="sheet-calc-item">
+              <input type="text" class="sheet-input small" placeholder="合計" />
+              <span class="sheet-unit">時間必要</span>
+            </div>
+            <div class="sheet-calc-item">
+              <input type="text" class="sheet-input small" placeholder="1日あたり" />
+              <span class="sheet-unit">時間</span>
+            </div>
+          </div>
+        </div>
+        <div class="sheet-block">
+          <label class="sheet-label">月別マイルストーン（3〜6ヶ月先まで）</label>
+          <div class="milestone-grid">
+            {['1ヶ月後', '2ヶ月後', '3ヶ月後', '4ヶ月後', '5ヶ月後', '試験直前'].map(m => (
+              <div class="milestone-item">
+                <span class="ms-label">{m}</span>
+                <input type="text" class="sheet-input" placeholder="この時点での状態" />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="sheet-block">
+          <label class="sheet-label">桜木への宣言（達成したら何をするか）</label>
+          <input type="text" class="sheet-input" placeholder="例：合格したら家族においしいものを食べさせる" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 週間計画シート -->
+    <div class="template-sheet hidden" id="tab-weekly">
+      <div class="sheet-header">
+        <h2>📅 週間勉強計画シート</h2>
+        <p class="sheet-subtitle">1日1時間の設計でOK。空白の日も記録に残す</p>
+      </div>
+      <div class="sheet-body">
+        <div class="sheet-row-2">
+          <div class="sheet-block">
+            <label class="sheet-label">対象週</label>
+            <input type="text" class="sheet-input" placeholder="例：5月13日〜5月19日" />
+          </div>
+          <div class="sheet-block">
+            <label class="sheet-label">今週の目標</label>
+            <input type="text" class="sheet-input" placeholder="例：単語帳50ページを2周" />
+          </div>
+        </div>
+        <div class="weekly-grid">
+          {['月', '火', '水', '木', '金', '土', '日'].map(day => (
+            <div class="weekly-day">
+              <p class="wd-label">{day}</p>
+              <input type="text" class="sheet-input small" placeholder="勉強内容" />
+              <div class="wd-time">
+                <input type="text" class="sheet-input tiny" placeholder="0" />
+                <span class="sheet-unit">分</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="sheet-row-2">
+          <div class="sheet-block">
+            <label class="sheet-label">今週の合計勉強時間</label>
+            <div class="sheet-calc-item">
+              <input type="text" class="sheet-input small" placeholder="0" />
+              <span class="sheet-unit">分</span>
+            </div>
+          </div>
+          <div class="sheet-block">
+            <label class="sheet-label">今週の目標達成度</label>
+            <div class="rate-btns">
+              {['20%', '40%', '60%', '80%', '100%'].map(r => (
+                <button class="rate-btn" onclick="this.classList.toggle('active')">{r}</button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 振り返りシート -->
+    <div class="template-sheet hidden" id="tab-review">
+      <div class="sheet-header">
+        <h2>🔄 振り返りシート</h2>
+        <p class="sheet-subtitle">週末・月末に5分で記入。成長の記録が自信になる</p>
+      </div>
+      <div class="sheet-body">
+        <div class="sheet-block">
+          <label class="sheet-label">振り返り期間</label>
+          <input type="text" class="sheet-input" placeholder="例：2026年5月第1週 / 5月全体" />
+        </div>
+        <div class="sheet-block">
+          <label class="sheet-label">できたこと・続けられたこと（桜木に報告する気持ちで）</label>
+          <textarea class="sheet-input tall" placeholder="例：毎朝15分の単語カード習慣を7日継続できた"></textarea>
+        </div>
+        <div class="sheet-block">
+          <label class="sheet-label">うまくいかなかったこと・原因</label>
+          <textarea class="sheet-input" placeholder="例：水曜日に残業で0分になった → 翌日に10分だけ補填するルールに変える"></textarea>
+        </div>
+        <div class="sheet-block">
+          <label class="sheet-label">次の期間でやること（1つだけ決める）</label>
+          <input type="text" class="sheet-input" placeholder="例：リスニングを週3回15分追加する" />
+        </div>
+        <div class="sheet-block">
+          <label class="sheet-label">今の自分に桜木建二の言葉を当てはめるなら</label>
+          <input type="text" class="sheet-input" placeholder="例：「逆転は、いつだって可能だ。ただし、今から始めた奴だけにな。」" />
+        </div>
+        <div class="review-score">
+          <p class="sheet-label">今月の自己採点</p>
+          <div class="score-stars" id="scoreStars">
+            {[1,2,3,4,5].map(n => (
+              <button class="star-btn" data-score={n}>★</button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="template-note no-print">
+      <p>※ 入力内容はブラウザ上にのみ表示されます。保存・送信はされません。印刷ボタンで紙に出力してご利用ください。</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+// タブ切替
+document.querySelectorAll<HTMLButtonElement>('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.template-sheet').forEach(s => s.classList.add('hidden'));
+    btn.classList.add('active');
+    const id = 'tab-' + btn.dataset.tab;
+    document.getElementById(id)?.classList.remove('hidden');
+  });
+});
+
+// 星評価
+document.querySelectorAll<HTMLButtonElement>('.star-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const score = Number(btn.dataset.score);
+    document.querySelectorAll('.star-btn').forEach((b, i) => {
+      b.classList.toggle('active', i < score);
+    });
+  });
+});
+</script>
+
+<style is:global>
+.template-page { max-width: 760px; margin: 0 auto; padding: 2rem 0 5rem; }
+
+.template-hero { text-align: center; margin-bottom: 2rem; }
+.template-label { font-size: 0.85rem; color: var(--accent); font-weight: 700; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.template-title { font-family: 'Noto Serif JP', serif; font-size: 2rem; font-weight: 900; line-height: 1.4; margin: 0 0 0.75rem; color: var(--text); }
+.template-desc { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem; }
+
+.print-btn { padding: 0.7rem 2rem; background: linear-gradient(135deg, #450A0A, #DC2626); color: #fff; border: none; border-radius: 10px; font-weight: 700; font-size: 0.95rem; cursor: pointer; font-family: 'Noto Sans JP', sans-serif; }
+
+.template-tabs { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.tab-btn { padding: 0.55rem 1.1rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-muted); font-size: 0.85rem; font-weight: 700; cursor: pointer; font-family: 'Noto Sans JP', sans-serif; transition: all 0.15s; }
+.tab-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tab-btn:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
+
+.template-sheet { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+.template-sheet.hidden { display: none; }
+
+.sheet-header { background: linear-gradient(135deg, #450A0A, #7F1D1D); padding: 1.25rem 1.5rem; }
+.sheet-header h2 { font-family: 'Noto Serif JP', serif; font-size: 1.15rem; font-weight: 900; color: #fff; margin: 0 0 0.25rem; }
+.sheet-subtitle { font-size: 0.8rem; color: rgba(255,255,255,0.7); margin: 0; }
+
+.sheet-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+.sheet-block { display: flex; flex-direction: column; gap: 0.4rem; }
+.sheet-label { font-size: 0.82rem; font-weight: 700; color: var(--text); }
+.sheet-input { width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); font-size: 0.88rem; font-family: 'Noto Sans JP', sans-serif; resize: none; }
+.sheet-input:focus { outline: none; border-color: var(--accent); }
+.sheet-input.tall { min-height: 80px; }
+.sheet-input.small { width: 80px; }
+.sheet-input.tiny { width: 56px; }
+
+.sheet-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.sheet-row-3 { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.sheet-calc-item { display: flex; align-items: center; gap: 0.4rem; }
+.sheet-unit { font-size: 0.82rem; color: var(--text-muted); white-space: nowrap; }
+
+.milestone-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.milestone-item { display: flex; flex-direction: column; gap: 0.3rem; }
+.ms-label { font-size: 0.75rem; font-weight: 700; color: var(--accent); }
+
+.weekly-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; }
+.weekly-day { display: flex; flex-direction: column; gap: 0.3rem; align-items: center; }
+.wd-label { font-size: 0.8rem; font-weight: 900; color: var(--text); text-align: center; }
+.wd-time { display: flex; align-items: center; gap: 0.2rem; }
+
+.rate-btns { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+.rate-btn { padding: 0.3rem 0.6rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; background: var(--bg); color: var(--text-muted); font-family: 'Noto Sans JP', sans-serif; transition: all 0.15s; }
+.rate-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.score-stars { display: flex; gap: 0.3rem; }
+.star-btn { font-size: 1.5rem; background: none; border: none; cursor: pointer; color: var(--border); transition: color 0.15s, transform 0.1s; line-height: 1; }
+.star-btn.active { color: #F59E0B; }
+.star-btn:active { transform: scale(1.2); }
+
+.template-note { margin-top: 1rem; padding: 0.75rem 1rem; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border); }
+.template-note p { font-size: 0.78rem; color: var(--text-muted); margin: 0; }
+
+/* 印刷スタイル */
+@media print {
+  .no-print, .template-tabs, .print-btn, .template-hero p, .template-hero .template-label { display: none !important; }
+  .template-sheet.hidden { display: block !important; }
+  .template-page { padding: 0; }
+  .sheet-header { background: #450A0A !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .template-sheet { break-inside: avoid; margin-bottom: 2rem; }
+  body { background: #fff !important; }
+}
+
+@media (max-width: 600px) {
+  .sheet-row-2 { grid-template-columns: 1fr; }
+  .milestone-grid { grid-template-columns: 1fr 1fr; }
+  .weekly-grid { grid-template-columns: repeat(4, 1fr); }
+  .template-title { font-size: 1.6rem; }
+}
+</style>
