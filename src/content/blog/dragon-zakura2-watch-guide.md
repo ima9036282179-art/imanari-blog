@@ -2,7 +2,7 @@
 title: 'ドラゴン桜2 どこで見れる？無料・有料の視聴方法まとめ【2026年版】'
 description: 'ドラゴン桜2を見たい方向けに、配信サービス・DVD・無料視聴の方法を徹底比較。TBS・Paravi・Amazon Prime・U-NEXTなど最新の視聴情報をまとめました。'
 pubDate: '2026-05-14'
-tags: ['ドラゴン桜2', '視聴方法', '配信', '動画']
+tags: ['ドラゴン桜2', '視聴方法', '配信', '動画', '比較・解説']
 category: '比較・解説'
 eyecatch: '/imanari-blog/images/thumbnails/thumb-tv.jpg'
 ---

@@ -2,7 +2,7 @@
 title: 'TOEIC 800点を目指す人の桜木式3ヶ月プラン｜社会人向け完全ガイド'
 description: 'TOEIC 800点突破に必要な勉強量・参考書・スケジュールを桜木建二メソッドで設計。忙しい社会人でも1日1時間、3ヶ月で200点アップを目指せる実践プランを解説します。'
 pubDate: '2026-05-17'
-tags: ['TOEIC', '英語', '勉強法', '社会人', '資格']
+tags: ['TOEIC', '英語', '勉強法', '社会人', '資格', '比較・解説']
 category: '比較・解説'
 eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
