@@ -1,0 +1,351 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+
+<BaseLayout
+  title="あなたは東大専科の誰タイプ？勉強スタイル診断【ドラゴン桜2】"
+  description="8つの質問に答えるだけで、ドラゴン桜2の東大専科キャラクターからあなたの勉強タイプがわかります。楓・健太・麻里・藤井・瀬戸の5タイプから診断。"
+>
+  <div class="quiz-page">
+    <div class="quiz-hero">
+      <p class="quiz-hero-label">🎬 ドラゴン桜2 キャラ診断</p>
+      <h1 class="quiz-hero-title">あなたは東大専科の<br>誰タイプ？</h1>
+      <p class="quiz-hero-desc">8つの質問に答えるだけで、あなたの勉強スタイルに最も近いキャラクターがわかります。</p>
+    </div>
+
+    <div id="quizContainer">
+      <div class="quiz-progress-wrap">
+        <div class="quiz-progress-bar" id="progressBar" style="width:0%"></div>
+      </div>
+      <p class="quiz-progress-text" id="progressText">質問 1 / 8</p>
+
+      <div id="questionArea"></div>
+
+      <div class="quiz-nav">
+        <button id="prevBtn" class="quiz-btn quiz-btn-prev" disabled>← 前へ</button>
+        <button id="nextBtn" class="quiz-btn quiz-btn-next" disabled>次へ →</button>
+      </div>
+    </div>
+
+    <div id="resultContainer" style="display:none">
+      <div class="result-card" id="resultCard">
+        <p class="result-label">あなたのタイプは…</p>
+        <h2 class="result-name" id="resultName"></h2>
+        <p class="result-emoji" id="resultEmoji"></p>
+        <p class="result-desc" id="resultDesc"></p>
+        <div class="result-tip-box">
+          <p class="result-tip-title">✏️ あなたに合った勉強法</p>
+          <p class="result-tip" id="resultTip"></p>
+        </div>
+        <div class="result-quote-box">
+          <p class="result-quote" id="resultQuote"></p>
+          <p class="result-quote-from">— 桜木建二（ドラゴン桜2）</p>
+        </div>
+        <button id="retryBtn" class="quiz-retry-btn">もう一度診断する</button>
+        <div class="result-share">
+          <p class="result-share-label">結果をシェアする</p>
+          <div class="result-share-btns">
+            <button id="shareX" class="share-btn share-x">𝕏 でシェア</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-related">
+      <h2 class="quiz-related-title">関連記事</h2>
+      <ul class="quiz-related-list">
+        <li><a href={`${base}blog/dragon-zakura2-characters/`}>ドラゴン桜2 登場人物まとめ｜キャスト・キャラクター全員解説</a></li>
+        <li><a href={`${base}blog/dragon-zakura2-study-methods/`}>ドラゴン桜2 勉強法5選｜今日から使える桜木式メソッド</a></li>
+        <li><a href={`${base}blog/dragon-zakura2-fujii-deep/`}>藤井遼が抱えていた恐怖の正体｜「できる人間」の孤独</a></li>
+        <li><a href={`${base}blog/dragon-zakura2-kaede-deep/`}>岩崎楓はなぜ変われたか｜傷を持つ人間が前に進む条件</a></li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+const questions = [
+  {
+    text: "勉強を始めるとき、あなたに一番近いのは？",
+    options: [
+      { text: "目標は決まっているが、なかなか手がつかない", type: "kaede" },
+      { text: "好きなことから始めて、気づいたら深くなっている", type: "kenta" },
+      { text: "周りの雰囲気に合わせて始める", type: "mari" },
+      { text: "完璧な計画を立ててから始めたい", type: "fujii" },
+      { text: "誰かのためになると思ったら頑張れる", type: "seto" },
+    ]
+  },
+  {
+    text: "スランプに陥ったとき、どうする？",
+    options: [
+      { text: "焦りながらも、なんとか自分を奮い立たせる", type: "kaede" },
+      { text: "別の角度から問題を眺めてみる", type: "kenta" },
+      { text: "誰かに話を聞いてもらう", type: "mari" },
+      { text: "一人で解決しようとして、追い詰められる", type: "fujii" },
+      { text: "責任があるから、とにかく踏ん張る", type: "seto" },
+    ]
+  },
+  {
+    text: "自分の一番の強みは？",
+    options: [
+      { text: "逆境に強い。追い詰められてから本領発揮する", type: "kaede" },
+      { text: "独自の発想力。人が気づかないことに気づける", type: "kenta" },
+      { text: "人の気持ちに敏感で、チームをまとめられる", type: "mari" },
+      { text: "分析力と集中力。本気になれば誰にも負けない", type: "fujii" },
+      { text: "度胸と行動力。リスクを恐れずに動ける", type: "seto" },
+    ]
+  },
+  {
+    text: "失敗したとき、どう感じる？",
+    options: [
+      { text: "落ち込むが、そこから立ち直る力がある", type: "kaede" },
+      { text: "「なぜ失敗したか」を冷静に分析する", type: "kenta" },
+      { text: "周りに申し訳なく感じてしまう", type: "mari" },
+      { text: "失敗を受け入れるのに時間がかかる", type: "fujii" },
+      { text: "「次こそ」と切り替えるのが早い", type: "seto" },
+    ]
+  },
+  {
+    text: "勉強する一番の動機に近いのは？",
+    options: [
+      { text: "夢や目標のため", type: "kaede" },
+      { text: "知ることが純粋に楽しいから", type: "kenta" },
+      { text: "大切な人を安心させたいから", type: "mari" },
+      { text: "誰にも負けたくないから", type: "fujii" },
+      { text: "将来の安定や周りへの責任のため", type: "seto" },
+    ]
+  },
+  {
+    text: "集中できる環境は？",
+    options: [
+      { text: "静かで一人になれる場所", type: "kaede" },
+      { text: "好きなものに囲まれた場所", type: "kenta" },
+      { text: "カフェや図書館など、人がいる場所", type: "mari" },
+      { text: "どんな環境でも集中できる（自信がある）", type: "fujii" },
+      { text: "少し騒がしい方が逆に集中できる", type: "seto" },
+    ]
+  },
+  {
+    text: "「無理じゃない？」と言われたら？",
+    options: [
+      { text: "一瞬ぐらつくが、意地でも頑張ろうとする", type: "kaede" },
+      { text: "「自分のやり方でやれば大丈夫」と思う", type: "kenta" },
+      { text: "不安になるが、仲間がいれば乗り越えられる", type: "mari" },
+      { text: "内心は不安でも、それを表に出さない", type: "fujii" },
+      { text: "「見てろよ」とファイトが湧く", type: "seto" },
+    ]
+  },
+  {
+    text: "一番しっくりくる言葉は？",
+    options: [
+      { text: "「迷いながらでも、前に進むことが大事」", type: "kaede" },
+      { text: "「自分だけの武器を磨け」", type: "kenta" },
+      { text: "「一人じゃできなくていい。仲間と一緒に進め」", type: "mari" },
+      { text: "「本気を出すことへの恐怖と向き合え」", type: "fujii" },
+      { text: "「責任の重さが、人を本気にさせる」", type: "seto" },
+    ]
+  },
+];
+
+const results = {
+  kaede: {
+    name: "岩崎楓タイプ",
+    emoji: "🏸",
+    actor: "（平手友梨奈）",
+    desc: "目標に向かって走る「逆転ランナー」。迷いや不安を抱えながらも、追い詰められたときに本領を発揮します。傷つきやすいからこそ、誰よりも深く前に進める力を持っています。",
+    tip: "「なぜ勉強するのか」という動機を紙に書いて貼っておきましょう。迷いが生じたときに動機に立ち返ることが、あなたの最大の武器になります。",
+    quote: "どうするかはお前が決めろ。",
+  },
+  kenta: {
+    name: "原健太タイプ",
+    emoji: "🐛",
+    actor: "（細田佳央太）",
+    desc: "独自の才能を持つ「異才」。人とは違う視点と記憶力を持ち、得意なことに徹底的に深掘りします。「変わってる」は最大の武器——自分らしさを捨てないでください。",
+    tip: "好きなことと勉強を結びつける「連想記憶法」が効果的です。虫が好きな健太が図鑑的知識で数学を解いたように、あなたの「好き」を学習に活かしましょう。",
+    quote: "生きてるだけで迷惑なんて誰にも言わせんなよ。",
+  },
+  mari: {
+    name: "小杉麻里タイプ",
+    emoji: "🌸",
+    actor: "（志田彩良）",
+    desc: "仲間と共に輝く「絆の人」。周囲の影響を強く受けますが、信頼できる仲間がいると爆発的な力を発揮します。環境を選ぶことが、あなたの成績を最も大きく変えます。",
+    tip: "一人で黙々と勉強するより、勉強仲間や勉強カフェなど「勉強する人がいる環境」に身を置くのが効果的です。環境が変わると、あなたは変わります。",
+    quote: "お前たちが書いた文章が、麻里を動かした。これが言葉の力だ。",
+  },
+  fujii: {
+    name: "藤井遼タイプ",
+    emoji: "📐",
+    actor: "（鈴鹿央士）",
+    desc: "本気になれば無敵の「実力者」。高い分析力とプライドを持ちますが、失敗を恐れて本気を出せないことがあります。その壁を越えたとき、あなたは本当に強くなります。",
+    tip: "「本気でやって失敗したら怖い」という気持ちに正直になりましょう。まず結果を気にせず小さな挑戦を繰り返すことで、本気を出すことへの恐怖が薄れていきます。",
+    quote: "本気になるのが怖いのは、本気でやって失敗したくないからだ。",
+  },
+  seto: {
+    name: "瀬戸輝タイプ",
+    emoji: "🔥",
+    actor: "（髙橋海人）",
+    desc: "責任感で本気になれる「リーダー」。誰かのため・何かのためという使命感がエンジンになります。ただし一人で抱え込む傾向があるので、頼ることも強さと心得て。",
+    tip: "「誰かのために」という動機を明確にすることが、あなたの最大のモチベーション源です。勉強の目的を「誰かへの貢献」と結びつけると、ブレにくくなります。",
+    quote: "もっと人を頼れ。",
+  },
+};
+
+let current = 0;
+const answers: string[] = new Array(questions.length).fill('');
+
+function renderQuestion() {
+  const q = questions[current];
+  const area = document.getElementById('questionArea')!;
+  const progress = ((current + 1) / questions.length) * 100;
+  (document.getElementById('progressBar') as HTMLElement).style.width = progress + '%';
+  (document.getElementById('progressText') as HTMLElement).textContent = `質問 ${current + 1} / ${questions.length}`;
+
+  area.innerHTML = `
+    <div class="question-card">
+      <p class="question-text">Q${current + 1}. ${q.text}</p>
+      <div class="options-list">
+        ${q.options.map((opt, i) => `
+          <label class="option-label ${answers[current] === opt.type ? 'selected' : ''}">
+            <input type="radio" name="q" value="${opt.type}" ${answers[current] === opt.type ? 'checked' : ''} />
+            <span>${opt.text}</span>
+          </label>
+        `).join('')}
+      </div>
+    </div>
+  `;
+
+  area.querySelectorAll('input[name="q"]').forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      answers[current] = (e.target as HTMLInputElement).value;
+      area.querySelectorAll('.option-label').forEach(l => l.classList.remove('selected'));
+      (e.target as HTMLInputElement).closest('.option-label')?.classList.add('selected');
+      (document.getElementById('nextBtn') as HTMLButtonElement).disabled = false;
+    });
+  });
+
+  (document.getElementById('prevBtn') as HTMLButtonElement).disabled = current === 0;
+  (document.getElementById('nextBtn') as HTMLButtonElement).disabled = !answers[current];
+  (document.getElementById('nextBtn') as HTMLButtonElement).textContent =
+    current === questions.length - 1 ? '結果を見る ✨' : '次へ →';
+}
+
+function showResult() {
+  const counts: Record<string, number> = { kaede: 0, kenta: 0, mari: 0, fujii: 0, seto: 0 };
+  answers.forEach(a => { if (a) counts[a]++; });
+  const type = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
+  const r = results[type as keyof typeof results];
+
+  document.getElementById('quizContainer')!.style.display = 'none';
+  const rc = document.getElementById('resultContainer')!;
+  rc.style.display = 'block';
+  document.getElementById('resultName')!.textContent = r.name + ' ' + r.actor;
+  document.getElementById('resultEmoji')!.textContent = r.emoji;
+  document.getElementById('resultDesc')!.textContent = r.desc;
+  document.getElementById('resultTip')!.textContent = r.tip;
+  document.getElementById('resultQuote')!.textContent = '「' + r.quote + '」';
+
+  document.getElementById('shareX')!.addEventListener('click', () => {
+    const text = `私は「${r.name}」タイプでした！${r.emoji}\nドラゴン桜2 キャラ診断`;
+    const url = location.href;
+    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
+  });
+}
+
+document.getElementById('nextBtn')!.addEventListener('click', () => {
+  if (current < questions.length - 1) {
+    current++;
+    renderQuestion();
+  } else {
+    showResult();
+  }
+});
+
+document.getElementById('prevBtn')!.addEventListener('click', () => {
+  if (current > 0) { current--; renderQuestion(); }
+});
+
+document.getElementById('retryBtn')!.addEventListener('click', () => {
+  current = 0;
+  answers.fill('');
+  document.getElementById('resultContainer')!.style.display = 'none';
+  document.getElementById('quizContainer')!.style.display = 'block';
+  renderQuestion();
+});
+
+renderQuestion();
+</script>
+
+<style>
+.quiz-page { max-width: 680px; margin: 0 auto; padding: 2rem 0 5rem; }
+
+.quiz-hero { text-align: center; margin-bottom: 2.5rem; }
+.quiz-hero-label { font-size: 0.85rem; color: var(--accent); font-weight: 700; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.quiz-hero-title { font-family: 'Noto Serif JP', serif; font-size: 2rem; font-weight: 900; line-height: 1.4; margin: 0 0 1rem; color: var(--text); }
+.quiz-hero-desc { color: var(--text-muted); font-size: 0.95rem; line-height: 1.8; }
+
+.quiz-progress-wrap { background: var(--border); border-radius: 99px; height: 6px; margin-bottom: 0.5rem; overflow: hidden; }
+.quiz-progress-bar { height: 100%; background: linear-gradient(90deg, #450A0A, #DC2626); border-radius: 99px; transition: width 0.4s ease; }
+.quiz-progress-text { font-size: 0.8rem; color: var(--text-muted); text-align: right; margin-bottom: 1.5rem; }
+
+.question-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; }
+.question-text { font-size: 1.1rem; font-weight: 700; color: var(--text); margin: 0 0 1.5rem; line-height: 1.6; }
+
+.options-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.option-label {
+  display: flex; align-items: flex-start; gap: 0.75rem;
+  padding: 0.875rem 1rem; border: 2px solid var(--border);
+  border-radius: 10px; cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  color: var(--text); font-size: 0.93rem; line-height: 1.5;
+}
+.option-label:hover { border-color: var(--accent); background: rgba(220,38,38,0.05); }
+.option-label.selected { border-color: var(--accent); background: rgba(220,38,38,0.08); font-weight: 700; }
+.option-label input { display: none; }
+
+.quiz-nav { display: flex; justify-content: space-between; gap: 1rem; }
+.quiz-btn { padding: 0.75rem 2rem; border-radius: 10px; font-weight: 700; font-size: 0.95rem; cursor: pointer; border: none; transition: opacity 0.15s, transform 0.1s; font-family: 'Noto Sans JP', sans-serif; }
+.quiz-btn:active { transform: scale(0.97); }
+.quiz-btn-prev { background: var(--bg-card); border: 2px solid var(--border); color: var(--text-muted); }
+.quiz-btn-prev:disabled { opacity: 0.3; cursor: not-allowed; }
+.quiz-btn-next { background: linear-gradient(135deg, #450A0A, #DC2626); color: #fff; flex: 1; }
+.quiz-btn-next:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Result */
+.result-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 2.5rem 2rem; text-align: center; }
+.result-label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; letter-spacing: 0.05em; }
+.result-name { font-family: 'Noto Serif JP', serif; font-size: 1.6rem; font-weight: 900; color: var(--accent); margin: 0 0 0.5rem; }
+.result-emoji { font-size: 3.5rem; margin: 0.5rem 0 1rem; }
+.result-desc { color: var(--text); font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.5rem; text-align: left; }
+
+.result-tip-box { background: rgba(220,38,38,0.06); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; margin-bottom: 1.5rem; text-align: left; }
+.result-tip-title { font-weight: 700; font-size: 0.9rem; color: var(--accent); margin-bottom: 0.4rem; }
+.result-tip { font-size: 0.9rem; color: var(--text); line-height: 1.8; margin: 0; }
+
+.result-quote-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; }
+.result-quote { font-size: 1rem; font-weight: 700; color: var(--text); font-style: italic; margin-bottom: 0.3rem; }
+.result-quote-from { font-size: 0.75rem; color: var(--text-muted); margin: 0; }
+
+.quiz-retry-btn { background: var(--bg-card); border: 2px solid var(--border); color: var(--text); padding: 0.65rem 2rem; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 0.9rem; margin-bottom: 1.5rem; font-family: 'Noto Sans JP', sans-serif; transition: border-color 0.15s; }
+.quiz-retry-btn:hover { border-color: var(--accent); }
+
+.result-share { margin-top: 0.5rem; }
+.result-share-label { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.result-share-btns { display: flex; justify-content: center; gap: 0.5rem; }
+.share-btn { padding: 0.6rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; border: none; font-family: 'Noto Sans JP', sans-serif; }
+.share-x { background: #000; color: #fff; }
+
+.quiz-related { margin-top: 3rem; border-top: 1px solid var(--border); padding-top: 2rem; }
+.quiz-related-title { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; }
+.quiz-related-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.quiz-related-list li::before { content: '→ '; color: var(--accent); }
+.quiz-related-list a { color: var(--text); font-size: 0.9rem; text-decoration: none; }
+.quiz-related-list a:hover { color: var(--accent); }
+
+@media (max-width: 640px) {
+  .quiz-hero-title { font-size: 1.5rem; }
+  .question-text { font-size: 1rem; }
+  .quiz-btn { padding: 0.7rem 1.2rem; font-size: 0.85rem; }
+  .result-name { font-size: 1.3rem; }
+}
+</style>
