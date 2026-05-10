@@ -4,6 +4,7 @@ description: 'Astro で作ったブログの最初の記事です。'
 pubDate: '2026-04-20'
 tags: ['はじめに', 'Astro']
 category: 'ブログ'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-books.jpg'
 ---
 
 こんにちは！このブログは [Astro](https://astro.build) で作りました。

@@ -4,6 +4,7 @@ description: 'Anthropic が開発した AI コーディングツール「Claude 
 pubDate: '2026-05-01'
 tags: ['Claude Code', 'AI', 'ツール']
 category: 'レビュー'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ---
 
 最近話題の AI コーディングツール「Claude Code」を実際に使ってみたので、感想をまとめます。

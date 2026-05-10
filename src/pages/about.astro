@@ -1,16 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+
+const posts = await getCollection('blog');
+const totalPosts = posts.length;
+const categories = [...new Set(posts.map(p => p.data.category).filter(Boolean))];
 ---
 
 <BaseLayout
-  title="このブログについて"
-  description="Dragon Blog の運営者 imanari によるブログ紹介ページ。ドラゴン桜2をテーマに、勉強法・名言・人生哲学を発信しています。"
+  title="このブログについて｜Dragon Blog"
+  description="Dragon Blog の運営者 imanari によるブログ紹介。ドラゴン桜2をテーマに勉強法・名言・人生哲学を発信。56本以上の記事・キャラ診断・名言ガチャなどコンテンツ多数。"
 >
   <article class="about-page">
+
     <header class="about-header">
-      <h1 class="about-title">このブログについて</h1>
-      <p class="about-subtitle">Dragon Blog — ドラゴン桜2から学ぶ、勉強と人生のヒント</p>
+      <p class="about-eyecatch-label">🐉 Dragon Blog について</p>
+      <h1 class="about-title">ドラゴン桜2から学ぶ、<br>勉強と人生のヒント</h1>
     </header>
 
     <div class="about-profile-block">
@@ -23,49 +29,109 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
         loading="lazy"
         decoding="async"
       />
-      <div>
+      <div class="about-profile-body">
         <p class="about-profile-name">imanari</p>
-        <p class="about-profile-desc">ドラゴン桜2を見て、桜木建二の言葉に本気で心を動かされた。受験の話だけじゃない、大人にこそ刺さる逆転の哲学がここにある。</p>
+        <p class="about-profile-tag">ドラゴン桜2 × 勉強法ブロガー</p>
+        <p class="about-profile-desc">社会人。ドラゴン桜2を見て桜木建二の言葉に本気で心を動かされた一人。受験の話だけじゃない——大人にこそ刺さる逆転の哲学がここにある。</p>
+      </div>
+    </div>
+
+    <!-- ブログ統計 -->
+    <div class="about-stats">
+      <div class="about-stat">
+        <p class="stat-num">{totalPosts}<span class="stat-unit">本</span></p>
+        <p class="stat-label">公開記事数</p>
+      </div>
+      <div class="about-stat">
+        <p class="stat-num">{categories.length}<span class="stat-unit">種</span></p>
+        <p class="stat-label">カテゴリ</p>
+      </div>
+      <div class="about-stat">
+        <p class="stat-num">25<span class="stat-unit">個</span></p>
+        <p class="stat-label">収録名言数</p>
+      </div>
+      <div class="about-stat">
+        <p class="stat-num">5<span class="stat-unit">種</span></p>
+        <p class="stat-label">キャラ診断タイプ</p>
       </div>
     </div>
 
     <section class="about-section">
-      <h2>なぜこのブログを作ったか</h2>
-      <p>
-        ドラゴン桜2を見て、「これはただの受験ドラマではない」と感じました。
-        桜木建二の言葉には、受験生だけでなく、仕事や人生に悩む大人にも刺さるものがある。
-        そのメッセージを自分なりに言語化し、残しておきたい。それがこのブログを始めた理由です。
-      </p>
+      <h2>なぜこのブログを作ったのか</h2>
+      <p>ドラゴン桜2を最終話まで見終えたとき、「これは受験ドラマではなかった」と思いました。</p>
+      <p>桜木建二が生徒に叩きつける言葉は、どれも受験生だけに向けられたものではない。やる気が出ない社会人、失敗を恐れて本気になれない大人、誰かのせいにして動けなくなっている人——全員に刺さる言葉が、このドラマには詰まっていました。</p>
+      <p>「この言葉を、自分なりに言語化して残しておきたい。」それがこのブログを始めた唯一の理由です。</p>
     </section>
 
     <section class="about-section">
-      <h2>このブログで発信していること</h2>
-      <ul>
-        <li>🎬 <strong>全話レビュー</strong>：各話のあらすじ・印象的なシーン・名言</li>
-        <li>💬 <strong>名言まとめ</strong>：桜木建二・生徒たちの言葉を深掘り</li>
-        <li>📚 <strong>勉強法・解説</strong>：ドラゴン桜2に登場する学習メソッドの実践ガイド</li>
-        <li>👥 <strong>キャラクター解説</strong>：登場人物の背景・成長・名シーン</li>
-      </ul>
+      <h2>このブログで読めること</h2>
+      <div class="about-contents-grid">
+        <div class="about-content-card">
+          <span class="content-icon">🎬</span>
+          <p class="content-title">全話レビュー</p>
+          <p class="content-desc">第1話〜最終話まで各話のあらすじ・名シーン・名言を独自の視点で解説</p>
+        </div>
+        <div class="about-content-card">
+          <span class="content-icon">💬</span>
+          <p class="content-title">名言まとめ</p>
+          <p class="content-desc">桜木建二・生徒たちの言葉を深掘り。なぜその言葉が刺さるのかを考察</p>
+        </div>
+        <div class="about-content-card">
+          <span class="content-icon">📚</span>
+          <p class="content-title">勉強法・解説</p>
+          <p class="content-desc">ドラマに登場する学習メソッドを科学的根拠と合わせて実践ガイドに</p>
+        </div>
+        <div class="about-content-card">
+          <span class="content-icon">👥</span>
+          <p class="content-title">キャラクター解説</p>
+          <p class="content-desc">東大専科の生徒たちが何を抱え、どう変わったか。登場人物を深掘り</p>
+        </div>
+      </div>
     </section>
 
     <section class="about-section">
       <h2>ブログのスタンス</h2>
       <blockquote>
-        「東大に行く必要はないけれど、桜木建二の言葉は知っておいた方がいい。」
+        「東大に行く必要はないけれど、<br>桜木建二の言葉は知っておいた方がいい。」
       </blockquote>
-      <p>
-        情報をまとめるだけでなく、「自分ならどう受け取るか」という視点を大切にしています。
-        受験生向けの解説ではなく、ドラマを通じて人生や仕事を考えるヒントとして書いています。
-      </p>
+      <p>情報をまとめるだけでなく、「自分ならどう受け取るか」という視点を大切にしています。受験生向けの解説サイトではなく、ドラマを通じて人生や仕事を考えるためのヒントとして書いています。</p>
+    </section>
+
+    <!-- インタラクティブコンテンツ -->
+    <section class="about-section">
+      <h2>遊べるコンテンツ</h2>
+      <div class="about-tools-grid">
+        <a href={`${base}quiz/`} class="about-tool-card">
+          <span class="tool-icon">🎓</span>
+          <p class="tool-title">キャラ診断</p>
+          <p class="tool-desc">8問に答えて東大専科キャラのどのタイプか診断</p>
+        </a>
+        <a href={`${base}fortune/`} class="about-tool-card">
+          <span class="tool-icon">🔮</span>
+          <p class="tool-title">ドラゴン桜２占い</p>
+          <p class="tool-desc">今日の桜木建二からのワンオラクルメッセージ</p>
+        </a>
+        <a href={`${base}quote-gacha/`} class="about-tool-card">
+          <span class="tool-icon">🎲</span>
+          <p class="tool-title">名言ガチャ</p>
+          <p class="tool-desc">25個の名言をランダム表示。Xでシェアも可能</p>
+        </a>
+      </div>
     </section>
 
     <section class="about-section">
-      <h2>技術について</h2>
-      <p>
-        このブログは <a href="https://astro.build/" target="_blank" rel="noopener">Astro</a> で構築し、
-        GitHub Pages で公開しています。
-        記事作成・コーディングには <strong>Claude Code</strong>（Anthropic の AI）を活用しています。
-      </p>
+      <h2>技術・制作について</h2>
+      <p>このブログは <a href="https://astro.build/" target="_blank" rel="noopener">Astro</a> で構築し、GitHub Pages で公開しています。記事作成・コーディングには <strong>Claude Code</strong>（Anthropic の AI）を活用しています。</p>
+      <p>「コードが書けなくても、自分のメディアを持てる時代になった」——このブログ自体が、その証明でもあります。</p>
+    </section>
+
+    <section class="about-section">
+      <h2>お問い合わせ・リンク</h2>
+      <div class="about-links">
+        <a href="https://x.com/" class="about-link-btn" target="_blank" rel="noopener">𝕏 X（旧Twitter）でフォローする</a>
+        <a href={`${base}newsletter/`} class="about-link-btn">📬 新着記事をメールで受け取る</a>
+        <a href={`${base}privacy/`} class="about-link-btn-sub">プライバシーポリシー・免責事項</a>
+      </div>
     </section>
 
     <div class="about-back">
@@ -74,55 +140,65 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
   </article>
 </BaseLayout>
 
-<style>
+<style is:global>
 .about-page { max-width: 720px; margin: 0 auto; padding: 2rem 0 4rem; }
 
-.about-header { margin-bottom: 2.5rem; }
-.about-title {
-  font-family: 'Noto Serif JP', serif;
-  font-size: 2rem;
-  font-weight: 900;
-  margin: 0 0 0.4rem;
-  color: var(--text);
-}
-.about-subtitle { font-size: 0.95rem; color: var(--text-muted); margin: 0; }
+.about-header { margin-bottom: 2rem; }
+.about-eyecatch-label { font-size: 0.85rem; color: var(--accent); font-weight: 700; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.about-title { font-family: 'Noto Serif JP', serif; font-size: 1.9rem; font-weight: 900; margin: 0; color: var(--text); line-height: 1.4; }
 
-.about-profile-block {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin-bottom: 2.5rem;
-}
+.about-profile-block { display: flex; align-items: flex-start; gap: 1.25rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; margin-bottom: 2rem; }
 .about-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); flex-shrink: 0; }
-.about-profile-name { font-weight: 900; font-size: 1.1rem; margin: 0 0 0.3rem; }
+.about-profile-body { display: flex; flex-direction: column; gap: 0.3rem; }
+.about-profile-name { font-weight: 900; font-size: 1.1rem; margin: 0; }
+.about-profile-tag { font-size: 0.78rem; color: var(--accent); font-weight: 700; margin: 0; }
 .about-profile-desc { font-size: 0.88rem; color: var(--text-muted); margin: 0; line-height: 1.7; }
 
-.about-section { margin-bottom: 2.5rem; }
-.about-section h2 {
-  font-family: 'Noto Serif JP', serif;
-  font-size: 1.2rem;
-  font-weight: 900;
-  border-left: 4px solid var(--accent);
-  padding-left: 0.85rem;
-  margin: 0 0 1rem;
-}
-.about-section p { line-height: 1.85; color: var(--text); }
-.about-section ul { padding-left: 1.25rem; line-height: 2; }
-.about-section a { color: var(--accent); }
-.about-section blockquote {
-  border-left: 4px solid var(--accent);
-  background: var(--bg-card);
-  padding: 0.9rem 1.25rem;
-  border-radius: 0 8px 8px 0;
-  font-family: 'Noto Serif JP', serif;
-  font-size: 1rem;
-  margin: 1rem 0;
-  color: var(--text);
-}
+/* 統計 */
+.about-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-bottom: 2.5rem; }
+.about-stat { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; text-align: center; }
+.stat-num { font-family: 'Noto Serif JP', serif; font-size: 1.8rem; font-weight: 900; color: var(--accent); margin: 0 0 0.2rem; line-height: 1; }
+.stat-unit { font-size: 0.9rem; }
+.stat-label { font-size: 0.72rem; color: var(--text-muted); margin: 0; }
 
-.about-back { margin-top: 3rem; text-align: center; }
+/* セクション */
+.about-section { margin-bottom: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
+.about-section:last-of-type { border-bottom: none; }
+.about-section h2 { font-family: 'Noto Serif JP', serif; font-size: 1.15rem; font-weight: 900; border-left: 4px solid var(--accent); padding-left: 0.85rem; margin: 0 0 1rem; color: var(--text); }
+.about-section p { line-height: 1.85; color: var(--text); margin-bottom: 0.8rem; font-size: 0.95rem; }
+.about-section p:last-child { margin-bottom: 0; }
+.about-section a { color: var(--accent); }
+.about-section blockquote { border-left: 4px solid var(--accent); background: var(--bg-card); padding: 1rem 1.25rem; border-radius: 0 10px 10px 0; font-family: 'Noto Serif JP', serif; font-size: 1rem; margin: 0 0 1rem; color: var(--text); line-height: 1.7; }
+
+/* コンテンツグリッド */
+.about-contents-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.about-content-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.1rem; }
+.content-icon { font-size: 1.4rem; }
+.content-title { font-size: 0.9rem; font-weight: 700; color: var(--text); margin: 0.3rem 0 0.3rem; }
+.content-desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
+
+/* ツールグリッド */
+.about-tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.about-tool-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.3rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 0.75rem; text-decoration: none; transition: border-color 0.15s, transform 0.15s; }
+.about-tool-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.tool-icon { font-size: 1.6rem; }
+.tool-title { font-size: 0.85rem; font-weight: 700; color: var(--text); margin: 0; }
+.tool-desc { font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; margin: 0; }
+
+/* リンク */
+.about-links { display: flex; flex-direction: column; gap: 0.6rem; }
+.about-link-btn { display: block; text-align: center; padding: 0.8rem; background: linear-gradient(135deg, #450A0A, #DC2626); color: #fff; border-radius: 10px; font-weight: 700; font-size: 0.9rem; text-decoration: none; transition: opacity 0.15s; }
+.about-link-btn:hover { opacity: 0.88; color: #fff; }
+.about-link-btn-sub { display: block; text-align: center; padding: 0.6rem; border: 1px solid var(--border); border-radius: 10px; color: var(--text-muted); font-size: 0.82rem; text-decoration: none; transition: border-color 0.15s; }
+.about-link-btn-sub:hover { border-color: var(--accent); color: var(--accent); }
+
+.about-back { margin-top: 2.5rem; text-align: center; }
+
+@media (max-width: 600px) {
+  .about-title { font-size: 1.5rem; }
+  .about-stats { grid-template-columns: repeat(2, 1fr); }
+  .about-contents-grid { grid-template-columns: 1fr; }
+  .about-tools-grid { grid-template-columns: 1fr; }
+  .about-profile-block { flex-direction: column; align-items: center; text-align: center; }
+}
 </style>

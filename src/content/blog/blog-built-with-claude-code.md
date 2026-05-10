@@ -4,6 +4,7 @@ description: 'AI コーディングツール「Claude Code」を使って、Astr
 pubDate: '2026-05-05'
 tags: ['Claude Code', 'Astro', 'GitHub Pages', 'ブログ']
 category: '技術'
+eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 ---
 
 「コードは書けないけど、自分のブログを持ちたい」そんな思いから、Claude Code を使ってブログを作ってみました。その全記録をまとめます。

@@ -68,6 +68,15 @@ const websiteSchema = JSON.stringify({
 
     <title>{pageTitle}</title>
 
+    <!-- Google Analytics GA4 (Measurement IDを取得後に G-XXXXXXXXXX を書き換えてください) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
+
     <!-- WebSite 構造化データ -->
     <script type="application/ld+json" set:html={websiteSchema} />
 
@@ -91,18 +100,28 @@ const websiteSchema = JSON.stringify({
           <span class="site-logo-icon">🐉</span>
           <span class="site-title">Dragon Blog</span>
         </a>
-        <nav class="site-nav">
-          <a href={base}>ホーム</a>
-          <a href={`${base}tags/`}>タグ</a>
-          <a href={`${base}about/`}>About</a>
-          <a href={`${base}newsletter/`}>📬 購読</a>
-          <a href={`${base}search/`}>🔍 検索</a>
-          <a href={`${base}fortune/`}>🔮 占い</a>
-          <a href={`${base}quote-gacha/`}>🎲 名言</a>
+        <div class="header-right">
           <DarkModeToggle />
-        </nav>
+          <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <nav class="site-nav" id="siteNav">
+            <button class="nav-close" id="navClose" aria-label="メニューを閉じる">✕</button>
+            <a href={base}>ホーム</a>
+            <a href={`${base}tags/`}>タグ</a>
+            <a href={`${base}about/`}>About</a>
+            <a href={`${base}newsletter/`}>📬 購読</a>
+            <a href={`${base}search/`}>🔍 検索</a>
+            <a href={`${base}fortune/`}>🔮 占い</a>
+            <a href={`${base}quote-gacha/`}>🎲 名言ガチャ</a>
+            <a href={`${base}quiz/`}>🎓 キャラ診断</a>
+          </nav>
+        </div>
       </div>
     </header>
+    <div class="nav-overlay" id="navOverlay"></div>
 
     <!-- フルワイドスロット（ヒーローバナーなど） -->
     <slot name="full-width" />
@@ -133,6 +152,34 @@ const websiteSchema = JSON.stringify({
 </style>
 
 <script>
+  // ハンバーガーメニュー
+  const navToggle = document.getElementById('navToggle');
+  const navClose = document.getElementById('navClose');
+  const siteNav = document.getElementById('siteNav');
+  const navOverlay = document.getElementById('navOverlay');
+
+  function openNav() {
+    siteNav?.classList.add('open');
+    navOverlay?.classList.add('open');
+    navToggle?.classList.add('open');
+    navToggle?.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav() {
+    siteNav?.classList.remove('open');
+    navOverlay?.classList.remove('open');
+    navToggle?.classList.remove('open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  navToggle?.addEventListener('click', () => {
+    siteNav?.classList.contains('open') ? closeNav() : openNav();
+  });
+  navClose?.addEventListener('click', closeNav);
+  navOverlay?.addEventListener('click', closeNav);
+  siteNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+
   // 読了プログレスバー
   const progress = document.getElementById('readProgress');
   if (progress) {
