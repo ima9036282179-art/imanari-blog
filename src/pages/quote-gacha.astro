@@ -1,0 +1,222 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+
+<BaseLayout
+  title="桜木建二 名言ガチャ｜ドラゴン桜2【ランダム名言】"
+  description="ボタンを押すたびにドラゴン桜2・桜木建二のランダム名言が出現。今日の一言を引いて、勉強・仕事・人生のヒントにしてください。"
+>
+  <div class="gacha-page">
+    <div class="gacha-hero">
+      <p class="gacha-hero-label">🎬 ドラゴン桜2</p>
+      <h1 class="gacha-hero-title">桜木建二<br>名言ガチャ</h1>
+      <p class="gacha-hero-desc">ボタンを1回押すだけ。今日の桜木建二からのメッセージを引いてください。</p>
+    </div>
+
+    <div class="gacha-stage">
+      <div class="gacha-card" id="gachaCard">
+        <div class="gacha-card-inner" id="gachaCardInner">
+          <div class="gacha-front">
+            <div class="gacha-front-top">✦ DRAGON ZAKURA ✦</div>
+            <div class="gacha-front-dragon">🐉</div>
+            <div class="gacha-front-bottom">桜木建二の言葉</div>
+          </div>
+          <div class="gacha-back" id="gachaBack">
+            <p class="gacha-quote-text" id="quoteText"></p>
+            <p class="gacha-quote-context" id="quoteContext"></p>
+            <p class="gacha-quote-from">— 桜木建二（ドラゴン桜2）</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="gacha-btn" id="gachaBtn">
+        <span class="gacha-btn-icon">🎲</span>
+        <span>名言を引く</span>
+      </button>
+      <p class="gacha-count-text" id="countText" style="display:none;"></p>
+    </div>
+
+    <div class="gacha-share" id="gachaShare" style="display:none;">
+      <p class="gacha-share-label">この名言をシェアする</p>
+      <div class="gacha-share-btns">
+        <button id="shareX" class="share-btn share-x">𝕏 でシェア</button>
+      </div>
+    </div>
+
+    <div class="gacha-related">
+      <h2 class="gacha-related-title">関連コンテンツ</h2>
+      <div class="gacha-related-grid">
+        <a href={`${base}fortune/`} class="gacha-related-card">
+          <span class="gacha-related-icon">🔮</span>
+          <span class="gacha-related-name">ドラゴン桜２占い</span>
+          <span class="gacha-related-desc">ワンオラクルで今日の指針を</span>
+        </a>
+        <a href={`${base}quiz/`} class="gacha-related-card">
+          <span class="gacha-related-icon">🎓</span>
+          <span class="gacha-related-name">キャラ診断</span>
+          <span class="gacha-related-desc">あなたは誰タイプ？</span>
+        </a>
+        <a href={`${base}blog/dragon-zakura2-quotes-ranking/`} class="gacha-related-card">
+          <span class="gacha-related-icon">💬</span>
+          <span class="gacha-related-name">名言ランキング</span>
+          <span class="gacha-related-desc">厳選名言まとめ記事</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+const quotes = [
+  { text: "バカとブスこそ東大へ行け。", context: "東大専科の生徒たちへの最初の言葉。逆転の可能性を信じろというメッセージ。" },
+  { text: "東大に行くことは手段だ。お前たちの人生を変える手段だ。", context: "勉強の目的は東大合格ではなく、人生を切り拓く力を手に入れること。" },
+  { text: "どうするかはお前が決めろ。", context: "岩崎楓に対して。答えを与えない桜木のスタイルを表す言葉。" },
+  { text: "やった量だけが、本番で自信になる。", context: "試験直前に不安になる生徒たちへ。積み上げた事実だけが本物の自信を生む。" },
+  { text: "本気になるのが怖いのは、本気でやって失敗したくないからだ。", context: "藤井遼への言葉。「本気を出せない」本当の理由を突いた核心の一言。" },
+  { text: "10分だけやれ。10分やって嫌ならやめていい。", context: "やる気が出ない生徒へ。脳科学的に正しい「始める」ための処方箋。" },
+  { text: "逆転は、いつだって可能だ。ただし、今から始めた奴だけにな。", context: "どんな状況でも始めることに遅すぎはない。今この瞬間が最速のスタート。" },
+  { text: "お前たちは証明した。どんな状況からでも、人間は変われる。", context: "東大専科の生徒たちの成長を振り返った言葉。変化は証明されると確信になる。" },
+  { text: "なぜ東大に行きたいんだ？", context: "生徒全員に問い続けた根源の問い。動機が弱ければ継続できない。" },
+  { text: "人に教えられないなら、まだ本当には理解していない。", context: "アウトプットこそ最大の学習法。「わかった気」と「わかっている」は別物。" },
+  { text: "もっと人を頼れ。", context: "瀬戸輝への言葉。一人で抱え込む強さより、頼れる強さを持てというメッセージ。" },
+  { text: "生きてるだけで迷惑なんて誰にも言わせんなよ。", context: "原健太への言葉。存在を肯定する、ドラゴン桜2で最も刺さる名言の一つ。" },
+  { text: "やる気が出ないのは意志の問題じゃない。構造の問題だ。", context: "継続できない人間への本質的な指摘。環境と設計を変えれば誰でも動ける。" },
+  { text: "お前たちが書いた文章が、麻里を動かした。これが言葉の力だ。", context: "言葉は人を動かす。その力を信じて勉強することの意味を説いた場面。" },
+  { text: "自分だけの武器を磨け。", context: "他人と比べるな。お前にしかない強みを見つけて磨くことが最速の逆転法だ。" },
+  { text: "諦めた瞬間、試合終了だ。", context: "どんな状況でも諦めを選ばなければ、可能性はゼロにならない。" },
+  { text: "努力した者が全員報われるわけではない。しかし成功した者は全員、努力している。", context: "努力は必要条件。結果を保証しないが、努力なしに結果はない。" },
+  { text: "方法が間違っているだけだ。", context: "できないのは才能の問題ではない。やり方を変えれば誰でも結果が出る。" },
+  { text: "迷いながらでも、前に進むことが大事だ。", context: "完璧な確信を持ってから動こうとする生徒へ。動きながら考えることが成長だ。" },
+  { text: "責任の重さが、人を本気にさせる。", context: "瀬戸輝の原動力を分析した言葉。使命感こそが最強のモチベーションになる。" },
+  { text: "一夜漬けで覚えたものは、一夜で忘れる。", context: "エビングハウスの忘却曲線を引用しながら。薄く長く繰り返すことが記憶の鍵。" },
+  { text: "恐怖と向き合え。逃げ続けた先に成長はない。", context: "藤井遼をはじめ、本気になることを恐れる生徒へ向けた言葉。" },
+  { text: "問いを立てられる人間が、時代を作る。", context: "答えを探すより問いを立てる力こそ、これからの時代に必要な思考力だ。" },
+  { text: "弱さを知っている人間が、本当に強くなれる。", context: "自分の弱点を認識することが、強さへの出発点になるというメッセージ。" },
+  { text: "今日の5分が、半年後の自分を作る。", context: "習慣の複利効果。毎日の小さな積み重ねが、圧倒的な差を生み出す。" },
+];
+
+let drawCount = 0;
+let currentQuote: typeof quotes[0] | null = null;
+let flipped = false;
+
+const card = document.getElementById('gachaCard')!;
+const inner = document.getElementById('gachaCardInner')!;
+const quoteText = document.getElementById('quoteText')!;
+const quoteContext = document.getElementById('quoteContext')!;
+const gachaBtn = document.getElementById('gachaBtn')!;
+const countText = document.getElementById('countText')!;
+const gachaShare = document.getElementById('gachaShare')!;
+
+function drawQuote() {
+  let next: typeof quotes[0];
+  do {
+    next = quotes[Math.floor(Math.random() * quotes.length)];
+  } while (quotes.length > 1 && next === currentQuote);
+  currentQuote = next;
+
+  if (flipped) {
+    inner.classList.remove('flipped');
+    setTimeout(() => {
+      quoteText.textContent = '「' + next.text + '」';
+      quoteContext.textContent = next.context;
+      inner.classList.add('flipped');
+    }, 350);
+  } else {
+    quoteText.textContent = '「' + next.text + '」';
+    quoteContext.textContent = next.context;
+    inner.classList.add('flipped');
+    flipped = true;
+  }
+
+  drawCount++;
+  countText.style.display = 'block';
+  countText.textContent = `${drawCount}回引きました`;
+  gachaShare.style.display = 'block';
+  gachaBtn.querySelector('span:last-child')!.textContent = 'もう一度引く';
+}
+
+gachaBtn.addEventListener('click', drawQuote);
+
+document.getElementById('shareX')!.addEventListener('click', () => {
+  if (!currentQuote) return;
+  const text = `「${currentQuote.text}」\n— 桜木建二（ドラゴン桜2）\n\n#ドラゴン桜2 #桜木建二`;
+  window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(location.href)}`, '_blank');
+});
+</script>
+
+<style is:global>
+.gacha-page { max-width: 600px; margin: 0 auto; padding: 2rem 0 5rem; }
+
+.gacha-hero { text-align: center; margin-bottom: 2.5rem; }
+.gacha-hero-label { font-size: 0.85rem; color: var(--accent); font-weight: 700; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.gacha-hero-title { font-family: 'Noto Serif JP', serif; font-size: 2rem; font-weight: 900; line-height: 1.4; margin: 0 0 0.75rem; color: var(--text); }
+.gacha-hero-desc { color: var(--text-muted); font-size: 0.92rem; line-height: 1.8; }
+
+.gacha-stage { display: flex; flex-direction: column; align-items: center; gap: 1.75rem; margin-bottom: 1.5rem; }
+
+/* カード */
+.gacha-card { width: 320px; height: 200px; perspective: 1000px; cursor: pointer; }
+.gacha-card-inner { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4,0,0.2,1); }
+.gacha-card-inner.flipped { transform: rotateY(180deg); }
+.gacha-front, .gacha-back { position: absolute; inset: 0; border-radius: 16px; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+
+.gacha-front {
+  background: linear-gradient(135deg, #450A0A, #7F1D1D);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
+  border: 2px solid rgba(255,255,255,0.15);
+}
+.gacha-front-top { font-size: 0.7rem; color: rgba(255,255,255,0.6); letter-spacing: 0.15em; }
+.gacha-front-dragon { font-size: 3.5rem; }
+.gacha-front-bottom { font-size: 0.75rem; color: rgba(255,255,255,0.5); }
+
+.gacha-back {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transform: rotateY(180deg);
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 1.5rem;
+  gap: 0.5rem;
+}
+.gacha-quote-text { font-size: 0.95rem; font-weight: 700; color: var(--text); line-height: 1.7; margin: 0; font-style: italic; }
+.gacha-quote-context { font-size: 0.75rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
+.gacha-quote-from { font-size: 0.72rem; color: var(--accent); margin: 0; font-weight: 700; }
+
+/* ボタン */
+.gacha-btn {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.9rem 2.5rem; border-radius: 50px;
+  background: linear-gradient(135deg, #450A0A, #DC2626);
+  color: #fff; font-size: 1rem; font-weight: 700;
+  border: none; cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 16px rgba(220,38,38,0.3);
+}
+.gacha-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(220,38,38,0.4); }
+.gacha-btn:active { transform: scale(0.97); }
+.gacha-btn-icon { font-size: 1.2rem; }
+
+.gacha-count-text { font-size: 0.8rem; color: var(--text-muted); }
+
+.gacha-share { text-align: center; margin-bottom: 2.5rem; }
+.gacha-share-label { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.6rem; }
+.gacha-share-btns { display: flex; justify-content: center; }
+.share-btn { padding: 0.55rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; border: none; font-family: 'Noto Sans JP', sans-serif; }
+.share-x { background: #000; color: #fff; }
+
+/* 関連 */
+.gacha-related { border-top: 1px solid var(--border); padding-top: 2rem; }
+.gacha-related-title { font-size: 0.9rem; font-weight: 700; color: var(--text-muted); margin-bottom: 1rem; text-align: center; }
+.gacha-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.gacha-related-card { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; padding: 1rem 0.75rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; text-decoration: none; transition: border-color 0.15s, transform 0.15s; text-align: center; }
+.gacha-related-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.gacha-related-icon { font-size: 1.5rem; }
+.gacha-related-name { font-size: 0.82rem; font-weight: 700; color: var(--text); }
+.gacha-related-desc { font-size: 0.72rem; color: var(--text-muted); line-height: 1.4; }
+
+@media (max-width: 480px) {
+  .gacha-card { width: 280px; height: 180px; }
+  .gacha-related-grid { grid-template-columns: 1fr; }
+}
+</style>
