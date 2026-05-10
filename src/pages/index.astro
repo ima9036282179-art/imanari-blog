@@ -50,12 +50,17 @@ const seriesLinks = [
   { label: 'キャラクター解説', tag: 'キャラクター解説', emoji: '👥', desc: 'キャスト・キャラ' },
   { label: '資格', tag: '資格', emoji: '🏆', desc: 'TOEIC・宅建・FP・簿記' },
 ];
-const catCounts = posts.reduce((acc, p) => {
-  for (const t of p.data.tags ?? []) {
-    acc[t] = (acc[t] || 0) + 1;
-  }
-  return acc;
-}, {} as Record<string, number>);
+// タグページ ([tag].astro) と同じ条件: tags?.includes(key) || category === key
+const _allKeys = [...new Set([
+  ...posts.flatMap(p => p.data.tags ?? []),
+  ...posts.map(p => p.data.category).filter(Boolean) as string[],
+])];
+const catCounts: Record<string, number> = {};
+for (const key of _allKeys) {
+  catCounts[key] = posts.filter(p =>
+    p.data.tags?.includes(key) || p.data.category === key
+  ).length;
+}
 ---
 
 <BaseLayout title="ホーム">
