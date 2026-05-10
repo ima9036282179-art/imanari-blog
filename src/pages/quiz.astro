@@ -205,12 +205,16 @@ function renderQuestion() {
     <div class="question-card">
       <p class="question-text">Q${current + 1}. ${q.text}</p>
       <div class="options-list">
-        ${q.options.map((opt, i) => `
+        ${q.options.map((opt, i) => {
+          const letters = ['A', 'B', 'C', 'D', 'E'];
+          return `
           <label class="option-label ${answers[current] === opt.type ? 'selected' : ''}">
             <input type="radio" name="q" value="${opt.type}" ${answers[current] === opt.type ? 'checked' : ''} />
-            <span>${opt.text}</span>
+            <span class="option-badge">${letters[i]}</span>
+            <span class="option-text">${opt.text}</span>
           </label>
-        `).join('')}
+          `;
+        }).join('')}
       </div>
     </div>
   `;
@@ -291,17 +295,26 @@ renderQuestion();
 .question-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; }
 .question-text { font-size: 1.1rem; font-weight: 700; color: var(--text); margin: 0 0 1.5rem; line-height: 1.6; }
 
-.options-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.options-list { display: flex; flex-direction: column; gap: 0.6rem; }
 .option-label {
-  display: flex; align-items: flex-start; gap: 0.75rem;
-  padding: 0.875rem 1rem; border: 2px solid var(--border);
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.8rem 1rem; border: 2px solid var(--border);
   border-radius: 10px; cursor: pointer;
   transition: border-color 0.15s, background 0.15s;
-  color: var(--text); font-size: 0.93rem; line-height: 1.5;
+  color: var(--text); line-height: 1.5;
 }
 .option-label:hover { border-color: var(--accent); background: rgba(220,38,38,0.05); }
-.option-label.selected { border-color: var(--accent); background: rgba(220,38,38,0.08); font-weight: 700; }
+.option-label.selected { border-color: var(--accent); background: rgba(220,38,38,0.08); }
+.option-label.selected .option-badge { background: var(--accent); color: #fff; border-color: var(--accent); }
 .option-label input { display: none; }
+.option-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.8rem; height: 1.8rem; min-width: 1.8rem;
+  border-radius: 50%; border: 2px solid var(--border);
+  font-size: 0.75rem; font-weight: 900; color: var(--text-muted);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.option-text { font-size: 0.92rem; }
 
 .quiz-nav { display: flex; justify-content: space-between; gap: 1rem; }
 .quiz-btn { padding: 0.75rem 2rem; border-radius: 10px; font-weight: 700; font-size: 0.95rem; cursor: pointer; border: none; transition: opacity 0.15s, transform 0.1s; font-family: 'Noto Sans JP', sans-serif; }

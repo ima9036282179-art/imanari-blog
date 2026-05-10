@@ -3,9 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="ドラゴン桜２ ワンオラクル占い｜桜木建二からの今日のメッセージ" description="桜木建二の言葉が今日のあなたへのメッセージ。20枚のタロットカードから1枚引いて、今日の指針を受け取ろう。">
-  <div class="fortune-wrap">
-    <h1 class="fortune-title">🔮 ドラゴン桜２ ワンオラクル</h1>
-    <p class="fortune-desc">心を静めて、桜木建二からのメッセージを受け取ってください。</p>
+  <div class="fortune-outer">
+    <div class="fortune-wrap">
+      <h1 class="fortune-title">🔮 ドラゴン桜２ ワンオラクル</h1>
+      <p class="fortune-desc">心を静めて、桜木建二からのメッセージを受け取ってください。</p>
 
     <div class="card-area">
       <div class="card" id="card">
@@ -28,7 +29,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p class="oracle-label">✦ 今日のメッセージ ✦</p>
       <p class="oracle-text" id="oracleText"></p>
     </div>
-  </div>
+    </div><!-- /.fortune-wrap -->
+
+    <aside class="fortune-sidebar">
+      <div class="sidebar-card">
+        <p class="sidebar-label">🎬 キャラ診断</p>
+        <h2 class="sidebar-title">あなたは東大専科の<br>誰タイプ？</h2>
+        <p class="sidebar-desc">8問の質問に答えるだけで、あなたに最も近いキャラクターと勉強法がわかります。</p>
+        <div class="sidebar-types">
+          <span>🏸 楓</span>
+          <span>🐛 健太</span>
+          <span>🌸 麻里</span>
+          <span>📐 藤井</span>
+          <span>🔥 瀬戸</span>
+        </div>
+        <a href="/imanari-blog/quiz/" class="sidebar-btn">診断スタート →</a>
+        <p class="sidebar-note">無料・約2分</p>
+      </div>
+    </aside>
+  </div><!-- /.fortune-outer -->
 </BaseLayout>
 
 <script>
@@ -198,11 +217,106 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </script>
 
 <style>
-  .fortune-wrap {
-    max-width: 480px;
+  .fortune-outer {
+    max-width: 860px;
     margin: 0 auto;
-    text-align: center;
     padding: 2rem 1rem 4rem;
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+  }
+
+  .fortune-wrap {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+  }
+
+  /* サイドバー：キャラ診断 */
+  .fortune-sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 5rem;
+  }
+
+  .sidebar-card {
+    background: linear-gradient(160deg, #1a0533 0%, #2d1b69 100%);
+    border: 1px solid #c9a84c;
+    border-radius: 16px;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    box-shadow: 0 0 16px rgba(201,168,76,0.15);
+  }
+
+  .sidebar-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: #c9a84c;
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+  }
+
+  .sidebar-title {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #f5e6c0;
+    line-height: 1.5;
+    margin: 0 0 0.75rem;
+    font-family: 'Noto Serif JP', serif;
+  }
+
+  .sidebar-desc {
+    font-size: 0.75rem;
+    color: #b8a880;
+    line-height: 1.7;
+    margin: 0 0 1rem;
+  }
+
+  .sidebar-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .sidebar-types span {
+    font-size: 0.7rem;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.3);
+    color: #c9a84c;
+    padding: 0.2rem 0.5rem;
+    border-radius: 99px;
+  }
+
+  .sidebar-btn {
+    display: block;
+    background: linear-gradient(135deg, #c9a84c, #e8c96e);
+    color: #1a0533;
+    font-weight: 900;
+    font-size: 0.85rem;
+    padding: 0.65rem 1rem;
+    border-radius: 99px;
+    text-decoration: none;
+    transition: opacity 0.2s, transform 0.1s;
+    margin-bottom: 0.5rem;
+  }
+
+  .sidebar-btn:hover { opacity: 0.85; transform: translateY(-2px); }
+
+  .sidebar-note {
+    font-size: 0.68rem;
+    color: #b8a880;
+    margin: 0;
+  }
+
+  @media (max-width: 700px) {
+    .fortune-outer { flex-direction: column; }
+    .fortune-sidebar { width: 100%; position: static; }
+    .sidebar-card { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; text-align: left; }
+    .sidebar-title { font-size: 0.95rem; }
+    .sidebar-btn { white-space: nowrap; }
   }
 
   .fortune-title {
