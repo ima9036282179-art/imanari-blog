@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
-const BUTTONDOWN_USERNAME = 'ima';
 ---
 
 <BaseLayout
@@ -21,14 +20,11 @@ const BUTTONDOWN_USERNAME = 'ima';
 
     <div class="nl-form-card">
       <form
-        action={`https://buttondown.email/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`}
+        action="https://api.follow.it/subscription-form/RzdTQzl1VFFtdlhTc3VMcVU2WWFWQXd2cWsvQ1hLUXBEclI2NENnNVJBUWN1RktvZHR5T2Y3WTZQOFp0V281d0NTNVRjc0xpRURDWWhJV2xha1hwVVpGbzZGN3dGUUNsSnFHSHBMQ1hSaWd0M0Z5RjluNFk4RU9tUFhZalphWlh8VldvR1JGR01zZm1IOGdGMHFkdGQ1WUJnbmdJTDQveFFRMVZuZzZrS1Yrcz0=/8"
         method="post"
-        target="popupwindow"
-        onsubmit={`window.open('https://buttondown.email/${BUTTONDOWN_USERNAME}', 'popupwindow')`}
         class="nl-form"
         id="subscribeForm"
       >
-        <input type="hidden" name="embed" value="1" />
         <div class="nl-input-row">
           <input
             type="email"
@@ -44,7 +40,7 @@ const BUTTONDOWN_USERNAME = 'ima';
           ✅ スパムは送りません。&nbsp;&nbsp;✅ いつでも解除できます。
         </p>
       </form>
-      <p class="nl-powered">配信サービス: <a href="https://buttondown.email" target="_blank" rel="noopener">Buttondown</a></p>
+      <p class="nl-powered">配信サービス: <a href="https://follow.it" target="_blank" rel="noopener">follow.it</a></p>
     </div>
 
     <div class="nl-features">
