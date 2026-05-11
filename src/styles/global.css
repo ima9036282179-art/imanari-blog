@@ -1660,3 +1660,12 @@ pre { position: relative; }
 
   .back-to-top { bottom: 1.25rem; right: 1.25rem; }
 }
+
+/* ============================================================
+   A8アフィリエイト バナー
+   ============================================================ */
+.a8-banner {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.a8-banner img { max-width: 100%; height: auto; }
