@@ -123,6 +123,23 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-books.jpg'
 
 ---
 
+## 本と合わせて：Z会の通信教育
+
+本で方法を学んだら、次は質の高い問題で実践する場も大切だ。Z会は難関校対策から基礎固めまで、レベル別に対応した通信教育サービス。
+
+<div class="a8-banner">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B3KUS+5OT76Y+E0Q+CMLQP" rel="nofollow">
+    <img border="0" width="200" height="120" alt="Z会の通信教育" src="https://www29.a8.net/svt/bgt?aid=260507476344&wid=004&eno=01&mid=s00000001817002121000&mc=1">
+  </a>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4B3KUS+5OT76Y+E0Q+CMLQP" alt="">
+</div>
+
+- 🏫 [Ｚ会の通信教育 高校コース（大学受験対策）を見る](https://px.a8.net/svt/ejp?a8mat=4B3KUS+5OT76Y+E0Q+C2102)
+- 📘 [Ｚ会の通信教育 中学生コース（資料請求で体験見本プレゼント）を見る](https://px.a8.net/svt/ejp?a8mat=4B3KUS+5OT76Y+E0Q+CB12Q)
+- ✏️ [Ｚ会の通信教育 小学生コース を見る](https://px.a8.net/svt/ejp?a8mat=4B3KUS+5OT76Y+E0Q+CUBIQ)
+
+---
+
 ## 関連記事
 
 - [勉強が続かない人へ｜「5分から始める」習慣化の科学](/imanari-blog/blog/study-habit-small-start/)

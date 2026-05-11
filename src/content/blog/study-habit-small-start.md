@@ -113,6 +113,23 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 
 ---
 
+## Z会の通信教育もチェック
+
+「続ける仕組み」を自分で作るのが難しければ、設計された通信教育を活用するのも一つの手だ。Z会は質の高い問題と添削指導で、難関校受験から基礎固めまで対応している。
+
+<div class="a8-banner">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B3KUS+5OT76Y+E0Q+CFJ41" rel="nofollow">
+    <img border="0" width="728" height="90" alt="Z会の通信教育" src="https://www20.a8.net/svt/bgt?aid=260507476344&wid=004&eno=01&mid=s00000001817002088000&mc=1">
+  </a>
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B3KUS+5OT76Y+E0Q+CFJ41" alt="">
+</div>
+
+- 🏫 [Ｚ会の通信教育 高校コース（大学受験対策）を見る](https://px.a8.net/svt/ejp?a8mat=4B3KUS+5OT76Y+E0Q+C2102)
+- 📘 [Ｚ会の通信教育 中学生コース（資料請求で体験見本プレゼント）を見る](https://px.a8.net/svt/ejp?a8mat=4B3KUS+5OT76Y+E0Q+CB12Q)
+- ✏️ [Ｚ会の通信教育 小学生コース を見る](https://px.a8.net/svt/ejp?a8mat=4B3KUS+5OT76Y+E0Q+CUBIQ)
+
+---
+
 ## 関連記事
 
 - [やる気が出ない3つの本当の原因と今日から使える対策](/imanari-blog/blog/motivation-not-coming-out/)
