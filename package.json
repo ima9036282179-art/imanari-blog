@@ -11,7 +11,8 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.1.6",
-    "astro": "^4.16.18"
+    "astro": "^4.16.18",
+    "puppeteer": "^24.43.1"
   },
   "devDependencies": {
     "pagefind": "^1.5.2"
