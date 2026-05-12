@@ -26,9 +26,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-coffee-book.jpg'
 
 現代日本社会において、知識・学歴・情報格差が経済的格差と直結している現実を、桜木は正面から突きつけます。「東大を目指せ」という主張の本質は「東大に行かなければいけない」ではなく、「搾取される立場から抜け出すための選択肢を持て」というメッセージです。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-02.png" alt="ルールは賢い奴が自分に都合よく作ってんだ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -45,9 +42,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-coffee-book.jpg'
 - 岩崎楓：怪我を機に選手の夢から逃げようとした
 - 藤井遼：プライドを守るために本気を出さなかった
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-05.png" alt="お前らが逃げているのは失敗することじゃない。本気になることだ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -63,9 +57,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-coffee-book.jpg'
 
 「試験は一人で戦える唯一の平等な戦場」という主張は、貧困・家族問題・地域格差を抱える生徒たちへのエールでもあります。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-14.png" alt="失敗は恥じゃない。挑戦しないことが恥だ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -89,9 +80,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-coffee-book.jpg'
 
 桜木建二が元暴走族・元落ちこぼれという設定も、このテーマの体現です。「どんな過去を持っていても変われる」という生き証人として、桜木自身がメッセージそのものになっています。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-18.png" alt="夢は見つけるものじゃなく作るものだ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 

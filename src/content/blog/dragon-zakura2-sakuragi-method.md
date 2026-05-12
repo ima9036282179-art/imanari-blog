@@ -18,9 +18,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 - エビングハウスの忘却曲線に基づく復習スケジュール
 - 睡眠前暗記・場所記憶法・連想リンク法の具体的なやり方
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-09.png" alt="人生に必要なのは正しい努力と正しい方向性｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -46,9 +43,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 | 3日後 | 問題形式でテストする |
 | 1週間後 | 完全に自力で再現する |
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-08.png" alt="模試の点数はお前の実力じゃない｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -128,9 +122,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 
 おかしなストーリーほど、脳に残りやすいです。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-17.png" alt="問題を解くな。問題を理解しろ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -146,9 +137,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 
 「暗記が苦手」という思い込みを捨て、まず1つ試してみてください。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-11.png" alt="環境のせいにするな。環境を変えるのがお前の仕事だ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 

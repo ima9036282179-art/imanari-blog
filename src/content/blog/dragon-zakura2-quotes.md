@@ -27,9 +27,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 シリーズを通じて語り継がれる、桜木の代名詞ともいえる言葉。  
 見た目や頭の良し悪しで将来を決めるな、という強烈なメッセージです。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-01.png" alt="バカとブスこそ東大へ行け｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -45,9 +42,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 言い訳をやめ、前向きに行動することの大切さを説いた言葉。  
 壁にぶつかったときに思い出したい一言です。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-03.png" alt="できない理由を探すな。できる方法を探せ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -56,9 +50,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 才能や環境のせいにしがちな私たちに、シンプルな真実を突きつけます。  
 努力こそが最大の武器だというメッセージです。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-07.png" alt="東大に受かるかどうかは結局やるかやらないかだ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -75,9 +66,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-pencils.jpg'
 
 > 逆転は、いつだって可能だ。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-19.png" alt="逆転はいつだって可能だ。今から始めた奴だけにな｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 

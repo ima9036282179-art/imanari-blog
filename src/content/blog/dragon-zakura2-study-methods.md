@@ -16,9 +16,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 - それぞれの科学的な根拠
 - 受験生・社会人が実践する際のポイント
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-06.png" alt="勉強は才能じゃない。やり方と時間の問題だ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ## 1. エピソード記憶術
 
@@ -51,9 +48,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ### 効果
 インプット：アウトプット = **3：7** の割合が理想とされています。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-10.png" alt="教えることは最高の学習法だ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -70,9 +64,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ### ポイント
 特に数学の公式や英単語は、**寝る前30分**に見直すと定着率が上がります。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-12.png" alt="睡眠不足は最大の敵だ。寝ることも勉強のうちだ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -90,9 +81,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-study-desk.jpg'
 ### なぜ機能する？
 締め切り効果（パーキンソンの法則）により、時間を区切ることで集中力が高まります。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-15.png" alt="25分やったら5分休め。集中した3時間の方が価値がある｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 

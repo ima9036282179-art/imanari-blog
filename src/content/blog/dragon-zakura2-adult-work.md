@@ -25,9 +25,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-coffee-book.jpg'
 
 **社会人への読み替え：** 「仕事が遅い」「段取りが悪い」のは才能の問題ではなく、正しい方法を知らないだけ。業務改善・ツール活用・優先順位の付け方を学べば、誰でも生産性は上がる。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-16.png" alt="好きなことだけやって生きていけると思うな｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -59,9 +56,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-coffee-book.jpg'
 
 **社会人への読み替え：** 弱点補強に時間を使いすぎていないか。自分が「人より明らかに得意なこと」に集中したほうが、組織への貢献度は上がる。ゼネラリストより、一点突破のスペシャリストが強い時代。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-13.png" alt="今のお前に必要なのは比較じゃなく前進だ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -83,9 +77,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-coffee-book.jpg'
 
 **社会人への読み替え：** プロジェクトが難航したとき、「無理」と思った瞬間にアイデアが止まる。粘り続けることが、他の人との最大の差になる。才能の差より、継続力の差のほうが仕事の結果に影響する。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-04.png" alt="諦めた瞬間から負けが始まるんだ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
@@ -97,9 +88,6 @@ eyecatch: '/imanari-blog/images/thumbnails/thumb-coffee-book.jpg'
 
 **社会人への読み替え：** 変われるかどうかは、変わろうとするかどうかだけ。会社・役職・年齢に関係なく、「今日から変える」と決めた人だけが変わっていく。
 
-<div style="text-align:center;margin:28px 0;">
-  <img src="/imanari-blog/images/quote-cards/quote-card-20.png" alt="お前が変われば周りも変わる。世界は内側から変わるんだ｜桜木建二の名言｜ドラゴン桜２" width="360" loading="lazy" style="max-width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);" />
-</div>
 
 ---
 
