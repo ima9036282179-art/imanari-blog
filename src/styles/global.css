@@ -360,9 +360,53 @@ img { max-width: 100%; height: auto; display: block; }
 
 .hero-banner-inner {
   position: relative;
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
   animation: fadeInUp 0.7s ease both;
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5rem;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-character {
+  flex-shrink: 0;
+  width: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-character-img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  object-position: bottom;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 32px rgba(0,0,0,0.55));
+}
+
+@media (max-width: 768px) {
+  .hero-banner-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .hero-text {
+    order: -1;
+    text-align: center;
+  }
+  .hero-character {
+    order: 1;
+    width: 100%;
+    max-width: 260px;
+  }
+  .hero-cta { justify-content: center; }
 }
 
 .hero-eyecatch {

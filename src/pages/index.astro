@@ -67,14 +67,19 @@ for (const key of _allKeys) {
   <!-- ヒーローバナー（full-widthスロット） -->
   <section class="hero-banner" slot="full-width">
     <div class="hero-banner-inner">
-      <span class="hero-eyecatch">🐉</span>
-      <h1 class="hero-catchphrase">ドラゴン桜2から学ぶ、<br>勉強と人生のヒント</h1>
-      <p class="hero-sub">桜木建二の言葉で、あなたの人生を逆転させよう</p>
-      <div class="hero-cta">
-        <a href="#articles" class="hero-btn-primary">記事を読む →</a>
-        <a href={`${base}fortune/`} class="hero-btn-secondary">🔮 ドラゴン桜２占い</a>
-        <a href={`${base}quote-gacha/`} class="hero-btn-secondary">🎲 名言ガチャ</a>
-        <a href={`${base}30day-challenge/`} class="hero-btn-secondary">🔥 30日チャレンジ</a>
+      <div class="hero-text">
+        <span class="hero-eyecatch">🐉</span>
+        <h1 class="hero-catchphrase">ドラゴン桜2から学ぶ、<br>勉強と人生のヒント</h1>
+        <p class="hero-sub">桜木建二の言葉で、あなたの人生を逆転させよう</p>
+        <div class="hero-cta">
+          <a href="#articles" class="hero-btn-primary">記事を読む →</a>
+          <a href={`${base}fortune/`} class="hero-btn-secondary">🔮 ドラゴン桜２占い</a>
+          <a href={`${base}quote-gacha/`} class="hero-btn-secondary">🎲 名言ガチャ</a>
+          <a href={`${base}30day-challenge/`} class="hero-btn-secondary">🔥 30日チャレンジ</a>
+        </div>
+      </div>
+      <div class="hero-character">
+        <img src={`${base}images/sakuragi-hero.png`} alt="桜木先生イラスト" class="hero-character-img" loading="eager" decoding="async" />
       </div>
     </div>
   </section>
